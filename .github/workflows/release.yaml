@@ -33,7 +33,7 @@ jobs:
     container: quay.io/git-chglog/git-chglog:0.15.0
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -47,9 +47,9 @@ jobs:
           apk add bash git grep yq curl
 
       - name: Install Helm
-        uses: azure/setup-helm@v1
+        uses: azure/setup-helm@v3
         with:
-          version: v3.8.1
+          version: v3.12.0
 
       - name: Generate charts changelog files
         shell: bash
