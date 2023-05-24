@@ -29,7 +29,7 @@ jobs:
         with:
           files: charts/*/Chart.yaml
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     container: quay.io/git-chglog/git-chglog:0.15.0
     steps:
       - name: Checkout
