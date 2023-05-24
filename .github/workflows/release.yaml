@@ -29,7 +29,7 @@ jobs:
         with:
           files: charts/*/Chart.yaml
   release:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     container: quay.io/git-chglog/git-chglog:0.15.0
     steps:
       - name: Checkout
@@ -44,7 +44,7 @@ jobs:
 
       - name: Install main dependencies
         run: |
-          apk add bash git grep yq curl
+          apk --upgrade add bash git grep yq curl
 
       - name: Install Helm
         uses: azure/setup-helm@v3
