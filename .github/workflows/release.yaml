@@ -31,6 +31,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     container: quay.io/git-chglog/git-chglog:0.15.0
+    permissions:
+      contents: write # for creating releases
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -74,8 +76,6 @@ jobs:
           done
 
       - name: Run chart-releaser
-        permissions:
-          contents: write
         uses: helm/chart-releaser-action@v1.5.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
