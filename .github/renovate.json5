@@ -12,5 +12,5 @@
 
     "enabledManagers": ["helmv3"],
 
-    "postUpdateOptions": ["helmUpdateSubChartArchives"]
+    "pinDigests": true
 }
