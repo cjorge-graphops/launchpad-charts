@@ -12,5 +12,63 @@
 
     "enabledManagers": ["helm-values"],
 
-    "pinDigests": true
+    "pinDigests": true,
+
+    "packageRules": [
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["arbitrum*/**"],
+        "groupName": "Arbitrum dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["avalanche/**"],
+        "groupName": "Avalanche dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["celo/**"],
+        "groupName": "Celo dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["erigon/**"],
+        "groupName": "Erigon dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["graph-*/**"],
+        "groupName": "Graph dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["heimdall/**"],
+        "groupName": "Heimdall dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["lighthouse/**"],
+        "groupName": "Lighthouse dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["nethermind/**"],
+        "groupName": "Nethermind dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["nimbus/**"],
+        "groupName": "Nimbus dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["openebs-*/**"],
+        "groupName": "Openebs dependencies"
+      },
+      {
+        "description": "Group dependencies",
+        "matchPaths": ["proxyd/**"],
+        "groupName": "Proxyd dependencies"
+      }
+    ]
 }
