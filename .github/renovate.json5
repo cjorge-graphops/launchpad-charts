@@ -10,7 +10,7 @@
     "ignoreDeps": [
     ],
 
-    "enabledManagers": ["helm-values"],
+    "enabledManagers": ["helm-values", "helmv3"],
 
     "pinDigests": true,
 
