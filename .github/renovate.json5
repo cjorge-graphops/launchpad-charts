@@ -1,7 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>graphops/renovate-config"
+        "github>cjorge-graphops/renovate-config"
     ],
 
     "ignorePaths": [
