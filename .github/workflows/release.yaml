@@ -81,7 +81,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          releaseNameRegEx: ".*-v\d+\.\d+\.\d+(-*)?"
+          releaseNameRegEx: '.*-v\d+\.\d+\.\d+(-*)?'
 
       - name: test
         shell: bash
