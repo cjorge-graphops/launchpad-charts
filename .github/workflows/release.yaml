@@ -108,7 +108,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: test
-        run: echo "${{ steps.test.outputs.data }}" | jq
+        run: |
+          echo "${{ steps.test.outputs.data }}" | jq
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
