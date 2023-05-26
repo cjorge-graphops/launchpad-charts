@@ -77,15 +77,41 @@ jobs:
 
       - name: test
         id: test
-        uses: cardinalby/git-get-release-action@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        uses: octokit/graphql-action@v2.x
         with:
-          releaseNameRegEx: '.*-[v]?\d+\.\d+\.\d+(-*)?'
+          query: |
+            query releases($owner:String!,$repo:String!) {
+              repository(owner:$owner,name:$repo) {
+                releases(last: 100, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  edges {
+                    node {
+                      name
+                      isPrerelease
+                      description
+                      createdAt
+                      releaseAssets(last: 100) {
+                        nodes {
+                          createdAt
+                          name
+                          size
+                          downloadUrl
+                        }
+                      }
+                    }
+                    cursor
+                  }
+                }
+              }
+            }
+          variables: |
+            owner: ${{ github.event.repository.owner.name }}
+            repo: ${{ github.event.repository.name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: test
         shell: bash
-        run: echo "${{ steps.test.outputs }}"
+        run: echo "${{ fromJson(steps.test.outputs).data }}"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
