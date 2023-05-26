@@ -12,9 +12,9 @@ on:
       - "release/*"
 
 jobs:
-  env:
-    release_tag: "arbitrum-classic-0.1.2"
   release:
+    env:
+      release_tag: "arbitrum-classic-0.1.2"
     runs-on: ubuntu-latest
     permissions:
       contents: write # for creating releases
