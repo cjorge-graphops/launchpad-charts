@@ -29,56 +29,58 @@ jobs:
         with:
           files: charts/*/Chart.yaml
   release:
-    runs-on: ubuntu-latest
-    container: quay.io/git-chglog/git-chglog:0.15.0
-    permissions:
-      contents: write # for creating releases
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    # runs-on: ubuntu-latest
+    # container: quay.io/git-chglog/git-chglog:0.15.0
+    # permissions:
+    #   contents: write # for creating releases
+    # steps:
+    #   - name: Checkout
+    #     uses: actions/checkout@v3
+    #     with:
+    #       fetch-depth: 0
 
-      - name: Configure Git
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+    #   - name: Configure Git
+    #     run: |
+    #       git config user.name "${{ github.actor }}"
+    #       git config user.email "${{ github.actor}}@users.noreply.github.com"
+    #       git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - name: Install main dependencies
-        run: |
-          apk --upgrade add bash git grep yq curl
+    #   - name: Install main dependencies
+    #     run: |
+    #       apk --upgrade add bash git grep yq curl
 
-      - name: Install Helm
-        uses: azure/setup-helm@v3
-        with:
-          version: v3.12.0
+    #   - name: Install Helm
+    #     uses: azure/setup-helm@v3
+    #     with:
+    #       version: v3.12.0
 
-      - name: Generate charts changelog files
-        shell: bash
-        run: |
-          set -x
-          # TODO: Bundle all of that logic in a Github Action to make it easy to share.
-          for chart_file in ${{ needs.find-charts-to-release.outputs.modified-charts-files }}; do
-              chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
-              chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
-              chart_tag="${chart_name}-${chart_version}"
-              chart_path="charts/${chart_name}"
+    #   - name: Generate charts changelog files
+    #     shell: bash
+    #     run: |
+    #       set -x
+    #       # TODO: Bundle all of that logic in a Github Action to make it easy to share.
+    #       for chart_file in ${{ needs.find-charts-to-release.outputs.modified-charts-files }}; do
+    #           chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
+    #           chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
+    #           chart_tag="${chart_name}-${chart_version}"
+    #           chart_path="charts/${chart_name}"
 
-              # Generate RELEASE-NOTES.md file (used for Github release notes).
-              git-chglog                                    \
-                  --output "${chart_path}/RELEASE-NOTES.md" \
-                  --tag-filter-pattern "${chart_name}"      \
-                  --next-tag "${chart_tag}"                 \
-                  --path "${chart_path}" "${chart_tag}"
+    #           # Generate RELEASE-NOTES.md file (used for Github release notes).
+    #           git-chglog                                    \
+    #               --output "${chart_path}/RELEASE-NOTES.md" \
+    #               --tag-filter-pattern "${chart_name}"      \
+    #               --next-tag "${chart_tag}"                 \
+    #               --path "${chart_path}" "${chart_tag}"
 
-              (set -x; cat ${chart_path}/RELEASE-NOTES.md)
-          done
+    #           (set -x; cat ${chart_path}/RELEASE-NOTES.md)
+    #       done
 
-      - name: test
+      - Name: test
         id: test
         uses: octokit/graphql-action@v2.x
         with:
+          owner: ${{ github.event.repository.owner.name }}
+          repo: ${{ github.event.repository.name }}
           query: |
             query releases($owner:String!,$repo:String!) {
               repository(owner:$owner,name:$repo) {
@@ -103,9 +105,6 @@ jobs:
                 }
               }
             }
-          variables: |
-            owner: ${{ github.event.repository.owner.name }}
-            repo: ${{ github.event.repository.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
