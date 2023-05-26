@@ -12,11 +12,23 @@ on:
       - "release/*"
 
 jobs:
+  env:
+    release_tag: "arbitrum-classic-0.1.2"
   release:
     runs-on: ubuntu-latest
     permissions:
       contents: write # for creating releases
     steps:
+      - name: Parse tag
+        id: parse_tag
+        run: |
+          name=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\1/g')
+          echo "::set-output name=name::$name"
+          version=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\2/g')
+          echo "::set-output name=version::$version"
+          prerelease=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\4/g')
+          echo "::set-output name=prerelease::$prerelease"
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -30,8 +42,8 @@ jobs:
 
       - name: Install main dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install jq
+          #sudo apt-get update
+          #sudo apt-get install jq
 
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod a+x /usr/local/bin/yq
@@ -43,3 +55,5 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           version: v3.12.0
+
+      - name:
