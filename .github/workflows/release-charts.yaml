@@ -23,11 +23,11 @@ jobs:
         id: parse_tag
         run: |
           name=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\1/g')
-          echo "::set-output name=name::$name"
+          echo "name=$name" >> $GITHUB_OUTPUT
           version=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\2/g')
-          echo "::set-output name=version::$version"
+          echo "version=$version" >> $GITHUB_OUTPUT
           prerelease=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\4/g')
-          echo "::set-output name=prerelease::$prerelease"
+          echo "prerelease=$prerelease" >> $GITHUB_OUTPUT
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -49,6 +49,10 @@ jobs:
           sudo chmod a+x /usr/local/bin/yq
 
           yq --version
+
+          echo ${{ steps.parse_tag.outputs.name }}
+          echo ${{ steps.parse_tag.outputs.version }}
+          echo ${{ steps.parse_tag.outputs.prerelease }}
 
 
       - name: Install Helm
