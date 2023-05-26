@@ -109,7 +109,9 @@ jobs:
 
       - name: test
         run: |
-          echo "${{ steps.test.outputs.data }}" | jq
+          echo "${releases}" | jq
+        env:
+          releases: ${{ steps.test.outputs.data }}
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
