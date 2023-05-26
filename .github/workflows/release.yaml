@@ -47,8 +47,7 @@ jobs:
 
       - name: Install main dependencies
         run: |
-          apt-get update
-          apt-get install yq jq
+          apk --upgrade add bash git grep yq curl jq
 
       - name: Install Helm
         uses: azure/setup-helm@v3
