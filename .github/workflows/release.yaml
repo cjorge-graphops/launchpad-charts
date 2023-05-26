@@ -109,7 +109,7 @@ jobs:
 
       - name: test
         shell: bash
-        run: echo "${{ fromJson(steps.test.outputs)[data] }}"
+        run: echo "${{ fromJson(steps.test.outputs.data) }}"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
