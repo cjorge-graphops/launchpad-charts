@@ -108,7 +108,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: test
-        shell: bash
         run: echo "${{ fromJson(steps.test.outputs.data) }}"
 
       - name: Run chart-releaser
