@@ -29,11 +29,11 @@ jobs:
         with:
           files: charts/*/Chart.yaml
   release:
-    # runs-on: ubuntu-latest
-    # container: quay.io/git-chglog/git-chglog:0.15.0
-    # permissions:
-    #   contents: write # for creating releases
-    # steps:
+    runs-on: ubuntu-latest
+    container: quay.io/git-chglog/git-chglog:0.15.0
+    permissions:
+      contents: write # for creating releases
+    steps:
     #   - name: Checkout
     #     uses: actions/checkout@v3
     #     with:
@@ -74,8 +74,7 @@ jobs:
 
     #           (set -x; cat ${chart_path}/RELEASE-NOTES.md)
     #       done
-
-      - Name: test
+      - name: test
         id: test
         uses: octokit/graphql-action@v2.x
         with:
