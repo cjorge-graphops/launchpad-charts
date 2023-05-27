@@ -145,4 +145,4 @@ jobs:
         run: |
           echo "${releases}"
         env:
-          releases: ${{ fromJSON(steps.test.outputs.data).repository.release }}
+          releases: ${{ fromJson(steps.test.outputs.data).repository.release }}
