@@ -12,16 +12,22 @@ on:
       - "release/*"
 
 jobs:
-  release:
+  init:
     env:
       release_tag: "arbitrum-classic-0.1.2"
     runs-on: ubuntu-latest
     permissions:
       contents: write # for creating releases
+    outputs:
+      name: ${{ steps.parse_tag.outputs.name }}
+      version: ${{ steps.parse_tag.outputs.version }}
+      prerelease: ${{ steps.parse_tag.outputs.prerelease }}
+      tag: ${{ steps.parse_tag.outputs.tag }}
     steps:
       - name: Parse tag
         id: parse_tag
         run: |
+          echo "tag=${{ env.release_tag }}" >> $GITHUB_OUTPUT
           name=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\1/g')
           echo "name=$name" >> $GITHUB_OUTPUT
           version=$(echo "${{ env.release_tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\2/g')
@@ -54,9 +60,51 @@ jobs:
           echo ${{ steps.parse_tag.outputs.version }}
           echo ${{ steps.parse_tag.outputs.prerelease }}
 
+  changelog:
+    needs: init
+    runs-on: ubuntu-latest
+    container: quay.io/git-chglog/git-chglog:0.15.0
+    outputs:
+      chglog: ${{ steps.gen_chglog.outputs.chglog }}
+    steps:
+      - name: Generate chart changelog
+        id: gen_chglog
+        shell: bash
+        run: |
+          set -x
+          # TODO: Bundle all of that logic in a Github Action to make it easy to share.
+          chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
+          chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
+          chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
+          chart_tag="${chart_name}-${chart_version}"
+          chart_path="charts/${chart_name}"
 
+          # prev_stable_tag=$(git tag | grep -Ex "${{ needs.init.outputs.name }}-[v]?[0-9]+\.[0-9]+\.[0-9]+" | sort -V -r | head -n 1)
+          current_tag=${{ needs.init.outputs.tag }}
+
+          # Generate RELEASE-NOTES.md file (used for Github release notes).
+          git-chglog                                    \
+              --output "${chart_path}/RELEASE-NOTES.md" \
+              --tag-filter-pattern "${chart_name}"      \
+              --path "${chart_path}"                    \
+              "..${{ current_tag }}"
+
+         echo "chglog=<<EOF" >> $GITHUB_OUTPUT
+         cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
+         echo "EOF" >> $GITHUB_OUTPUT
+
+  release:
+    needs:
+      - init
+      - changelog
+    runs-on: ubuntu-latest
+    steps:
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
           version: v3.12.0
-
+      - name: Generate Helm package
+        run: |
+          helm package "charts/${{ needs.init.outputs.name }}"
+      - name: test
+        run: gh --version
