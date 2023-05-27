@@ -75,7 +75,6 @@ jobs:
 
       - name: Generate chart changelog
         id: gen_chglog
-        shell: bash
         run: |
           set -x
           # TODO: Bundle all of that logic in a Github Action to make it easy to share.
