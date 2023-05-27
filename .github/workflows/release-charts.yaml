@@ -150,7 +150,12 @@ jobs:
 
       - name: Create release
         run: |
-          echo "${{ needs.changelog.outputs.change_log }}" > RELEASE-NOTES.md
+          set -x
+          cat << EOF
+          echo "${{ needs.changelog.outputs.change_log }}"
+          echo "EOF"
+          > RELEASE-NOTES.md
+
           if [ -z ${{ needs.init.outputs.prerelease }} ]; then
             gh release create -t ${{ needs.init.outputs.tag }} --verify-tag ${{ needs.init.outputs.tag }} -F RELEASE-NOTES.md
           else
