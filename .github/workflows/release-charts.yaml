@@ -165,5 +165,5 @@ jobs:
           else
             gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease ${{ needs.init.outputs.tag }} -F RELEASE-NOTES.md
           fi
-        with:
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
