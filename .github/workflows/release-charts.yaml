@@ -131,7 +131,7 @@ jobs:
           repo: ${{ github.event.repository.name }}
           tag: ${{ needs.init.outputs.tag }}
           query: |
-            query releases($owner:String!,$repo:String!) {
+            query releases($owner:String!,$repo:String!,$tag:String!) {
               repository(owner:$owner,name:$repo) {
                 release(tagName: $tag) {
                   id
