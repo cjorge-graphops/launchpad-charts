@@ -64,7 +64,15 @@ jobs:
     needs: init
     runs-on: ubuntu-latest
     container: quay.io/git-chglog/git-chglog:0.15.0
+    outputs:
+      change_log: ${{ steps.gen_chglog.outputs.change_log }}
+
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
       - name: Generate chart changelog
         id: gen_chglog
         shell: bash
@@ -87,13 +95,11 @@ jobs:
               --path "${chart_path}"                    \
               "..${{ current_tag }}"
 
-         change_log="$(cat ${chart_path}/RELEASE-NOTES.md)"
-         echo "change_log="$change_log"" >> $GITHUB_OUTPUT
+         #change_log="$(cat ${chart_path}/RELEASE-NOTES.md)"
+         #echo "change_log="$change_log"" >> $GITHUB_OUTPUT
          #echo "chglog=<<EOF" >> $GITHUB_OUTPUT
          #cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
          #echo "EOF" >> $GITHUB_OUTPUT
-    outputs:
-      change_log: ${{ steps.gen_chglog.outputs.change_log }}
 
   release:
     needs:
