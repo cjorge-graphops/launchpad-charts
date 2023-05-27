@@ -122,3 +122,27 @@ jobs:
           helm package "charts/${{ needs.init.outputs.name }}"
       - name: test
         run: gh --version
+
+      - name: Check existing release
+        id: check_release
+        uses: octokit/graphql-action@v2.x
+        with:
+          owner: ${{ github.event.repository.owner.name }}
+          repo: ${{ github.event.repository.name }}
+          tag: ${{ needs.init.outputs.tag }}
+          query: |
+            query releases($owner:String!,$repo:String!) {
+              repository(owner:$owner,name:$repo) {
+                release(tagName: $tag) {
+                  id
+                }
+              }
+            }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: test
+        run: |
+          echo "${releases}"
+        env:
+          releases: ${{ fromJSON(steps.test.outputs.data).repository.release }}
