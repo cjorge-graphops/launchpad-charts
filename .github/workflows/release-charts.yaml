@@ -150,10 +150,10 @@ jobs:
 
       - name: Create release
         run: |
-          if [ -z ${{ needs.init.outputs.prerelease }} ]; then
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tar.gz <<<$CHANGELOG
+          if [ -z "${{ needs.init.outputs.prerelease }}" ]; then
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} arbitrum-classic-0.1.1.tgz <<<$CHANGELOG
           else
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tar.gz <<<$CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} arbitrum-classic-0.1.1.tgz <<<$CHANGELOG
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
