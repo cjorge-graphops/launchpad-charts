@@ -99,7 +99,7 @@ jobs:
               --path "${chart_path}"                    \
               "..${current_tag}"
 
-          echo "change_log<<'EOF'" >> $GITHUB_OUTPUT
+          echo "change_log<<EOF" >> $GITHUB_OUTPUT
           cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
