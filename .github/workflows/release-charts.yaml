@@ -150,16 +150,11 @@ jobs:
 
       - name: Create release
         run: |
-          set -x
-          cat << EOF
-          echo "${{ needs.changelog.outputs.change_log }}"
-          echo "EOF"
-          > RELEASE-NOTES.md
-
           if [ -z ${{ needs.init.outputs.prerelease }} ]; then
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag ${{ needs.init.outputs.tag }} -F RELEASE-NOTES.md
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag ${{ needs.init.outputs.tag }} -F - <<($CHANGELOG)
           else
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease ${{ needs.init.outputs.tag }} -F RELEASE-NOTES.md
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease ${{ needs.init.outputs.tag }} -F - <<($CHANGELOG)
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGELOG: ${{ needs.changelog.outputs.change_log }}
