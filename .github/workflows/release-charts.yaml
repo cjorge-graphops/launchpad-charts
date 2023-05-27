@@ -127,7 +127,7 @@ jobs:
         id: check_release
         uses: octokit/graphql-action@v2.x
         with:
-          owner: ${{ github.event.repository.owner.name }}
+          owner: ${{ github.event.repository.owner.login }}
           repo: ${{ github.event.repository.name }}
           tag: ${{ needs.init.outputs.tag }}
           query: |
