@@ -89,9 +89,11 @@ jobs:
               --path "${chart_path}"                    \
               "..${{ current_tag }}"
 
-         echo "chglog=<<EOF" >> $GITHUB_OUTPUT
-         cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
-         echo "EOF" >> $GITHUB_OUTPUT
+         chglog=$(cat ${chart_path}/RELEASE-NOTES.md)
+         echo "chglog=$chglog" >> $GITHUB_OUTPUT
+         #echo "chglog=<<EOF" >> $GITHUB_OUTPUT
+         #cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
+         #echo "EOF" >> $GITHUB_OUTPUT
 
   release:
     needs:
