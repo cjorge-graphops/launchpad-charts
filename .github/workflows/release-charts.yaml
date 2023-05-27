@@ -99,9 +99,7 @@ jobs:
               --path "${chart_path}"                    \
               "..${current_tag}"
 
-          #change_log="$(cat ${chart_path}/RELEASE-NOTES.md)"
-          #echo "change_log="$change_log"" >> $GITHUB_OUTPUT
-          echo "change_log=<<EOF" >> $GITHUB_OUTPUT
+          echo "change_log=<<'EOF'" >> $GITHUB_OUTPUT
           cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
