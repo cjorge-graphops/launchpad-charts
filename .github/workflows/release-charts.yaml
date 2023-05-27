@@ -93,7 +93,7 @@ jobs:
               --output "${chart_path}/RELEASE-NOTES.md" \
               --tag-filter-pattern "${chart_name}"      \
               --path "${chart_path}"                    \
-              "..${{ current_tag }}"
+              "..${current_tag}"
 
           change_log="$(cat ${chart_path}/RELEASE-NOTES.md)"
           echo "change_log="$change_log"" >> $GITHUB_OUTPUT
