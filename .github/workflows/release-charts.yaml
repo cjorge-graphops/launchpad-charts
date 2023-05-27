@@ -122,16 +122,7 @@ jobs:
       - name: Generate Helm package
         id: helm_package
         run: |
-          chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
-          chart_description="$(grep -Po "(?<=^description: ).+" ${chart_file})"
-
-          EOF_MARKER="EOF-$(uuidgen)"
-          echo "CHART_DESCRIPTION=<<$EOF_MARKER" >> $GITHUB_ENV
-          cat $chart_file >> $GITHUB_ENV
-          echo "$EOF_MARKER" >> $GITHUB_ENV
-
           helm package "charts/${{ needs.init.outputs.name }}"
-
 
       - name: Check existing release
         id: check_release
