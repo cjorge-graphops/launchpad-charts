@@ -151,9 +151,9 @@ jobs:
       - name: Create release
         run: |
           if [ -z ${{ needs.init.outputs.prerelease }} ]; then
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag ${{ needs.init.outputs.tag }} -F - <<< $CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tar.gz <<<$CHANGELOG
           else
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease ${{ needs.init.outputs.tag }} -F - <<< $CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tar.gz <<<$CHANGELOG
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
