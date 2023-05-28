@@ -1,7 +1,7 @@
 const { Octokit } = require("@octokit/action");
 
 const OctokitP = Octokit.plugin(
-  require("octokit-plugin-example")
+  require("paginateGraphql")
 );
 
 const octokit = new OctokitP();
