@@ -8,7 +8,7 @@ const octokit = new OctokitP();
 
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
-const result = await octokit.graphql.paginate(`
+const { result } = octokit.graphql.paginate(`
   query paginate($cursor: String, $owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
     releases(
