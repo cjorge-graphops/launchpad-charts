@@ -58,4 +58,7 @@ jobs:
             return result
 
       - name: print
-        run: echo "${{ steps.query.outputs.result }}" | jq
+        env:
+          repositories: ${{ steps.query.outputs.result }}
+        run: |
+          echo "$repositories" | jq
