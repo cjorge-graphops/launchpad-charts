@@ -22,7 +22,7 @@ jobs:
       - run: npm install @octokit/action @octokit/plugin-paginate-graphql
 
       - run: |
-          result=$(node .github/actions/query-releases.js)
+          result="$(node .github/actions/query-releases.js)"
           echo "result<<EOF" >> $GITHUB_OUTPUT
           echo "$result" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -34,4 +34,4 @@ jobs:
         env:
           repositories: ${{ steps.query.outputs.result }}
         run: |
-          echo "$repositories" | jq
+          echo "$repositories"
