@@ -19,7 +19,7 @@ jobs:
 
       - uses: ./.github/actions/query-releases
         id: query
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print

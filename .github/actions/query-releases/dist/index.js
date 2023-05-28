@@ -9956,8 +9956,7 @@ const { paginateGraphql } = __nccwpck_require__(6617);
 const octokit = GitHub.plugin(paginateGraphql)
 const core = __nccwpck_require__(989);
 
-const token = process.env.GITHUB_TOKEN;
-const myOctokit = new octokit(getOctokitOptions(token))
+const myOctokit = new octokit(getOctokitOptions())
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
 async function query() {
