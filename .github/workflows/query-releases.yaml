@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: ./github/actions/query-releases
+      - uses: ./.github/actions/query-releases
         id: query
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
