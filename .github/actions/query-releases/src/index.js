@@ -3,8 +3,11 @@ const { paginateGraphql } = require("@octokit/plugin-paginate-graphql");
 const octokit = GitHub.plugin(paginateGraphql)
 const core = require('@actions/core');
 
-const myOctokit = new octokit(getOctokitOptions())
-const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
+const token = core.getInput('token', { required: true });
+const owner = core.getInput('owner', { required: true});
+const repo = core.getInput('repo', { required: true});
+
+const myOctokit = new octokit(getOctokitOptions(token))
 
 async function query() {
   const response = await myOctokit.graphql.paginate(`

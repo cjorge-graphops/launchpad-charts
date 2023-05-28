@@ -19,8 +19,10 @@ jobs:
 
       - uses: ./.github/actions/query-releases
         id: query
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: ${{ github.repository.name }}
+          owner: ${{ github.repository.owner.login }}
 
       - name: print
         env:
