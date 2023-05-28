@@ -53,8 +53,17 @@ jobs:
             yq -i e '.entries.[strenv(name)] |= map(select(.version == strenv(version)).created=strenv(date)) |= map(select(.version == strenv(version)).urls=[strenv(url)])' .releases/index.yaml
           done
 
+          cat .releases/index.yaml
 
       - uses: actions/upload-artifact@v3
         with:
           name: chart-index
           path: .releases/index.yaml
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: chart-index
+
+      - name: print
+        run: |
+          cat index.yaml
