@@ -22,8 +22,8 @@ jobs:
         id: query
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repo: ${{ github.repository.name }}
-          owner: ${{ github.repository.owner.login }}
+          repo: ${{ github.event.repository.name }}
+          owner: ${{ github.event.repository.owner.login }}
 
       - name: print
         env:
