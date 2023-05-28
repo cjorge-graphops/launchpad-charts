@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
+        id: query
         with:
           script: |
             const query = `query paginate($cursor: String, $owner: String!, $name: String!) {
@@ -54,3 +55,6 @@ jobs:
             }
             const result = await github.graphql(query, variables)
             console.log(result)
+
+      - name: print
+        run: echo "${{ steps.query.outputs.result }}" | jq
