@@ -50,8 +50,11 @@ jobs:
             date=$(echo "$releases_json" | jq -r '.date')
             url=$(echo "$releases_json" | jq -r '.url')
 
-            yq -i e '.entries.[strenv(name)] |= map(select(.version == strenv(version)).created=strenv(date)) |= map(select(.version == strenv(version)).urls=[strenv(url)])' index.yaml
+            yq -i e '.entries.[strenv(name)] |= map(select(.version == strenv(version)).created=strenv(date)) |= map(select(.version == strenv(version)).urls=[strenv(url)])' .releases/index.yaml
 
           done < <(jq --nul-output '.[] | { name: .name, date: .createdAt, url: .releaseAssets.nodes[].downloadUrl }' releases.json)
 
-          cat .releases/index.yaml
+      - uses: actions/upload-artifact@v3
+        with:
+          name: chart-index
+          path: .releases/index.yaml
