@@ -45,9 +45,9 @@ async function query() {
 }
 );
 
-  return response;
+  console.log("${response}");
+  core.setOutput('response', response);
+
 }
 
-const response = query();
-console.log("${response}");
-core.setOutput('response', response);
+query();
