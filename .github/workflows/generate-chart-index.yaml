@@ -37,8 +37,9 @@ jobs:
       - name: print
         run: |
           mkdir .releases
+
           for chart_url in $(cat releases.json| jq -r '.[].releaseAssets.nodes[].downloadUrl'); do
-            wget "$chart_url";
+            wget -P .releases/ "$chart_url";
           done
 
           helm repo index .releases/
