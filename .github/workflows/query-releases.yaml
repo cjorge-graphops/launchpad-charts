@@ -31,4 +31,4 @@ jobs:
         env:
           repositories: ${{ steps.query.outputs.response }}
         run: |
-          echo "$repositories"
+          echo "$repositories" | jq
