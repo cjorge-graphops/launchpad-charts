@@ -1,0 +1,56 @@
+name: Query Releases
+
+on:
+  push:
+    tags:
+      - '*-[v]?[0-9]+.[0-9]+.[0-9]+'
+      - '*-[v]?[0-9]+.[0-9]+.[0-9]+-pre.[0-9]+'
+  # Allow to run the workflow from GitHub UI and other workflows.
+  workflow_dispatch:
+    branches:
+      - main
+      - "release/*"
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const query = `query paginate($cursor: String, $owner: String!, $name: String!) {
+                repository(owner: $owner, name: $name) {
+                  releases(
+                    first: 2
+                    orderBy: {field: CREATED_AT, direction: ASC}
+                  ) {
+                    edges {
+                      node {
+                        name
+                        isPrerelease
+                        description
+                        createdAt
+                        releaseAssets(last: 100) {
+                          nodes {
+                            createdAt
+                            name
+                            size
+                            downloadUrl
+                          }
+                        }
+                      }
+                    }
+                    pageInfo {
+                      endCursor
+                      hasNextPage
+                    }
+                  }
+                }
+              }
+            }`;
+            const variables = {
+              owner: context.repo.owner,
+              name: context.repo.repo
+            }
+            const result = await github.graphql.paginate(query, variables)
+            console.log(result)
