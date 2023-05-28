@@ -15,47 +15,22 @@ jobs:
   query:
     runs-on: ubuntu-latest
     steps:
-      - name: Query GraphQL API
-        uses: actions/github-script@v6
-        id: query
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
         with:
-          script: |
-            const query = `query paginate($cursor: String, $owner: String!, $name: String!) {
-              repository(owner: $owner, name: $name) {
-                releases(
-                  first: 2
-                  after: $cursor
-                  orderBy: {field: CREATED_AT, direction: ASC}
-                ) {
-                  edges {
-                    node {
-                      name
-                      isPrerelease
-                      description
-                      createdAt
-                      releaseAssets(last: 100) {
-                        nodes {
-                          createdAt
-                          name
-                          size
-                          downloadUrl
-                        }
-                      }
-                    }
-                  }
-                  pageInfo {
-                    endCursor
-                    hasNextPage
-                  }
-                }
-              }
-            }`;
-            const variables = {
-              owner: context.repo.owner,
-              name: context.repo.repo
-            }
-            const result = await github.graphql(query, variables)
-            return result
+          version: 12
+
+      - run: npm install @octokit/action
+
+      - run: |
+          result=$(node .github/actions/query-releases.js)
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$result" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        id: query
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print
         env:
