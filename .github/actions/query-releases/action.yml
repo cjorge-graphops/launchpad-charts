@@ -10,6 +10,9 @@ inputs:
   owner: # Repository owner's login
     description: "repository owner login"
     required: true
+outputs:
+  response:
+    description: "Response JSON"
 runs:
   using: 'node16'
   main: 'dist/index.js'
