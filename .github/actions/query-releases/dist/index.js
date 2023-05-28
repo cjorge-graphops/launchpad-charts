@@ -16725,7 +16725,7 @@ async function query() {
 
   console.log(response);
 
-  fs.writeFileSync('releases.json', JSON.stringify(response));
+  fs.writeFileSync('releases.json', JSON.stringify(response.repository.releases.edges.map( edge => edge.node)));
 
   const artifactClient = artifact.create()
   const options = {
