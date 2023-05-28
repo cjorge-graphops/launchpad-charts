@@ -61,9 +61,9 @@ jobs:
           helm repo index .releases/
 
           if [[ '${{ inputs.includePrereleases }}' == 'false' ]]; then
-            filter="jq '.[] | select(.isPrerelease == false)'"
+            filter="jq \'.[] | select(.isPrerelease == false)\'"
           else
-            filter="jq '.[]'"
+            filter="jq \'.[]\'"
           fi
 
           for release in $(cat releases.json | $filter | jq -c '. | { name: .name, date: .createdAt, url: .releaseAssets.nodes[].downloadUrl }'); do
