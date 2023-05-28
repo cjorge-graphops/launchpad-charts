@@ -7,8 +7,7 @@ const token = process.env.GITHUB_TOKEN;
 const myOctokit = new octokit(getOctokitOptions(token))
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
-async function doQuery(owner, repo) {
-  const response = await myOctokit.graphql.paginate(`
+const response = myOctokit.graphql.paginate(`
   query paginate($cursor: String, $owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
     releases(
@@ -43,10 +42,7 @@ async function doQuery(owner, repo) {
   owner: owner,
   name: repo
 }
-);
-}
-
-const response = await doQuery(owner, repo);
+).resolve();
 
 console.log("${response}");
 core.setOutput('response', response);
