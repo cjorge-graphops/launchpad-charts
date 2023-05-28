@@ -61,7 +61,7 @@ async function query() {
 
   const uploadResponse = await artifactClient.uploadArtifact(
     'releases',
-    [ 'releases.json' ],
+    ['releases.json'],
     '.',
     options
   )
