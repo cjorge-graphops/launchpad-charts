@@ -1,13 +1,14 @@
-const { Octokit } = require("@octokit/action");
+import { GitHub, getOctokitOptions } from '@actions/github/lib/utils'
+import process from 'node:process';
 const { paginateGraphql } = require("@octokit/plugin-paginate-graphql");
+const octokit = GitHub.plugin(paginateGraphql)
+const core = require('@actions/core');
 
-const OctokitP = Octokit.plugin(paginateGraphql);
-
-const octokit = new OctokitP();
-
+const token = process.env.GITHUB_TOKEN;
+const myOctokit = new octokit(getOctokitOptions(token))
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
-const { result } = octokit.graphql.paginate(`
+const { response } = myOctokit.graphql.paginate(`
   query paginate($cursor: String, $owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
     releases(
@@ -44,4 +45,5 @@ const { result } = octokit.graphql.paginate(`
 }
 );
 
-console.log(result);
+console.log(response);
+core.setOutput('response', response);

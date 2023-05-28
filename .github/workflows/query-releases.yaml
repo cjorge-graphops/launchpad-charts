@@ -19,19 +19,16 @@ jobs:
 
       - uses: actions/setup-node@v3
 
-      - run: npm install @octokit/action @octokit/plugin-paginate-graphql
+      - run: npm install @actions/core @actions/github @octokit/plugin-paginate-graphql
 
       - run: |
-          result="$(node .github/actions/query-releases.js)"
-          echo "result<<EOF" >> $GITHUB_OUTPUT
-          echo "$result" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          node .github/actions/query-releases.js
         id: query
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print
         env:
-          repositories: ${{ steps.query.outputs.result }}
+          repositories: ${{ steps.query.outputs.response }}
         run: |
           echo "$repositories"
