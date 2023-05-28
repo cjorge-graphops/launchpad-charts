@@ -60,7 +60,7 @@ jobs:
 
           helm repo index .releases/
 
-          if [[ '${{ inputs.includePrereleases }}' == 'false' }} ]]; then
+          if [[ '${{ inputs.includePrereleases }}' == 'false' ]]; then
             releases="$(jq '.[] | select(.isPrerelease == false)' releases.json)"
           else
             releases="$(jq '.[]' releases.json)"
