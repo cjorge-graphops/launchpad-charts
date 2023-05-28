@@ -14,7 +14,7 @@ on:
       includePrereleases:
         type: boolean
         required: true
-        description: "Should prereleases be included?"
+        description: "Include prereleases?"
         default: false
 
   workflow_call:
@@ -22,7 +22,7 @@ on:
       includePrereleases:
         type: boolean
         required: true
-        description: "Should prereleases be included?"
+        description: "Include prereleases?"
         default: false
 
 
@@ -60,7 +60,7 @@ jobs:
 
           helm repo index .releases/
 
-          if [[ '${{ inputs.includePrereleases' == 'false' }} ]]; then
+          if [[ '${{ inputs.includePrereleases }}' == 'false' }} ]]; then
             releases="$(jq '.[] | select(.isPrerelease == false)' releases.json)"
           else
             releases="$(jq '.[]' releases.json)"
