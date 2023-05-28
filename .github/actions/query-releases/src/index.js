@@ -54,7 +54,8 @@ async function query() {
 
   core.setOutput('response', response);
 
-  fs.writeFileSync('./releases.json', JSON.stringify(response));
+  BASE_PATH = fs.realpathSync('.');
+  fs.writeFileSync("${BASE_PATH}/releases.json", JSON.stringify(response));
 
   const artifactClient = artifact.create()
   const options = {
@@ -63,8 +64,8 @@ async function query() {
 
   const uploadResponse = await artifactClient.uploadArtifact(
     'releases',
-    './releases.json',
-    '.',
+    "${BASE_PATH}/releases.json",
+    BASE_PATH,
     options
   )
 }
