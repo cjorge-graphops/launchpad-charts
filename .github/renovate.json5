@@ -4,6 +4,8 @@
         "github>cjorge-graphops/renovate-config"
     ],
 
+    "separateMajorMinor": false,
+
     "ignorePaths": [
     ],
 
