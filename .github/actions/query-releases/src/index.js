@@ -54,7 +54,7 @@ async function query() {
 
   core.setOutput('response', response);
 
-  fs.writeFileSync('./releases.json', response)
+  fs.writeFileSync('./releases.json', JSON.stringify(response));
 
   const artifactClient = artifact.create()
   const options = {
