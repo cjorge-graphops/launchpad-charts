@@ -1,0 +1,46 @@
+name: Generate Chart Index
+
+on:
+  push:
+    tags:
+      - '*-[v]?[0-9]+.[0-9]+.[0-9]+'
+      - '*-[v]?[0-9]+.[0-9]+.[0-9]+-pre.[0-9]+'
+  # Allow to run the workflow from GitHub UI and other workflows.
+  workflow_dispatch:
+    branches:
+      - main
+      - "release/*"
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.12.0
+
+      - name: Query Releases
+        uses: ./.github/actions/query-releases
+        id: query
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: ${{ github.event.repository.name }}
+          owner: ${{ github.event.repository.owner.login }}
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: releases
+
+      - name: print
+        run: |
+          mkdir .releases
+          for chart_url in $(cat releases.json| jq -r '.[].releaseAssets.nodes[].downloadUrl'); do
+            wget "$chart_url";
+          done
+
+          helm repo index .releases/
+
+          cat .releases/index.yaml
