@@ -22,6 +22,7 @@ jobs:
               repository(owner: $owner, name: $name) {
                 releases(
                   first: 2
+                  after: $cursor
                   orderBy: {field: CREATED_AT, direction: ASC}
                 ) {
                   edges {
