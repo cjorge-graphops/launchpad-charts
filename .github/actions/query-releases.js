@@ -7,7 +7,7 @@ const token = process.env.GITHUB_TOKEN;
 const myOctokit = new octokit(getOctokitOptions(token))
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 
-let prom = myOctokit.graphql.paginate(`
+myOctokit.graphql.paginate(`
   query paginate($cursor: String, $owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
     releases(
@@ -42,9 +42,9 @@ let prom = myOctokit.graphql.paginate(`
   owner: owner,
   name: repo
 }
-)
-
-var response = prom.resolve();
-
-console.log("${response}");
-core.setOutput('response', response);
+).then(
+  (response) => {
+    console.log("${response}");
+    core.setOutput('response', response);
+  }
+);
