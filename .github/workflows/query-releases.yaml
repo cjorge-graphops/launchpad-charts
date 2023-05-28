@@ -15,7 +15,8 @@ jobs:
   query:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v6
+      - name: Query GraphQL API
+        uses: actions/github-script@v6
         id: query
         with:
           script: |
@@ -57,4 +58,4 @@ jobs:
             console.log(result)
 
       - name: print
-        run: echo "${{ steps.query.outputs.result }}" | jq
+        run: echo "${{ fromJSON(steps.query.outputs.result) }}" | jq
