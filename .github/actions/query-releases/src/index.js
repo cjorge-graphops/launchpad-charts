@@ -53,6 +53,7 @@ async function query() {
   console.log(`${response}`);
 
   BASE_PATH = fs.realpathSync('.');
+  console.log(BASE_PATH);
   fs.writeFileSync(`${BASE_PATH}/releases.json`, JSON.stringify(response));
 
   const artifactClient = artifact.create()
