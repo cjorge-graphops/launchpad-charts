@@ -52,7 +52,7 @@ async function query() {
 
   console.log(response);
 
-  fs.writeFileSync('/tmp/releases.json', JSON.stringify(response));
+  fs.writeFileSync('releases.json', JSON.stringify(response));
 
   const artifactClient = artifact.create()
   const options = {
@@ -61,8 +61,8 @@ async function query() {
 
   const uploadResponse = await artifactClient.uploadArtifact(
     'releases',
-    '/tmp/releases.json',
-    '/tmp',
+    [ 'releases.json' ],
+    '.',
     options
   )
 }
