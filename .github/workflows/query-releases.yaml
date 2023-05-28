@@ -19,7 +19,7 @@ jobs:
 
       - uses: actions/setup-node@v3
 
-      - run: npm install @octokit/action
+      - run: npm install @octokit/action @octokit/plugin-paginate-graphql
 
       - run: |
           result=$(node .github/actions/query-releases.js)
