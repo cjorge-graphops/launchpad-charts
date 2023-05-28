@@ -1,5 +1,4 @@
-import { GitHub, getOctokitOptions } from '@actions/github/lib/utils'
-import process from 'node:process';
+const { GitHub, getOctokitOptions } = require("@actions/github/lib/utils");
 const { paginateGraphql } = require("@octokit/plugin-paginate-graphql");
 const octokit = GitHub.plugin(paginateGraphql)
 const core = require('@actions/core');
