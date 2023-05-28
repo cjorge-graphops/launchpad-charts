@@ -1,0 +1,5 @@
+name: 'Query Repository Releases'
+description: 'Builds a JSON artifact with data of all repository releases'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

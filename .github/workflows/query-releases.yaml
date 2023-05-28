@@ -17,14 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
-
-      - run: npm install @actions/core @actions/github @octokit/plugin-paginate-graphql
-
-      - run: |
-          node .github/actions/query-releases.js
+      - uses: ./github/actions/query-releases
         id: query
-        env:
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print
