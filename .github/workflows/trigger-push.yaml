@@ -52,8 +52,10 @@ jobs:
 
               if [[ "$chart_version" == *"pre"* ]]; then
                 release_streams+=("canary")
+                echo "HERE (canary)"
               else
                 release_streams+=("main")
+                echo "HERE (main)"
               fi
             fi
           done
@@ -68,7 +70,7 @@ jobs:
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
           echo "$(jq -Rc '. / " "' <<< ${(u)release_streams[*]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "streams: $(jq -Rc '. / " "' <<< ${(u)release_streams[*]})"
+          echo "streams: ${release_streams[*]} $(jq -Rc '. / " "' <<< ${(u)release_streams[*]})"
 
   call-release:
     needs: find-tags-to-release
