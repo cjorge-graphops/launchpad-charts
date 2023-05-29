@@ -28,8 +28,10 @@ jobs:
         with:
           files: charts/*/Chart.yaml
 
-      - name: Find list of tags
+      - name: Create tags
         id: list-release-tags
+        permissions:
+          contents: write # for creating tags
         shell: bash
         run: |
           tags=()
