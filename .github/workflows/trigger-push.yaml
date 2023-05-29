@@ -63,12 +63,10 @@ jobs:
           echo "release-tags<<EOF" >> $GITHUB_OUTPUT
           echo "$(jq -Rc '. / " "' <<< ${tags[*]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "tags: $(jq -Rc '. / " "' <<< ${tags[*]})"
 
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
           echo "$(jq -Rc '. / " "' <<< ${!release_streams[@]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "streams: ${!release_streams[@]} $(jq -Rc '. / " "' <<< ${!release_streams[@]})"
 
   call-release:
     needs: find-tags-to-release
@@ -84,7 +82,9 @@ jobs:
       tag: ${{ matrix.tag }}
 
   call-update-helm-repo:
-    needs: call-release
+    needs:
+      - call-release
+      - find-tags-to-release
     uses: ./.github/workflows/update-helm-repo.yaml
     permissions:
       contents: write # for updating index.yaml
