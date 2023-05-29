@@ -39,12 +39,11 @@ jobs:
         shell: bash
         run: |
           tags=()
+          declare -A release_streams=()
           for chart_file in ${{ steps.list-changed-charts.outputs.all_modified_files }}; do
             chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
-
-            declare -A release_streams=()
 
             if ! git rev-parse "$chart_tag" >/dev/null 2>&1; then
               tags+=("$chart_tag")
@@ -67,7 +66,6 @@ jobs:
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
           echo "$(jq -Rc '. / " "' <<< ${!release_streams[@]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "streams: ${!release_streams[@]}"
 
   call-release:
     needs: find-tags-to-release
