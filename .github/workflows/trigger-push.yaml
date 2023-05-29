@@ -44,7 +44,7 @@ jobs:
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
 
-            release_streams=()
+            declare -A release_streams=()
 
             if ! git rev-parse "$chart_tag" >/dev/null 2>&1; then
               tags+=("$chart_tag")
