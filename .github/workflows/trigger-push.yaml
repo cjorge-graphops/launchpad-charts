@@ -64,19 +64,23 @@ jobs:
 
   call-release:
     needs: find-tags-to-release
+    uses: ./.github/workflows/make-chart-release.yaml
+    permissions:
+      contents: write # for updating index.yaml
     strategy:
       matrix:
         tag: ${{ needs.find-tags-to-release.outputs.release-tags }}
       fail-fast: false
-    uses: ./.github/workflows/make-chart-release.yaml
     with:
       tag: ${{ matrix.tag }}
 
   call-update-helm-repo:
     needs: call-release
+    uses: ./.github/workflows/update-helm-repo.yaml
+    permissions:
+      contents: write # for updating index.yaml
     strategy:
       matrix:
         repo: ${{ needs.find-tags-to-release.outputs.release-streams }}
-    uses: ./.github/workflows/update-helm-repo.yaml
     with:
       repo: ${{ matrix.repo }}
