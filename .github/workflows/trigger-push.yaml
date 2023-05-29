@@ -23,6 +23,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
       - name: Get list of changed charts
         id: list-changed-charts
         uses: tj-actions/changed-files@v35.9.2
@@ -34,16 +39,10 @@ jobs:
         shell: bash
         run: |
           tags=()
-          echo ${{ steps.list-changed-charts.outputs.all_modified_files }}
           for chart_file in ${{ steps.list-changed-charts.outputs.all_modified_files }}; do
             chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
-
-            echo "$chart_name"
-            echo "$chart_tag"
-
-            echo "$(git rev-parse "$chart_tag")"
 
             release_streams=()
 
