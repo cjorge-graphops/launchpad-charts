@@ -1,4 +1,4 @@
-name: Release Charts
+name: Make Chart Release
 
 on:
   workflow_call:

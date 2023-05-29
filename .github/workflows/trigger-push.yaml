@@ -55,7 +55,7 @@ jobs:
       matrix:
         tag: ${{ needs.find-tags-to-release.outputs.release-tags }}
       fail-fast: false
-    uses: ./.github/workflows/release-charts.yaml
+    uses: ./.github/workflows/make-chart-release.yaml
     with:
       tag: ${{ matrix.tag }}
 

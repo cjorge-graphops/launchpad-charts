@@ -14,6 +14,6 @@ on:
 
 jobs:
   call-release:
-    uses: ./.github/workflows/release-charts.yaml
+    uses: ./.github/workflows/make-chart-release.yaml
     with:
       tag: ${{ github.ref_name }}

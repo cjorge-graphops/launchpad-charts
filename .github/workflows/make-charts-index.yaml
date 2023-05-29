@@ -1,4 +1,4 @@
-name: Generate Chart Index
+name: Make Charts Index
 
 on:
   workflow_dispatch:
