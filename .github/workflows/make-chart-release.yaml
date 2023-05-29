@@ -109,7 +109,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "${{ needs.init.outputs.tag }}.helm-package"
-          path: "charts/${{ needs.init.outputs.name }}/${{ needs.init.outputs.tag }}.tgz"
+          path: "${{ needs.init.outputs.tag }}.tgz"
 
       #TODO: finish logic in case release exists
       - name: Check existing release
