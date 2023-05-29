@@ -43,7 +43,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: chart-index
-          path: "nindex.yaml"
+          path: ".nindex"
 
       - name: Update index when there's changes
         run: |
@@ -53,8 +53,8 @@ jobs:
             path="canary"
           fi
 
-          if ! diff -q nindex.yaml "$path/index.yaml"; then
-            cp nindex.yaml "$path/index.yaml"
+          if ! diff -q .nindex/index.yaml "$path/index.yaml"; then
+            cp .nindex/index.yaml "$path/index.yaml"
             git add "$path/index.yaml"
             git commit -m "chore(pages): update index.yaml"
             git push
