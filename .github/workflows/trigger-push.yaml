@@ -15,7 +15,6 @@ jobs:
     permissions:
       contents: write # for creating tags
     outputs:
-      modified-charts-files: ${{ steps.list-changed-charts.outputs.all_modified_files }}
       release-tags: ${{ steps.list-release-tags.outputs.release-tags }}
       release-streams: ${{ steps.list-release-tags.outputs.release-streams }}
     steps:
@@ -35,8 +34,8 @@ jobs:
         shell: bash
         run: |
           tags=()
-          echo ${{ steps.find-charts-to-release.outputs.modified-charts-files }}
-          for chart_file in ${{ steps.find-charts-to-release.outputs.modified-charts-files }}; do
+          echo ${{ steps.list-changed-charts.outputs.all_modified_files }}
+          for chart_file in ${{ steps.list-changed-charts.outputs.all_modified_files }}; do
             chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
