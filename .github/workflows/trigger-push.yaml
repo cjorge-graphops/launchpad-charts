@@ -71,8 +71,9 @@ jobs:
       contents: write # for updating index.yaml
     strategy:
       matrix:
-        tag: ${{ needs.find-tags-to-release.outputs.release-tags }}
+        tag: ${{ fromJson(needs.find-tags-to-release.outputs.release-tags) }}
       fail-fast: false
+    if: ${{ needs.find-tags-to-release.outputs.release-tags != '[]' }}
     with:
       tag: ${{ matrix.tag }}
 
@@ -83,6 +84,7 @@ jobs:
       contents: write # for updating index.yaml
     strategy:
       matrix:
-        repo: ${{ needs.find-tags-to-release.outputs.release-streams }}
+        repo: ${{ fromJson(needs.find-tags-to-release.outputs.release-streams) }}
+    if: ${{ needs.find-tags-to-release.outputs.release-streams != '[]' }}
     with:
       repo: ${{ matrix.repo }}
