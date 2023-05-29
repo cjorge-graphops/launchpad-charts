@@ -127,7 +127,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: release-notes
-          path: RELEASE-NOTES.md
+          path: "."
 
       - name: Create release
         run: |
