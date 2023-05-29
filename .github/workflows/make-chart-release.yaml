@@ -36,37 +36,10 @@ jobs:
           prerelease=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-pre\.)?([[:digit:]]+)?$/\4/g')
           echo "prerelease=$prerelease" >> $GITHUB_OUTPUT
 
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Configure Git
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-
-      - name: Install main dependencies
-        run: |
-          #sudo apt-get update
-          #sudo apt-get install jq
-
-          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-          sudo chmod a+x /usr/local/bin/yq
-
-          yq --version
-
-          echo ${{ steps.parse_tag.outputs.name }}
-          echo ${{ steps.parse_tag.outputs.version }}
-          echo ${{ steps.parse_tag.outputs.prerelease }}
-
   changelog:
     needs: init
     runs-on: ubuntu-latest
     container: quay.io/git-chglog/git-chglog:0.15.0
-    outputs:
-      change_log: ${{ steps.gen_chglog.outputs.change_log }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -94,14 +67,15 @@ jobs:
 
           # Generate RELEASE-NOTES.md file (used for Github release notes).
           git-chglog                                    \
-              --output "${chart_path}/RELEASE-NOTES.md" \
+              --output "RELEASE-NOTES.md" \
               --tag-filter-pattern "${chart_name}"      \
               --path "${chart_path}"                    \
               "..${current_tag}"
 
-          echo "change_log<<EOF" >> $GITHUB_OUTPUT
-          cat ${chart_path}/RELEASE-NOTES.md | tee >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v3
+        with:
+          name: release-notes
+          path: RELEASE-NOTES.md
 
   release:
     needs:
@@ -150,13 +124,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: actions/download-artifact@v3
+        with:
+          name: release-notes
+          path: RELEASE-NOTES.md
+
       - name: Create release
         run: |
           if [ -z "${{ needs.init.outputs.prerelease }}" ]; then
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz <<<$CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F RELEASE-NOTES.md ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz
           else
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz <<<$CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F RELEASE-NOTES.md ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CHANGELOG: ${{ needs.changelog.outputs.change_log }}
