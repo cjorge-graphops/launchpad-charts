@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T11:15:08Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: c6e53c34537e87a601fb1f9b43c86b11839705993e8413437f7795d6464db344
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.19/arbitrum-classic-0.1.19.tgz
+      version: 0.1.19
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-05-29T10:54:40Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: 99ac5ba015592f88e74d8651eecbff91af32e029e83bfbc84844b7b4dfd79287
@@ -105,6 +115,16 @@ entries:
   arbitrum-nitro:
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
+      created: "2023-05-29T11:15:08Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: 8a6ea5a69654d11082bdd8bd7b9277260584430e01e42d8ef7c5c8c5b9cda6ac
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.10/arbitrum-nitro-0.1.10.tgz
+      version: 0.1.10
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
       created: "2023-05-29T10:54:40Z"
       description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
       digest: 27c85019d0c845bb2c07c781114b1cb485dc7fde4b47f80a1edbe33601123e42
@@ -136,7 +156,17 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
-      created: "2023-05-29T10:55:53.323781199Z"
+      created: "2023-05-29T11:16:19.58226214Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 025fbff72d922d3446d999fe62bdd8ca77e85b9af1c17cb5c94b88895123565c
+      name: celo
+      type: application
+      urls:
+        - celo-0.1.1-pre.3.tgz
+      version: 0.1.1-pre.3
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-29T11:16:19.580822745Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: e6fcf25e87d3e848199080fc31c235c10e5d70ffeee7995d586f84fa2a0bdcbe
       name: celo
@@ -157,7 +187,17 @@ entries:
   erigon:
     - apiVersion: v2
       appVersion: v2.34.0
-      created: "2023-05-29T10:55:53.327369331Z"
+      created: "2023-05-29T11:16:19.591444205Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 4096de67e6c3a47e6bcb466ecf546decea8e4638e548fa924209973e4c9fcc6b
+      name: erigon
+      type: application
+      urls:
+        - erigon-0.6.1-pre.3.tgz
+      version: 0.6.1-pre.3
+    - apiVersion: v2
+      appVersion: v2.34.0
+      created: "2023-05-29T11:16:19.585414728Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: 64db3fbb9830e363bd0a3ca8363907f6fe5b367762d825a8afae48dca6442b26
       name: erigon
@@ -286,4 +326,6 @@ entries:
       version: 0.2.0
   erigon-pre.1: []
   celo-pre.1: []
-generated: "2023-05-29T10:55:53.306257945Z"
+  celo-pre.3: []
+  erigon-pre.3: []
+generated: "2023-05-29T11:16:19.559582327Z"
