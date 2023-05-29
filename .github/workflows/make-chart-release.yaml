@@ -45,7 +45,6 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       - name: Install main dependencies
         run: |
@@ -117,6 +116,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
@@ -127,6 +131,7 @@ jobs:
         run: |
           helm package "charts/${{ needs.init.outputs.name }}"
 
+      #TODO: finish logic in case release exists
       - name: Check existing release
         id: check_release
         uses: octokit/graphql-action@v2.x
@@ -145,18 +150,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: test
-        run: |
-          echo "${releases}"
-        env:
-          releases: ${{ steps.test.outputs.data.repository.release }}
-
       - name: Create release
         run: |
           if [ -z "${{ needs.init.outputs.prerelease }}" ]; then
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} arbitrum-classic-0.1.1.tgz <<<$CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz <<<$CHANGELOG
           else
-            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} arbitrum-classic-0.1.1.tgz <<<$CHANGELOG
+            gh release create -t ${{ needs.init.outputs.tag }} --verify-tag --prerelease -F - ${{ needs.init.outputs.tag }} ${{ needs.init.outputs.tag }}.tgz <<<$CHANGELOG
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
