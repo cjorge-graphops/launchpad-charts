@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T11:49:17Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: be90224510c919632e4889318c15701de11dc1b774cfd156cb105918da951bb7
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.20/arbitrum-classic-0.1.20.tgz
+      version: 0.1.20
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-05-29T11:15:08Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: c6e53c34537e87a601fb1f9b43c86b11839705993e8413437f7795d6464db344
@@ -156,23 +166,33 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
-      created: "2023-05-29T11:16:19.58226214Z"
+      created: "2023-05-29T11:49:17Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 54b505a1fe8417ce14e3a82b314b04081f61f1bb1758deca7d94c21c709c0920
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.1-pre.4/celo-0.1.1-pre.4.tgz
+      version: 0.1.1-pre.4
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-29T11:15:08Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: 025fbff72d922d3446d999fe62bdd8ca77e85b9af1c17cb5c94b88895123565c
       name: celo
       type: application
       urls:
-        - celo-0.1.1-pre.3.tgz
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.1-pre.3/celo-0.1.1-pre.3.tgz
       version: 0.1.1-pre.3
     - apiVersion: v2
       appVersion: 1.7.2
-      created: "2023-05-29T11:16:19.580822745Z"
+      created: "2023-05-29T10:54:40Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: e6fcf25e87d3e848199080fc31c235c10e5d70ffeee7995d586f84fa2a0bdcbe
       name: celo
       type: application
       urls:
-        - celo-0.1.1-pre.1.tgz
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.1-pre.1/celo-0.1.1-pre.1.tgz
       version: 0.1.1-pre.1
     - apiVersion: v2
       appVersion: 1.7.2
@@ -187,23 +207,23 @@ entries:
   erigon:
     - apiVersion: v2
       appVersion: v2.34.0
-      created: "2023-05-29T11:16:19.591444205Z"
+      created: "2023-05-29T11:15:08Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: 4096de67e6c3a47e6bcb466ecf546decea8e4638e548fa924209973e4c9fcc6b
       name: erigon
       type: application
       urls:
-        - erigon-0.6.1-pre.3.tgz
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-pre.3/erigon-0.6.1-pre.3.tgz
       version: 0.6.1-pre.3
     - apiVersion: v2
       appVersion: v2.34.0
-      created: "2023-05-29T11:16:19.585414728Z"
+      created: "2023-05-29T10:54:40Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: 64db3fbb9830e363bd0a3ca8363907f6fe5b367762d825a8afae48dca6442b26
       name: erigon
       type: application
       urls:
-        - erigon-0.6.1-pre.1.tgz
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-pre.1/erigon-0.6.1-pre.1.tgz
       version: 0.6.1-pre.1
     - apiVersion: v2
       appVersion: v2.34.0
@@ -324,8 +344,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-  erigon-pre.1: []
-  celo-pre.1: []
-  celo-pre.3: []
-  erigon-pre.3: []
-generated: "2023-05-29T11:16:19.559582327Z"
+generated: "2023-05-29T11:50:18.068047802Z"
