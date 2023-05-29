@@ -51,11 +51,9 @@ jobs:
               git tag -a "$chart_tag" -m "Release $chart_tag"
 
               if [[ "$chart_version" == *"pre"* ]]; then
-                release_streams+=("canary")
-                echo "HERE (canary)"
+                release_streams["canary"]=1
               else
-                release_streams+=("main")
-                echo "HERE (main)"
+                release_streams["main"]=1
               fi
             fi
           done
@@ -68,9 +66,9 @@ jobs:
           echo "tags: $(jq -Rc '. / " "' <<< ${tags[*]})"
 
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
-          echo "$(jq -Rc '. / " "' <<< ${(u)release_streams[*]})" >> $GITHUB_OUTPUT
+          echo "$(jq -Rc '. / " "' <<< ${!release_streams[@]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "streams: ${release_streams[*]} $(jq -Rc '. / " "' <<< ${(u)release_streams[*]})"
+          echo "streams: ${!release_streams[@]} $(jq -Rc '. / " "' <<< ${!release_streams[@]})"
 
   call-release:
     needs: find-tags-to-release
