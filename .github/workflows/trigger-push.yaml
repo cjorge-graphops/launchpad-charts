@@ -15,6 +15,7 @@ jobs:
     outputs:
       modified-charts-files: ${{ steps.list-changed-charts.outputs.all_modified_files }}
       release-tags: ${{ steps.list-release-tags.outputs.release-tags }}
+      release-streams: ${{ steps.list-release-tags.outputs.release-streams }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -37,9 +38,17 @@ jobs:
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
 
+            release_streams=()
+
             if ! git rev-parse "$chart_tag" >/dev/null 2>&1; then
               tags+=("$chart_tag")
               git tag -a "$chart_tag" -m "Release $chart_tag"
+
+              if [[ $chart_version == *"pre"* ]]; then
+                release_streams+="canary"
+              else
+                release_streams+="main"
+              fi
             fi
           done
 
@@ -47,6 +56,10 @@ jobs:
 
           echo "release-tags<<EOF" >> $GITHUB_OUTPUT
           $(jq -Rc '. / " "' <<< ${tags[*]}) >> $GITHUB_OUTPUT
+          echo EOF >> $GITHUB_OUTPUT
+
+          echo "release-streams<<EOF" >> $GITHUB_OUTPUT
+          $(jq -Rc '. / " "' <<< ${(u)release_streams[*]}) >> $GITHUB_OUTPUT
           echo EOF >> $GITHUB_OUTPUT
 
   call-release:
@@ -59,12 +72,11 @@ jobs:
     with:
       tag: ${{ matrix.tag }}
 
-#      - name: Configure Git
-#        run: |
-#          git config user.name "${{ github.actor }}"
-#          git config user.email "${{ github.actor}}@users.noreply.github.com"
-#          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-
-#      - name: Install main dependencies
-#        run: |
-#          apk --upgrade add bash git grep yq curl jq
+  call-update-helm-repo:
+    needs: call-release
+    strategy:
+      matrix:
+        repo: ${{ needs.find-tags-to-release.outputs.release-streams }}
+    uses: ./.github/workflows/update-helm-repo.yaml
+    with:
+      repo: ${{ matrix.repo }}

@@ -17,3 +17,27 @@ jobs:
     uses: ./.github/workflows/make-chart-release.yaml
     with:
       tag: ${{ github.ref_name }}
+
+  check-release-stream:
+    runs-on: ubuntu-latest
+    outputs:
+      repo: ${{ steps.check-release-stream.outputs.repo }}
+    steps:
+      - name: check-release-stream
+        run: |
+          version=$(echo "${{ github.ref_name }}" | sed -r 's/.*-([0-9]+\.[0-9]+\.[0-9]+.*)/\1/g')
+          if [[ "$version" == *"-pre"* ]]; then
+            release_stream="canary"
+          else
+            release_stream="main"
+          fi
+
+          echo "repo=${release_stream}" >> $GITHUB_OUTPUTS
+
+  call-update-helm-repo:
+    needs:
+      - call-release
+      - check-release-stream
+    uses: ./.github/workflows/update-helm-repo.yaml
+    with:
+      repo: ${{ needs.check-release-stream.outputs.repo }}
