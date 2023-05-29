@@ -1,180 +1,289 @@
 apiVersion: v1
 entries:
   Avalanche:
-  - apiVersion: v2
-    appVersion: v1.9.7
-    created: "2023-05-24T20:26:53.019659252Z"
-    description: Deploy and scale [avalanche](https://github.com/avalancheEth/avalanche)
-      inside Kubernetes with ease
-    digest: 460661b278bddb5149337b2421bb5f31b667d80ffd501542ff88103fa8690bbf
-    name: Avalanche
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/Avalanche-0.1.0/Avalanche-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: v1.9.7
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [avalanche](https://github.com/avalancheEth/avalanche) inside Kubernetes with ease
+      digest: 460661b278bddb5149337b2421bb5f31b667d80ffd501542ff88103fa8690bbf
+      name: Avalanche
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/Avalanche-0.1.0/Avalanche-0.1.0.tgz
+      version: 0.1.0
   arbitrum-classic:
-  - apiVersion: v2
-    appVersion: v1.4.5-e97c1a4
-    created: "2023-05-24T20:26:53.168607835Z"
-    description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum)
-      inside Kubernetes with ease
-    digest: d189ffdd070b80ddb02d3ccc0276e248a64eab67c8c266e0d6d1452b09c75149
-    name: arbitrum-classic
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
-    version: 0.1.1
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:54:40Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 99ac5ba015592f88e74d8651eecbff91af32e029e83bfbc84844b7b4dfd79287
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.17/arbitrum-classic-0.1.17.tgz
+      version: 0.1.17
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:49:18Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: c2513884da5eaae74a938214723b8382df301cfecd9a3d521fffa4f2d31782d2
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.16/arbitrum-classic-0.1.16.tgz
+      version: 0.1.16
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:46:35Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 3b08bd8576339aa089492cf0d51420e6441cc17a025ca7ee149fe44f2b346f33
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.15/arbitrum-classic-0.1.15.tgz
+      version: 0.1.15
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:39:57Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 2068d3e81db5f862005761c7bcbccd5b909a4c7869747ec5119612643bc7adca
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.14/arbitrum-classic-0.1.14.tgz
+      version: 0.1.14
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:35:05Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 27885129e2a588ec84a98d78d7646c33630010c3cbf63e70f855b1552c6a8b5e
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.13/arbitrum-classic-0.1.13.tgz
+      version: 0.1.13
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:29:48Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: a32255ec52a5d2d55cda91fa31efa0849b75473b1104f2f4a5417ca5f0c1398e
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.12/arbitrum-classic-0.1.12.tgz
+      version: 0.1.12
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:22:35Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: f10a1e4c173cc1ccec40c309c367b332eb20bbc9bf08b2fde4aee228c9b0c818
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.11/arbitrum-classic-0.1.11.tgz
+      version: 0.1.11
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:18:30Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: d108da74f942856c9ab31a50dbb5cf91a4fb38d340f467e8f1a389888f6d9d95
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.10/arbitrum-classic-0.1.10.tgz
+      version: 0.1.10
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: d189ffdd070b80ddb02d3ccc0276e248a64eab67c8c266e0d6d1452b09c75149
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
+      version: 0.1.1
   arbitrum-nitro:
-  - apiVersion: v2
-    appVersion: v2.0.10-73224e3
-    created: "2023-05-24T20:26:53.339444254Z"
-    description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/)
-      inside Kubernetes with ease
-    digest: 11bf874b02c8cf9b51df48f374925e1723f452ca6321030e0e1cb3964175f02e
-    name: arbitrum-nitro
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.1/arbitrum-nitro-0.1.1.tgz
-    version: 0.1.1
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
+      created: "2023-05-29T10:54:40Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: 27c85019d0c845bb2c07c781114b1cb485dc7fde4b47f80a1edbe33601123e42
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.8/arbitrum-nitro-0.1.8.tgz
+      version: 0.1.8
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
+      created: "2023-05-29T10:22:35Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: 0bc3dfe84aa0d96582a500c87bc9a6ae0b0914f692d5676529d75f79e1245f04
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.7/arbitrum-nitro-0.1.7.tgz
+      version: 0.1.7
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: 11bf874b02c8cf9b51df48f374925e1723f452ca6321030e0e1cb3964175f02e
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.1/arbitrum-nitro-0.1.1.tgz
+      version: 0.1.1
   celo:
-  - apiVersion: v2
-    appVersion: 1.7.2
-    created: "2023-05-24T20:26:53.502496553Z"
-    description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain)
-      Nodes inside Kubernetes with ease
-    digest: e29d398226c319d4bcd48b3f206ab2e17c09369850a2983a5ee63aabc9c4d1ac
-    name: celo
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.0/celo-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-29T10:55:53.323781199Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: e6fcf25e87d3e848199080fc31c235c10e5d70ffeee7995d586f84fa2a0bdcbe
+      name: celo
+      type: application
+      urls:
+        - celo-0.1.1-pre.1.tgz
+      version: 0.1.1-pre.1
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: e29d398226c319d4bcd48b3f206ab2e17c09369850a2983a5ee63aabc9c4d1ac
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.0/celo-0.1.0.tgz
+      version: 0.1.0
   erigon:
-  - apiVersion: v2
-    appVersion: v2.34.0
-    created: "2023-05-24T20:26:53.684102036Z"
-    description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon)
-      inside Kubernetes with ease
-    digest: ae3b7674c5f705af568b28dcca4633d9ffb12c18745e97ec5048f3939442e247
-    name: erigon
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.0/erigon-0.6.0.tgz
-    version: 0.6.0
+    - apiVersion: v2
+      appVersion: v2.34.0
+      created: "2023-05-29T10:55:53.327369331Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 64db3fbb9830e363bd0a3ca8363907f6fe5b367762d825a8afae48dca6442b26
+      name: erigon
+      type: application
+      urls:
+        - erigon-0.6.1-pre.1.tgz
+      version: 0.6.1-pre.1
+    - apiVersion: v2
+      appVersion: v2.34.0
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: ae3b7674c5f705af568b28dcca4633d9ffb12c18745e97ec5048f3939442e247
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.0/erigon-0.6.0.tgz
+      version: 0.6.0
   graph-network-indexer:
-  - apiVersion: v2
-    appVersion: v0.20.5-alpha.1
-    created: "2023-05-24T20:26:53.848632258Z"
-    description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer)
-      components inside Kubernetes with ease
-    digest: 36c96549ccbddb2042ea2102dd0abb189f5843c95bffa6d70c5e2b91b228b582
-    name: graph-network-indexer
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
-    version: 0.1.2
+    - apiVersion: v2
+      appVersion: v0.20.5-alpha.1
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
+      digest: 36c96549ccbddb2042ea2102dd0abb189f5843c95bffa6d70c5e2b91b228b582
+      name: graph-network-indexer
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
+      version: 0.1.2
   graph-node:
-  - apiVersion: v2
-    appVersion: v0.28.2
-    created: "2023-05-24T20:26:54.014058993Z"
-    description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node)
-      inside Kubernetes with ease
-    digest: e1fddde5761f24873bd3ec557080f9c9d763741d1950baaacb4e5a9e72c3bb84
-    name: graph-node
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.5/graph-node-0.1.5.tgz
-    version: 0.1.5
+    - apiVersion: v2
+      appVersion: v0.28.2
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node) inside Kubernetes with ease
+      digest: e1fddde5761f24873bd3ec557080f9c9d763741d1950baaacb4e5a9e72c3bb84
+      name: graph-node
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.5/graph-node-0.1.5.tgz
+      version: 0.1.5
   graph-toolbox:
-  - apiVersion: v2
-    appVersion: main
-    created: "2023-05-24T20:26:54.171060199Z"
-    description: Deploy a preconfigured toolbox container for to be used alongside
-      the
-    digest: 236e4f4689a6ae1c494862caca66f731e4173a8a4863457e81cc6b1b0963ca24
-    name: graph-toolbox
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-toolbox-0.1.0/graph-toolbox-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: main
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy a preconfigured toolbox container for to be used alongside the
+      digest: 236e4f4689a6ae1c494862caca66f731e4173a8a4863457e81cc6b1b0963ca24
+      name: graph-toolbox
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-toolbox-0.1.0/graph-toolbox-0.1.0.tgz
+      version: 0.1.0
   heimdall:
-  - apiVersion: v2
-    appVersion: v0.3.0
-    created: "2023-05-24T20:26:54.339129975Z"
-    description: Deploy and scale [Heimdall](https://github.com/maticnetwork/heimdall)
-      inside Kubernetes with ease
-    digest: a3075d7cf87b84b655d1abf0033946859c551e14756c1793a8a10f51a9401b18
-    name: heimdall
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
-    version: 1.1.2
+    - apiVersion: v2
+      appVersion: v0.3.0
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Heimdall](https://github.com/maticnetwork/heimdall) inside Kubernetes with ease
+      digest: a3075d7cf87b84b655d1abf0033946859c551e14756c1793a8a10f51a9401b18
+      name: heimdall
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
+      version: 1.1.2
   lighthouse:
-  - apiVersion: v2
-    appVersion: v3.4.0
-    created: "2023-05-24T20:26:54.498580519Z"
-    description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse)
-      inside Kubernetes with ease
-    digest: 9f6cd62cca4f547fa5adef73c79a3b1144dedcddbab515fdf682b663604efbd7
-    name: lighthouse
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
-    version: 0.2.0
+    - apiVersion: v2
+      appVersion: v3.4.0
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 9f6cd62cca4f547fa5adef73c79a3b1144dedcddbab515fdf682b663604efbd7
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
+      version: 0.2.0
   nethermind:
-  - apiVersion: v2
-    appVersion: 1.16.0-unstable
-    created: "2023-05-24T20:26:54.658071563Z"
-    description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind)
-      inside Kubernetes with ease
-    digest: 72f2cceb9ceda211e42bd1ae6551d4aaf1962f9f92e5e97e5cd271e8adad4a21
-    name: nethermind
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.0/nethermind-0.3.0.tgz
-    version: 0.3.0
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 72f2cceb9ceda211e42bd1ae6551d4aaf1962f9f92e5e97e5cd271e8adad4a21
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.0/nethermind-0.3.0.tgz
+      version: 0.3.0
   nimbus:
-  - apiVersion: v2
-    appVersion: multiarch-v22.12.0
-    created: "2023-05-24T20:26:54.823412697Z"
-    description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2)
-      inside Kubernetes with ease
-    digest: 7bd3ab46144d57d0a064bfbc4aef224862b6b097d41301461e6e50e778826168
-    name: nimbus
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.0/nimbus-0.3.0.tgz
-    version: 0.3.0
+    - apiVersion: v2
+      appVersion: multiarch-v22.12.0
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
+      digest: 7bd3ab46144d57d0a064bfbc4aef224862b6b097d41301461e6e50e778826168
+      name: nimbus
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.0/nimbus-0.3.0.tgz
+      version: 0.3.0
   openebs-rawfile-localpv:
-  - apiVersion: v2
-    appVersion: 0.7.0
-    created: "2023-05-24T20:26:54.993726808Z"
-    description: RawFile Driver Container Storage Interface
-    digest: 76745ebd13d0e0eaf0274f9a9dd2d96cf8f7634c4e7c94a75f2786bf62352dbc
-    name: openebs-rawfile-localpv
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.0/openebs-rawfile-localpv-0.8.0.tgz
-    version: 0.8.0
+    - apiVersion: v2
+      appVersion: 0.7.0
+      created: "2023-05-24T20:15:46Z"
+      description: RawFile Driver Container Storage Interface
+      digest: 76745ebd13d0e0eaf0274f9a9dd2d96cf8f7634c4e7c94a75f2786bf62352dbc
+      name: openebs-rawfile-localpv
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.0/openebs-rawfile-localpv-0.8.0.tgz
+      version: 0.8.0
   proxyd:
-  - apiVersion: v2
-    appVersion: 3.11.0
-    created: "2023-05-24T20:26:55.158096527Z"
-    description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd)
-      inside Kubernetes with ease
-    digest: b45598669166f6491d9b3d98d9b49fb71a8aa073b4aa34d6802c65a96d3a2186
-    name: proxyd
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.8/proxyd-0.1.8.tgz
-    version: 0.1.8
+    - apiVersion: v2
+      appVersion: 3.11.0
+      created: "2023-05-24T20:15:46Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: b45598669166f6491d9b3d98d9b49fb71a8aa073b4aa34d6802c65a96d3a2186
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.8/proxyd-0.1.8.tgz
+      version: 0.1.8
   resource-injector:
-  - apiVersion: v2
-    created: "2023-05-24T20:26:55.306503101Z"
-    description: Manage Raw Kubernetes Resources using Helm
-    digest: b2cdb5655dc3709f0687e62651eccfe9a21bfa7beb8d745115395a7610fd78c6
-    name: resource-injector
-    type: application
-    urls:
-    - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
-    version: 0.2.0
-generated: "2023-05-24T20:26:55.306995709Z"
+    - apiVersion: v2
+      created: "2023-05-24T20:15:46Z"
+      description: Manage Raw Kubernetes Resources using Helm
+      digest: b2cdb5655dc3709f0687e62651eccfe9a21bfa7beb8d745115395a7610fd78c6
+      name: resource-injector
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
+      version: 0.2.0
+  erigon-pre.1: []
+  celo-pre.1: []
+generated: "2023-05-29T10:55:53.306257945Z"
