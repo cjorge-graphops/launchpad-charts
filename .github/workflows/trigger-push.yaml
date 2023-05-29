@@ -35,10 +35,16 @@ jobs:
         shell: bash
         run: |
           tags=()
+          echo ${{ steps.find-charts-to-release.outputs.modified-charts-files }}
           for chart_file in ${{ steps.find-charts-to-release.outputs.modified-charts-files }}; do
             chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
             chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
             chart_tag="${chart_name}-${chart_version}"
+
+            echo "$chart_name"
+            echo "$chart_tag"
+
+            echo "$(git rev-parse "$chart_tag")"
 
             release_streams=()
 
