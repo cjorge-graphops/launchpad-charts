@@ -67,6 +67,7 @@ jobs:
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
           echo "$(jq -Rc '. / " "' <<< ${!release_streams[@]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+          echo "streams: ${!release_streams[@]}"
 
   call-release:
     needs: find-tags-to-release
