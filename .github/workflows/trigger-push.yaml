@@ -51,9 +51,9 @@ jobs:
               git tag -a "$chart_tag" -m "Release $chart_tag"
 
               if [[ $chart_version == *"pre"* ]]; then
-                release_streams+="canary"
+                release_streams+=("canary")
               else
-                release_streams+="main"
+                release_streams+=("main")
               fi
             fi
           done
