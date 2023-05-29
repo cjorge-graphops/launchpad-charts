@@ -29,6 +29,8 @@ jobs:
   update-page:
     runs-on: ubuntu-latest
     needs: call-make-index
+    permissions:
+      contents: write # for updating index.yaml
     steps:
       - uses: actions/checkout@v3
         with:
