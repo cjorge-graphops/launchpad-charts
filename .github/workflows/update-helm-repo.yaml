@@ -24,7 +24,7 @@ jobs:
   call-make-index:
     uses: ./.github/workflows/make-charts-index.yaml
     with:
-      includePrereleases: ${{ inputs.repo == "canary" }}
+      includePrereleases: ${{ inputs.repo == 'canary' }}
 
   update-page:
     runs-on: ubuntu-latest
