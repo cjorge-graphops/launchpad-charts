@@ -57,12 +57,12 @@ jobs:
           git push --tags
 
           echo "release-tags<<EOF" >> $GITHUB_OUTPUT
-          $(jq -Rc '. / " "' <<< ${tags[*]}) >> $GITHUB_OUTPUT
-          echo EOF >> $GITHUB_OUTPUT
+          echo "$(jq -Rc '. / " "' <<< ${tags[*]})" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
           echo "release-streams<<EOF" >> $GITHUB_OUTPUT
-          $(jq -Rc '. / " "' <<< ${(u)release_streams[*]}) >> $GITHUB_OUTPUT
-          echo EOF >> $GITHUB_OUTPUT
+          echo "$(jq -Rc '. / " "' <<< ${(u)release_streams[*]})" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
   call-release:
     needs: find-tags-to-release
