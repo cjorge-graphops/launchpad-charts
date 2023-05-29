@@ -25,6 +25,7 @@ jobs:
     uses: ./.github/workflows/make-charts-index.yaml
     with:
       includePrereleases: ${{ inputs.repo == 'canary' }}
+      repoName: ${{ inputs.repo }}
 
   update-page:
     runs-on: ubuntu-latest
@@ -43,7 +44,7 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: chart-index
+          name: "chart-index.${{ inputs.repo }}"
           path: ".nindex"
 
       - name: Update index when there's changes
@@ -51,7 +52,7 @@ jobs:
           if [[ "${{ inputs.repo }}" == "main" ]]; then
             path="."
           else
-            path="canary"
+            path="${{ inputs.repo }}"
           fi
 
           if ! diff -q .nindex/index.yaml "$path/index.yaml"; then

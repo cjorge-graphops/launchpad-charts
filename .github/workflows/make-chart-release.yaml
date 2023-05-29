@@ -74,7 +74,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: release-notes
+          name: "${{ needs.init.outputs.tag }}.release-notes"
           path: RELEASE-NOTES.md
 
   release:
@@ -105,6 +105,12 @@ jobs:
         run: |
           helm package "charts/${{ needs.init.outputs.name }}"
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ needs.init.outputs.tag }}.helm-package"
+          path: "charts/${{ needs.init.outputs.name }}/${{ needs.init.outputs.tag }}.tgz"
+
       #TODO: finish logic in case release exists
       - name: Check existing release
         id: check_release
@@ -126,7 +132,7 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: release-notes
+          name: "${{ needs.init.outputs.tag }}.release-notes"
           path: "."
 
       - name: Create release
