@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T12:08:59Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: aa44b3bb03282c8200880733ed1e99b0b401571b9a1a41d02902e104b910dce5
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.23/arbitrum-classic-0.1.23.tgz
+      version: 0.1.23
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-05-29T12:06:53Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: 17ac5ad62b86227629305914aa5b10c53653513ed434a90a47d7da1f55dacf04
@@ -237,6 +247,16 @@ entries:
   erigon:
     - apiVersion: v2
       appVersion: v2.34.0
+      created: "2023-05-29T12:08:59Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 5c4b7741462f49b0e785e2c7507f154bd9b9846fb64fa4c12d0849a526cbd21c
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-pre.6/erigon-0.6.1-pre.6.tgz
+      version: 0.6.1-pre.6
+    - apiVersion: v2
+      appVersion: v2.34.0
       created: "2023-05-29T12:06:53Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: 4f7d084addb06e1c11390e778b3e554c8a14207d9c491bcede26f7413751fc48
@@ -394,4 +414,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-05-29T12:08:29.47585641Z"
+generated: "2023-05-29T12:10:16.490930052Z"
