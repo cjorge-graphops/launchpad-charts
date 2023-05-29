@@ -14,6 +14,76 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:49:18Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: c2513884da5eaae74a938214723b8382df301cfecd9a3d521fffa4f2d31782d2
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.16/arbitrum-classic-0.1.16.tgz
+      version: 0.1.16
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:46:35Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 3b08bd8576339aa089492cf0d51420e6441cc17a025ca7ee149fe44f2b346f33
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.15/arbitrum-classic-0.1.15.tgz
+      version: 0.1.15
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:39:57Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 2068d3e81db5f862005761c7bcbccd5b909a4c7869747ec5119612643bc7adca
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.14/arbitrum-classic-0.1.14.tgz
+      version: 0.1.14
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:35:05Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 27885129e2a588ec84a98d78d7646c33630010c3cbf63e70f855b1552c6a8b5e
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.13/arbitrum-classic-0.1.13.tgz
+      version: 0.1.13
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:29:48Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: a32255ec52a5d2d55cda91fa31efa0849b75473b1104f2f4a5417ca5f0c1398e
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.12/arbitrum-classic-0.1.12.tgz
+      version: 0.1.12
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:22:35Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: f10a1e4c173cc1ccec40c309c367b332eb20bbc9bf08b2fde4aee228c9b0c818
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.11/arbitrum-classic-0.1.11.tgz
+      version: 0.1.11
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
+      created: "2023-05-29T10:18:30Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: d108da74f942856c9ab31a50dbb5cf91a4fb38d340f467e8f1a389888f6d9d95
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.10/arbitrum-classic-0.1.10.tgz
+      version: 0.1.10
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-05-24T20:15:46Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: d189ffdd070b80ddb02d3ccc0276e248a64eab67c8c266e0d6d1452b09c75149
@@ -23,6 +93,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
       version: 0.1.1
   arbitrum-nitro:
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
+      created: "2023-05-29T10:22:35Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: 0bc3dfe84aa0d96582a500c87bc9a6ae0b0914f692d5676529d75f79e1245f04
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.7/arbitrum-nitro-0.1.7.tgz
+      version: 0.1.7
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
       created: "2023-05-24T20:15:46Z"
@@ -164,4 +244,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-05-29T09:32:29.483433997Z"
+generated: "2023-05-29T10:50:30.385259979Z"
