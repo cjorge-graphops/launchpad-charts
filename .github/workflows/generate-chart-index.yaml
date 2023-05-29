@@ -1,15 +1,7 @@
 name: Generate Chart Index
 
 on:
-#  push:
-#    tags:
-#      - '*-[v]?[0-9]+.[0-9]+.[0-9]+'
-#      - '*-[v]?[0-9]+.[0-9]+.[0-9]+-pre.[0-9]+'
-  # Allow to run the workflow from GitHub UI and other workflows.
   workflow_dispatch:
-    branches:
-      - main
-      - "release/*"
     inputs:
       includePrereleases:
         type: boolean
@@ -24,8 +16,6 @@ on:
         required: true
         description: "Include prereleases?"
         default: false
-
-
 
 jobs:
   query:

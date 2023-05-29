@@ -1,0 +1,70 @@
+
+name: Release on Commit
+
+on:
+  push:
+    branches:
+      - main
+      - 'renovate/*'
+    paths:
+      - 'charts/*/Chart.yaml'
+
+jobs:
+  find-tags-to-release:
+    runs-on: ubuntu-latest
+    outputs:
+      modified-charts-files: ${{ steps.list-changed-charts.outputs.all_modified_files }}
+      release-tags: ${{ steps.list-release-tags.outputs.release-tags }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get list of changed charts
+        id: list-changed-charts
+        uses: tj-actions/changed-files@v35.9.2
+        with:
+          files: charts/*/Chart.yaml
+
+      - name: Find list of tags
+        id: list-release-tags
+        shell: bash
+        run: |
+          tags=()
+          for chart_file in ${{ steps.find-charts-to-release.outputs.modified-charts-files }}; do
+            chart_name=$(grep -Po "(?<=^name: ).+" ${chart_file})
+            chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
+            chart_tag="${chart_name}-${chart_version}"
+
+            if ! git rev-parse "$chart_tag" >/dev/null 2>&1; then
+              tags+=("$chart_tag")
+              git tag -a "$chart_tag" -m "Release $chart_tag"
+            fi
+          done
+
+          git push --tags
+
+          echo "release-tags<<EOF" >> $GITHUB_OUTPUT
+          $(jq -Rc '. / " "' <<< ${tags[*]}) >> $GITHUB_OUTPUT
+          echo EOF >> $GITHUB_OUTPUT
+
+  call-release:
+    needs: find-tags-to-release
+    strategy:
+      matrix:
+        tag: ${{ needs.find-tags-to-release.outputs.release-tags }}
+      fail-fast: false
+    uses: ./.github/workflows/release-charts.yaml
+    with:
+      tag: ${{ matrix.tag }}
+
+#      - name: Configure Git
+#        run: |
+#          git config user.name "${{ github.actor }}"
+#          git config user.email "${{ github.actor}}@users.noreply.github.com"
+#          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+#      - name: Install main dependencies
+#        run: |
+#          apk --upgrade add bash git grep yq curl jq
