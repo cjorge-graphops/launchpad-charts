@@ -12,6 +12,8 @@ on:
 jobs:
   find-tags-to-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # for creating tags
     outputs:
       modified-charts-files: ${{ steps.list-changed-charts.outputs.all_modified_files }}
       release-tags: ${{ steps.list-release-tags.outputs.release-tags }}
@@ -28,10 +30,8 @@ jobs:
         with:
           files: charts/*/Chart.yaml
 
-      - name: Create tags
+      - name: List and create tags
         id: list-release-tags
-        permissions:
-          contents: write # for creating tags
         shell: bash
         run: |
           tags=()
