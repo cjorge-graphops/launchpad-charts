@@ -67,7 +67,7 @@ jobs:
 
           current_tag=${{ needs.init.outputs.tag }}
 
-          if [[ "${{ chart_tag }}" =~ ^.*-[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          if [[ "${chart_tag}" =~ ^.*-[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             tag_filter_pattern="${{ chart_name }}-[0-9]+\.[0-9]+\.[0-9]+$"
           else
             tag_filter_pattern="${chart_name}"
