@@ -62,7 +62,9 @@ jobs:
           chart_tag="${chart_name}-${chart_version}"
           chart_path="charts/${chart_name}"
 
-          # prev_stable_tag=$(git tag | grep -Ex "${{ needs.init.outputs.name }}-[v]?[0-9]+\.[0-9]+\.[0-9]+" | sort -V -r | head -n 1)
+          #returns previous stable tag if it exsits, or empty string
+          prev_stable_tag=$(git tag | grep -Ex "${{ needs.init.outputs.name }}-[v]?[0-9]+\.[0-9]+\.[0-9]+" | sort -V -r | head -n 2 | tail -n+2)
+
           current_tag=${{ needs.init.outputs.tag }}
 
           # Generate RELEASE-NOTES.md file (used for Github release notes).
@@ -70,7 +72,7 @@ jobs:
               --output "RELEASE-NOTES.md" \
               --tag-filter-pattern "${chart_name}"      \
               --path "${chart_path}"                    \
-              "..${current_tag}"
+              "${prev_stable_tag}..${current_tag}"
 
       - uses: actions/upload-artifact@v3
         with:
