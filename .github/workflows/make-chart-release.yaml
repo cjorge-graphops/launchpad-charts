@@ -62,14 +62,12 @@ jobs:
           chart_tag="${chart_name}-${chart_version}"
           chart_path="charts/${chart_name}"
 
-          # returns previous stable tag if it exsits, or empty string
-          # so that pre-releases get changelogs going back to previous stable version
-          prev_stable_tag=$(git tag | grep -Ex "${{ needs.init.outputs.name }}-[v]?[0-9]+\.[0-9]+\.[0-9]+" | sort -V -r | head -n 2 | tail -n+2)
-
           current_tag=${{ needs.init.outputs.tag }}
 
           if [[ "${chart_tag}" =~ ^.*-[0-9]+\.[0-9]+\.[0-9]+-pre.* ]]; then
-            query_tag="${prev_stable_tag}..${current_tag}"
+            # on pre-releases we want the changelog to span all pre-releases from .1 to current
+            first_pre="$(echo ${current_tag} | sed -r 's/(.*-[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+-pre\.).*/\11/g')"
+            query_tag="${first_pre}..${current_tag}"
           else
             query_tag="${current_tag}"
           fi
