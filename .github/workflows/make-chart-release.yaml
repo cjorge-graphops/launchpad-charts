@@ -62,15 +62,16 @@ jobs:
           chart_tag="${chart_name}-${chart_version}"
           chart_path="charts/${chart_name}"
 
-          #returns previous stable tag if it exsits, or empty string
+          # returns previous stable tag if it exsits, or empty string
+          # so that pre-releases get changelogs going back to previous stable version
           prev_stable_tag=$(git tag | grep -Ex "${{ needs.init.outputs.name }}-[v]?[0-9]+\.[0-9]+\.[0-9]+" | sort -V -r | head -n 2 | tail -n+2)
 
           current_tag=${{ needs.init.outputs.tag }}
 
-          if [[ "${chart_tag}" =~ ^.*-[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            tag_filter_pattern="${chart_name}-[0-9]+\.[0-9]+\.[0-9]+$"
+          if [[ "${chart_tag}" =~ ^.*-[0-9]+\.[0-9]+\.[0-9]+-pre.* ]]; then
+            query_tag="${prev_stable_tag}..${current_tag}"
           else
-            tag_filter_pattern="${chart_name}"
+            query_tag="${current_tag}"
           fi
 
           # Generate RELEASE-NOTES.md file (used for Github release notes).
@@ -78,7 +79,7 @@ jobs:
               --output "RELEASE-NOTES.md" \
               --tag-filter-pattern "${chart_name}"      \
               --path "${chart_path}"                    \
-              "${prev_stable_tag}..${current_tag}"
+              "${query_tag}"
 
       - uses: actions/upload-artifact@v3
         with:
