@@ -196,6 +196,36 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
+      created: "2023-05-30T19:22:37Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 22598e9dcbdaa5d0fc25af5479428b8b89a1e7f7afdf1301b2c39aa420dc0ef5
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.9/celo-0.1.9.tgz
+      version: 0.1.9
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-30T19:20:38Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 0901bad96fee1c73a707bcaf8efe16764cd08c4b042c94ac026766e23f862369
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.8-pre.3/celo-0.1.8-pre.3.tgz
+      version: 0.1.8-pre.3
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-05-30T19:03:24Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 11e1e2efa1b8a49f3350bc516df7f0ba343a0c405ea36e7cbb4cf503e05d2cac
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.8-pre.1/celo-0.1.8-pre.1.tgz
+      version: 0.1.8-pre.1
+    - apiVersion: v2
+      appVersion: 1.7.2
       created: "2023-05-30T18:48:34Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: 67b46bb61d3878494e41a633c46b6b00d27544d6943dde77babffaaf0aac669c
@@ -434,4 +464,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-05-30T18:49:52.595281979Z"
+generated: "2023-05-30T19:23:57.60281266Z"
