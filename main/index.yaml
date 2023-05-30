@@ -196,6 +196,16 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
+      created: "2023-05-30T18:48:34Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 67b46bb61d3878494e41a633c46b6b00d27544d6943dde77babffaaf0aac669c
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.5/celo-0.1.5.tgz
+      version: 0.1.5
+    - apiVersion: v2
+      appVersion: 1.7.2
       created: "2023-05-30T18:32:37Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: 724aebd02c40a7823ef66430aa60fc263b20c8123d4c5eb29178cc5b59aca7d3
@@ -424,4 +434,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-05-30T18:33:52.132899509Z"
+generated: "2023-05-30T18:49:52.595281979Z"
