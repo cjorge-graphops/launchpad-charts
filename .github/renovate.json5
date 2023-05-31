@@ -14,7 +14,7 @@
 
     "pinDigests": true,
 
-    "enabledManagers": ["helmv3", "regex"],
+    "enabledManagers": ["helm-values", "helmv3", "regex"],
 
     "regexManagers": [
       {
