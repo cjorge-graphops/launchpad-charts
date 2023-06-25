@@ -70,7 +70,7 @@ jobs:
           echo "$(jq -Rc '. / " "' <<< ${!release_streams[@]})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-  call-make-release:
+  call-release:
     needs: find-tags-to-release
     uses: ./.github/workflows/make-chart-release.yaml
     permissions:
