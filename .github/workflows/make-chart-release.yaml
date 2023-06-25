@@ -57,7 +57,7 @@ jobs:
 
       - name: Generate release notes
         id: release_notes
-        with:
+        env:
           CHART: ${{ steps.chart_name.name }}
         run: |
           set -x
