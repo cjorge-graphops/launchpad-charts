@@ -104,7 +104,7 @@ jobs:
         run: |
           set -x -e
           chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
-          sed -E -i 's/^version: [[:digit:]]+.[[:digit:]]+.[[:digit:]]+.*/${{ needs.init.outputs.tag }}/' "$chart_file"
+          sed -E -i 's/^version: [[:digit:]]+.[[:digit:]]+.[[:digit:]]+.*/version: ${{ needs.init.outputs.version }}-${{ needs.init.outputs.prerelease }}/' "$chart_file"
 
       - name: Generate Helm package
         id: helm_package
