@@ -112,7 +112,7 @@ jobs:
           set -x -e
 
           chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
-          chart_version=$(grep -Po "(?<=^version: ).+" ${chart_file})
+          chart_version="$(grep -Po '(?<=^version: ).+' "${chart_file}")"
 
           if [[ ! "${{ needs.init.outputs.name }}-$chart_version" == ${{ needs.init.outputs.tag }} ]]; then
             echo "Chart version doesn't match release tag, please update"
