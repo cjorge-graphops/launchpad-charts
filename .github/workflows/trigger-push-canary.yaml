@@ -1,11 +1,12 @@
 
-name: Release on Commit
+name: Release on Commit (Canary)
 
 on:
   push:
     branches:
       - 'renovate/*'
       - 'canary/*'
+  workflow_dispatch:
 
 jobs:
   find-tags-to-release:
