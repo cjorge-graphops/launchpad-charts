@@ -50,7 +50,7 @@ jobs:
             if [ -z "$last_pre_tag" ]; then
               index=1
             else
-              index="$(echo "$last_pre_tag" | sed -E "s/(.*-)?[[:digit:]]+.[[:digit:]]+.[[:digit:]]+-canary.([[:digit:]]+)(#.*)?/echo $((\2 + 1))/e")"
+              index=$(echo "$last_pre_tag" | sed -E "s/(.*-)?[[:digit:]]+.[[:digit:]]+.[[:digit:]]+-canary.([[:digit:]]+)(#.*)?/echo $((\2 + 1))/e")
             fi
             next_tag="$chart_name-$next_patch-canary.$(printf "%03d" $index)"
 
