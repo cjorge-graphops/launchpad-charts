@@ -345,6 +345,16 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-canary.1/erigon-0.6.1-canary.1.tgz
       version: 0.6.1-canary.1
+    - apiVersion: v2
+      appVersion: v2.34.0
+      created: "2023-06-25T22:41:17Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 737debace3834f860fac9afc17681965be8a29b47d9cbe2bdd401d165c87aff8
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.1/erigon-0.5.2-canary.1.tgz
+      version: 0.5.2-canary.1
   graph-network-indexer:
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -694,4 +704,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-25T22:35:32.137593807Z"
+generated: "2023-06-25T22:42:54.892424176Z"
