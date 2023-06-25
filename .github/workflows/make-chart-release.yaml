@@ -17,6 +17,7 @@ jobs:
     outputs:
       name: ${{ steps.parse_tag.outputs.name }}
       version: ${{ steps.parse_tag.outputs.version }}
+      fullversion: ${{ steps.parse_tag.outputs.fullversion }}
       prerelease: ${{ steps.parse_tag.outputs.prerelease }}
       tag: ${{ steps.parse_tag.outputs.tag }}
     steps:
@@ -27,6 +28,8 @@ jobs:
           name=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\1/g')
           echo "name=$name" >> $GITHUB_OUTPUT
           version=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\2/g')
+          fullversion=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+(-pre\.[[:digit:]]+)?)/\2/g')
+          echo "fullversion=$fullversion" >> $GITHUB_OUTPUT
           echo "version=$version" >> $GITHUB_OUTPUT
           prerelease=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\4/g')
           echo "prerelease=$prerelease" >> $GITHUB_OUTPUT
@@ -104,7 +107,7 @@ jobs:
         run: |
           set -x -e
           chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
-          sed -E -i 's/^version: [[:digit:]]+.[[:digit:]]+.[[:digit:]]+.*/version: ${{ needs.init.outputs.version }}-${{ needs.init.outputs.prerelease }}/' "$chart_file"
+          sed -E -i 's/^version: [[:digit:]]+.[[:digit:]]+.[[:digit:]]+.*/version: ${{ needs.init.outputs.fullversion }}/' "$chart_file"
 
       - name: Generate Helm package
         id: helm_package
@@ -114,7 +117,7 @@ jobs:
           chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
           chart_version="$(grep -Po '(?<=^version: ).+' "${chart_file}")"
 
-          if [[ ! "${{ needs.init.outputs.name }}-$chart_version" == ${{ needs.init.outputs.tag }} ]]; then
+          if [[ ! "$chart_version" == ${{ needs.init.outputs.fullversion }} ]]; then
             echo "Chart version doesn't match release tag, please update"
           fi
 
