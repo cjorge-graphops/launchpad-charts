@@ -52,7 +52,7 @@ jobs:
             else
               index=$(echo "$last_pre_tag" | sed -E 's/(.*-)?[[:digit:]]+.[[:digit:]]+.[[:digit:]]+-canary.([[:digit:]]+)(#.*)?/echo $((\2 + 1))/e')
             fi
-            next_tag="$chart_name-$next_patch-canary.$(printf "%03d" $index)"
+            next_tag="$chart_name-$next_patch-canary.$index"
 
             tags+=("$next_tag")
             git tag -a "$next_tag" -m "Release $next_tag"
