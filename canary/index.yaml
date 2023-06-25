@@ -327,6 +327,16 @@ entries:
   erigon:
     - apiVersion: v2
       appVersion: v2.34.0
+      created: "2023-06-25T22:20:27Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: fa01b4b89108c8e3bd0c764cee67eafb0a08cc993ba6f7ad6f0b403e753dd152
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-canary.1/erigon-0.6.1-canary.1.tgz
+      version: 0.6.1-canary.1
+    - apiVersion: v2
+      appVersion: v2.34.0
       created: "2023-05-24T20:15:46Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: ae3b7674c5f705af568b28dcca4633d9ffb12c18745e97ec5048f3939442e247
@@ -472,6 +482,16 @@ entries:
   lighthouse:
     - apiVersion: v2
       appVersion: v3.4.0
+      created: "2023-06-25T22:20:35Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 225b64d7d42f3347f280115cdbdc6a3a38db38b4c92ceeacb41b50715bf8101e
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.7/lighthouse-0.2.1-canary.7.tgz
+      version: 0.2.1-canary.7
+    - apiVersion: v2
+      appVersion: v3.4.0
       created: "2023-06-25T22:00:25Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: b96eb29df0b655c16b3e1a35479304fc86bcb11337aa8a87896ea21b0d0a7ffc
@@ -501,6 +521,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
+      created: "2023-06-25T22:20:39Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 2db41dea15a8b5aa54c782680651810d8e54dce2ed81905c6aac7b8190f1dadc
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.7/nethermind-0.3.1-canary.7.tgz
+      version: 0.3.1-canary.7
     - apiVersion: v2
       appVersion: 1.16.0-unstable
       created: "2023-06-25T22:00:30Z"
@@ -616,6 +646,16 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
+      created: "2023-06-25T22:20:30Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: 411bc0a95c142701dc666dd00be86305644f8b741936c945174786a1bd29360c
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.7/proxyd-0.1.9-canary.7.tgz
+      version: 0.1.9-canary.7
+    - apiVersion: v2
+      appVersion: 3.11.0
       created: "2023-06-25T22:00:21Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: 867c162753f8e064d126bc8ab5ae93bbef73d955db580ef91c9a298541df1d23
@@ -654,4 +694,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-25T22:21:46.068417561Z"
+generated: "2023-06-25T22:22:01.959623676Z"
