@@ -6,6 +6,8 @@
 
     "separateMajorMinor": false,
 
+    "commitBodyTable": true,
+
     "ignorePaths": [
     ],
 
