@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-06-25T21:52:11Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 08a01c4d9c99dbca15a4737062181bbde58f1aefcc0f0714ec3677c7afd7f7d9
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.5/arbitrum-classic-0.1.24-canary.5.tgz
+      version: 0.1.24-canary.5
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-05-29T12:08:59Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: aa44b3bb03282c8200880733ed1e99b0b401571b9a1a41d02902e104b910dce5
@@ -155,6 +165,16 @@ entries:
   arbitrum-nitro:
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
+      created: "2023-06-25T21:52:11Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: d3a793ac488964da1ee81ea4ff69a68c74a1c68e8611728204f3cde5e4e35ba3
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.5/arbitrum-nitro-0.1.12-canary.5.tgz
+      version: 0.1.12-canary.5
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
       created: "2023-05-29T11:15:08Z"
       description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
       digest: 8a6ea5a69654d11082bdd8bd7b9277260584430e01e42d8ef7c5c8c5b9cda6ac
@@ -194,6 +214,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.1/arbitrum-nitro-0.1.1.tgz
       version: 0.1.1
   celo:
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-06-25T21:52:20Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 27b0e228f03f537f4cd3287dd78150d0f378a389c99ff905bd5bc4e5b3596f92
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.5/celo-0.1.10-canary.5.tgz
+      version: 0.1.10-canary.5
     - apiVersion: v2
       appVersion: 1.7.2
       created: "2023-05-30T19:22:37Z"
@@ -486,6 +516,16 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
+      created: "2023-06-25T21:52:30Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: 4646afcc792d40451c9dbe2fc13b1262cc96cdc2da08ce411fee18102043e728
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.5/proxyd-0.1.9-canary.5.tgz
+      version: 0.1.9-canary.5
+    - apiVersion: v2
+      appVersion: 3.11.0
       created: "2023-05-24T20:15:46Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: b45598669166f6491d9b3d98d9b49fb71a8aa073b4aa34d6802c65a96d3a2186
@@ -504,4 +544,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-25T21:53:05.841071407Z"
+generated: "2023-06-25T21:53:21.510103069Z"
