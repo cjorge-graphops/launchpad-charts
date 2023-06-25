@@ -100,7 +100,7 @@ jobs:
           version: v3.12.0
 
       - name: Update chart version
-        if: needs.init.outputs.prerelease != ""
+        if: needs.init.outputs.prerelease != ''
         run: |
           set -x -e
           chart_file="charts/${{ needs.init.outputs.name }}/Chart.yaml"
