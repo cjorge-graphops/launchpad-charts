@@ -59,14 +59,14 @@ jobs:
         id: release_notes
         env:
           CHART: ${{ steps.chart_name.name }}
-          prerelease: ${{ needs.init.outputs.prerelease }}
+          prerelease: "${{ needs.init.outputs.prerelease }}"
         run: |
           set -x
 
           export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
           export GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
 
-          if [[ -n "$prerelease" ]]; then
+          if [ -n $prerelease ]; then
             yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -u -t "${{ needs.init.outputs.tag }}" > "RELEASE-NOTES.md"
           else
             yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -l > "RELEASE-NOTES.md"
