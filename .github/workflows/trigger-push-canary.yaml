@@ -6,7 +6,6 @@ on:
     branches:
       - 'renovate/*'
       - 'canary/*'
-  workflow_dispatch:
 
 jobs:
   find-tags-to-release:
