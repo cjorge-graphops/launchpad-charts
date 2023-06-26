@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -17,4 +16,3 @@ All notable changes to this project will be documented in this file.
 
 - Rawfile-csi chart (#9) ([bbfc9c](https://github.com/graphops/launchpad-charts/commit/bbfc9cd89bd66304b3690a1c89639637b12d85de))
 
-~/code/graphops/downstream/launchpad-charts

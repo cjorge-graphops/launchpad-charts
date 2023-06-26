@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -42,4 +41,3 @@ All notable changes to this project will be documented in this file.
 
 - Rename helm-charts to launchpad-charts ([70cd3b](https://github.com/graphops/launchpad-charts/commit/70cd3b7aed214e314ec0534bf845d687efab41d8))
 
-~/code/graphops/downstream/launchpad-charts

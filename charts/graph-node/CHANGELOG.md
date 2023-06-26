@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -47,4 +46,3 @@ All notable changes to this project will be documented in this file.
 
 - Release (#14) ([e57b8c](https://github.com/graphops/launchpad-charts/commit/e57b8cefacee381173332eacb52c4ce496eb886a))
 
-~/code/graphops/downstream/launchpad-charts

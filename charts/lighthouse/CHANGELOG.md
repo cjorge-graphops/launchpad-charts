@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -19,4 +18,3 @@ All notable changes to this project will be documented in this file.
 
 - Adding chart (#33) ([66e41b](https://github.com/graphops/launchpad-charts/commit/66e41be30a67caadda7ee5eaf4a0b8ae6a80c281))
 
-~/code/graphops/downstream/launchpad-charts

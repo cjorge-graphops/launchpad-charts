@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -19,4 +18,3 @@ All notable changes to this project will be documented in this file.
 
 - Adding arbitrum charts (#43) ([b0fd0a](https://github.com/graphops/launchpad-charts/commit/b0fd0ac02c2b35e2a31ff4485688ed8877bd4bef))
 
-~/code/graphops/downstream/launchpad-charts

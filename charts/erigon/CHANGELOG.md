@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -248,4 +247,3 @@ All notable changes to this project will be documented in this file.
 
 - Bump chart version to release new artifact ([ad8f88](https://github.com/graphops/launchpad-charts/commit/ad8f885d30ac3e5ef28845f5b02df4b1b7ae85ed))
 
-~/code/graphops/downstream/launchpad-charts

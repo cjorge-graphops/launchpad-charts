@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -40,4 +39,3 @@ All notable changes to this project will be documented in this file.
 
 - Pushgateway and jwt behaviour ([ea1b85](https://github.com/graphops/launchpad-charts/commit/ea1b85ee9735678272dc8ce82e76457b42edd092))
 
-~/code/graphops/downstream/launchpad-charts

@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -17,4 +16,3 @@ All notable changes to this project will be documented in this file.
 
 - Adding new indexer release (#16) ([55cc53](https://github.com/graphops/launchpad-charts/commit/55cc53f7185e48e43a13b75490cf5fc87ec9b836))
 
-~/code/graphops/downstream/launchpad-charts

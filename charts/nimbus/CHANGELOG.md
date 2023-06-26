@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -72,4 +71,3 @@ All notable changes to this project will be documented in this file.
 
 - Document trusted node sync ([0e1a8d](https://github.com/graphops/launchpad-charts/commit/0e1a8d216f5cff48630b97afdf16ba7c9b5f48d4))
 
-~/code/graphops/downstream/launchpad-charts

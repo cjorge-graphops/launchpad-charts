@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -95,4 +94,3 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of Nethermind chart (#11) ([cf2ec8](https://github.com/graphops/launchpad-charts/commit/cf2ec811d0e71ad3be3aab3643f14e563f6983c8))
 
-~/code/graphops/downstream/launchpad-charts

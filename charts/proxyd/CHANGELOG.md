@@ -1,4 +1,3 @@
-~/code/graphops/downstream/launchpad-charts ~/code/graphops/downstream/launchpad-charts
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -71,4 +70,3 @@ All notable changes to this project will be documented in this file.
 
 - Language alignment ([ce5a4d](https://github.com/graphops/launchpad-charts/commit/ce5a4d3471ce4d64c8f617321e544c6134a1ca80))
 
-~/code/graphops/downstream/launchpad-charts
