@@ -42,67 +42,78 @@
         "description": "Group dependencies",
         "matchPaths": ["charts/arbitrum*/**"],
         "groupName": "Arbitrum dependencies",
-        "groupSlug": "arbitrum"
+        "groupSlug": "arbitrum",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/avalanche/**"],
         "groupName": "Avalanche dependencies",
-        "groupSlug": "avalanche"
+        "groupSlug": "avalanche",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/celo/**"],
         "groupName": "Celo dependencies",
-        "groupSlug": "celo"
+        "groupSlug": "celo",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/erigon/**"],
         "groupName": "Erigon dependencies",
-        "groupSlug": "erigon"
+        "groupSlug": "erigon",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/graph-*/**"],
         "groupName": "Graph dependencies",
-        "groupSlug": "graph"
+        "groupSlug": "graph",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/heimdall/**"],
         "groupName": "Heimdall dependencies",
-        "groupSlug": "heimdall"
+        "groupSlug": "heimdall",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/lighthouse/**"],
         "groupName": "Lighthouse dependencies",
-        "groupSlug": "lighthouse"
+        "groupSlug": "lighthouse",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/nethermind/**"],
         "groupName": "Nethermind dependencies",
-        "groupSlug": "nethermind"
+        "groupSlug": "nethermind",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/nimbus/**"],
         "groupName": "Nimbus dependencies",
-        "groupSlug": "nimbus"
+        "groupSlug": "nimbus",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/openebs-*/**"],
         "groupName": "OpenEBS dependencies",
-        "groupSlug": "openebs"
+        "groupSlug": "openebs",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/proxyd/**"],
         "groupName": "Proxyd dependencies",
-        "groupSlug": "proxyd"
+        "groupSlug": "proxyd",
+        "commitMessageTopic": "{{groupSlug}}"
       },
       {
         "matchManagers": ["helm-requirements", "helm-values", "regex"],
