@@ -773,6 +773,16 @@ entries:
   nethermind:
     - apiVersion: v2
       appVersion: 1.16.0-unstable
+      created: "2023-06-26T00:57:41Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 213ef48c9c8c2f49f5b58557cf06758c8482daf29f8b9d55c6c88e03526289a8
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.10/nethermind-0.3.1-canary.10.tgz
+      version: 0.3.1-canary.10
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
       created: "2023-06-26T00:50:09Z"
       description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
       digest: 5648bdd7d0286dacaf6b3fdb3a8579e96d402ca6c0c6856a3e312dde8ef194c5
@@ -1054,4 +1064,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:59:06.071786503Z"
+generated: "2023-06-26T00:59:20.575693959Z"
