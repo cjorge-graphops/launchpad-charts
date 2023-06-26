@@ -65,13 +65,13 @@ jobs:
         run: |
           set -x -e
 
-          export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
-          export GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
+          tag_pattern="$CHART-*"
+          ignore_tags="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
 
           if [[ -n "${{ needs.init.outputs.prerelease }}" ]]; then
-            yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -u -t "${{ needs.init.outputs.tag }}" -o "RELEASE-NOTES.md"
+            GIT_CLIFF__GIT__TAG_PATTERN="$tag_pattern" GIT_CLIFF__GIT__IGNORE_TAGS="$ignore_tags" yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -u -t "${{ needs.init.outputs.tag }}" -o "RELEASE-NOTES.md"
           else
-            yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -l -o "RELEASE-NOTES.md"
+            GIT_CLIFF__GIT__TAG_PATTERN="$tag_pattern" GIT_CLIFF__GIT__IGNORE_TAGS="$ignore_tags" yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -l -o "RELEASE-NOTES.md"
           fi
 
       - uses: actions/upload-artifact@v3
