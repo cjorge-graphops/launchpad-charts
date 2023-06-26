@@ -622,6 +622,16 @@ entries:
   lighthouse:
     - apiVersion: v2
       appVersion: v3.4.0
+      created: "2023-06-26T00:50:06Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 56b83f30376933625efabcf02282f0b8819eedcd1789fa7a4c48dc9d78c88476
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.9/lighthouse-0.2.1-canary.9.tgz
+      version: 0.2.1-canary.9
+    - apiVersion: v2
+      appVersion: v3.4.0
       created: "2023-06-26T00:19:42Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: 381396df702cab55befbf6082f187f4221c80a006a9e3bb70f044675838da79e
@@ -671,6 +681,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
+      created: "2023-06-26T00:50:09Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 5648bdd7d0286dacaf6b3fdb3a8579e96d402ca6c0c6856a3e312dde8ef194c5
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.9/nethermind-0.3.1-canary.9.tgz
+      version: 0.3.1-canary.9
     - apiVersion: v2
       appVersion: 1.16.0-unstable
       created: "2023-06-26T00:19:41Z"
@@ -914,4 +934,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:51:07.45481682Z"
+generated: "2023-06-26T00:51:11.899722684Z"
