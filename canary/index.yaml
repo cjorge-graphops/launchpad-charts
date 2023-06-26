@@ -842,16 +842,6 @@ entries:
   lighthouse:
     - apiVersion: v2
       appVersion: v3.4.0
-      created: "2023-06-26T01:22:51Z"
-      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
-      digest: 8917cd27ddd56bc32ee5dfa06c107bb182c4297366c73ded75037744334f0487
-      name: lighthouse
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.12/lighthouse-0.2.1-canary.12.tgz
-      version: 0.2.1-canary.12
-    - apiVersion: v2
-      appVersion: v3.4.0
       created: "2023-06-26T01:09:16Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: 5bcd9f84d49d4a590e0cd236cf4ffdbebd4353fe1e5a1df9214070e09c1445da
@@ -931,16 +921,6 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
-    - apiVersion: v2
-      appVersion: 1.16.0-unstable
-      created: "2023-06-26T01:22:56Z"
-      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
-      digest: 33b8c1d30352e059c098c4a3b7bb305d289f1af713ff9effe2a11532678c53d7
-      name: nethermind
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.12/nethermind-0.3.1-canary.12.tgz
-      version: 0.3.1-canary.12
     - apiVersion: v2
       appVersion: 1.16.0-unstable
       created: "2023-06-26T01:09:15Z"
@@ -1206,16 +1186,6 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
-      created: "2023-06-26T01:22:51Z"
-      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
-      digest: 412755e70b8ff4e34356e2c725e14cb9af27ac3a9ae5dbee9a43dfeb2fa45e1e
-      name: proxyd
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.12/proxyd-0.1.9-canary.12.tgz
-      version: 0.1.9-canary.12
-    - apiVersion: v2
-      appVersion: 3.11.0
       created: "2023-06-26T01:09:09Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: 4a1c01a235851586faf7b3605264388edf3106d904029eeea71b995f04ee2d2a
@@ -1304,4 +1274,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T01:24:03.937400863Z"
+generated: "2023-06-26T01:23:59.333371902Z"
