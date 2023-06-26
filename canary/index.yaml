@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-06-26T00:19:27Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 2fcc5373321de9d775b5b833b3f24b8cda132cf7d331987a8028bc4a5f11cc38
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.8/arbitrum-classic-0.1.24-canary.8.tgz
+      version: 0.1.24-canary.8
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-06-25T22:20:11Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: bb53b7b98a699b47f51b2fb588c9f7a3d10184f7435e81996844bbe8b97f6367
@@ -183,6 +193,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
       version: 0.1.1
   arbitrum-nitro:
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
+      created: "2023-06-26T00:19:27Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: aa89246431a1792e8c71214ef8d2591b1fb57e560046b6daff6731732a7f684e
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.8/arbitrum-nitro-0.1.12-canary.8.tgz
+      version: 0.1.12-canary.8
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
       created: "2023-06-25T22:20:11Z"
@@ -358,6 +378,16 @@ entries:
   graph-network-indexer:
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
+      created: "2023-06-26T00:19:26Z"
+      description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
+      digest: f1d38a7bc1aa52cb5e5cccc7d0b7fd3f7e98cf00ec2485238cd4103e785a76f8
+      name: graph-network-indexer
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.8/graph-network-indexer-0.1.3-canary.8.tgz
+      version: 0.1.3-canary.8
+    - apiVersion: v2
+      appVersion: v0.20.5-alpha.1
       created: "2023-06-25T22:20:05Z"
       description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
       digest: 01967c0ac83d9ee10a4c588fa44f904806c1bdc8ece558a9485c57755db2342a
@@ -397,6 +427,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
       version: 0.1.2
   graph-node:
+    - apiVersion: v2
+      appVersion: v0.28.2
+      created: "2023-06-26T00:19:26Z"
+      description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node) inside Kubernetes with ease
+      digest: 5e5ca3d219c9cea049e1cf7594538212eb75cd4de99e17e247b48b12a5584fb1
+      name: graph-node
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.8/graph-node-0.1.6-canary.8.tgz
+      version: 0.1.6-canary.8
     - apiVersion: v2
       appVersion: v0.28.2
       created: "2023-06-25T22:20:05Z"
@@ -451,6 +491,16 @@ entries:
   heimdall:
     - apiVersion: v2
       appVersion: v0.3.0
+      created: "2023-06-26T00:19:23Z"
+      description: Deploy and scale [Heimdall](https://github.com/maticnetwork/heimdall) inside Kubernetes with ease
+      digest: 021724cc6e8f363b68b0923d2f6f71f007b5d2cb393d6cc8fa345654f8d91998
+      name: heimdall
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.8/heimdall-1.1.3-canary.8.tgz
+      version: 1.1.3-canary.8
+    - apiVersion: v2
+      appVersion: v0.3.0
       created: "2023-06-25T22:19:58Z"
       description: Deploy and scale [Heimdall](https://github.com/maticnetwork/heimdall) inside Kubernetes with ease
       digest: 53d104c1f9f796a81ff3ef638a6e5079eac234c3d10787cd4166597a42a6d4f1
@@ -490,6 +540,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
       version: 1.1.2
   lighthouse:
+    - apiVersion: v2
+      appVersion: v3.4.0
+      created: "2023-06-26T00:19:42Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 381396df702cab55befbf6082f187f4221c80a006a9e3bb70f044675838da79e
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.8/lighthouse-0.2.1-canary.8.tgz
+      version: 0.2.1-canary.8
     - apiVersion: v2
       appVersion: v3.4.0
       created: "2023-06-25T22:20:35Z"
@@ -533,6 +593,16 @@ entries:
   nethermind:
     - apiVersion: v2
       appVersion: 1.16.0-unstable
+      created: "2023-06-26T00:19:41Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 0fa8c7cb1ebf4d0f6479f0dbea9b747dc31cda8665e6fc696a943226412afe3b
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.8/nethermind-0.3.1-canary.8.tgz
+      version: 0.3.1-canary.8
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
       created: "2023-06-25T22:20:39Z"
       description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
       digest: 2db41dea15a8b5aa54c782680651810d8e54dce2ed81905c6aac7b8190f1dadc
@@ -572,6 +642,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.0/nethermind-0.3.0.tgz
       version: 0.3.0
   nimbus:
+    - apiVersion: v2
+      appVersion: multiarch-v22.12.0
+      created: "2023-06-26T00:19:28Z"
+      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
+      digest: 46e4579b418d3f671c40207ced369ac68e9044a8baeba63625c349f1ec1dc4fd
+      name: nimbus
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.8/nimbus-0.3.1-canary.8.tgz
+      version: 0.3.1-canary.8
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
       created: "2023-06-25T22:20:19Z"
@@ -615,6 +695,16 @@ entries:
   openebs-rawfile-localpv:
     - apiVersion: v2
       appVersion: 0.7.0
+      created: "2023-06-26T00:19:19Z"
+      description: RawFile Driver Container Storage Interface
+      digest: 791bbd9ffcde533d90c3d317821e3850d6be67803fe36c3d4a3345e822e8d62c
+      name: openebs-rawfile-localpv
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.8/openebs-rawfile-localpv-0.8.1-canary.8.tgz
+      version: 0.8.1-canary.8
+    - apiVersion: v2
+      appVersion: 0.7.0
       created: "2023-06-25T22:20:04Z"
       description: RawFile Driver Container Storage Interface
       digest: 7c0cb6c69cad997b08c0d9ad19443a4fd96796a4a9b57bafc561f89aa7d68b85
@@ -654,6 +744,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.0/openebs-rawfile-localpv-0.8.0.tgz
       version: 0.8.0
   proxyd:
+    - apiVersion: v2
+      appVersion: 3.11.0
+      created: "2023-06-26T00:19:36Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: c5871bed17230718e1c83a8869e1106ee6c50920fbfe3dfbf91d9bf90ce01c8e
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.8/proxyd-0.1.9-canary.8.tgz
+      version: 0.1.9-canary.8
     - apiVersion: v2
       appVersion: 3.11.0
       created: "2023-06-25T22:20:30Z"
@@ -704,4 +804,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-25T22:42:54.892424176Z"
+generated: "2023-06-26T00:20:44.595793631Z"
