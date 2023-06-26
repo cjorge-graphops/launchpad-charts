@@ -48,7 +48,7 @@ jobs:
 
       - name: Yarn install
         run: |
-          set -x
+          set -x -e
 
           yarn install
 
@@ -63,7 +63,7 @@ jobs:
         env:
           CHART: ${{ steps.chart_name.name }}
         run: |
-          set -x
+          set -x -e
 
           export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
           export GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
