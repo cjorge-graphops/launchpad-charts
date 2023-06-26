@@ -316,6 +316,16 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
+      created: "2023-06-26T00:57:30Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 780058eed7cf5432f6edfc2cc15a961ccf9e1665780ffceccaf9f05e4cf4098b
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.10/celo-0.1.10-canary.10.tgz
+      version: 0.1.10-canary.10
+    - apiVersion: v2
+      appVersion: 1.7.2
       created: "2023-06-26T00:49:57Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: 6c3c1e8a5b639ed6e16a021eb4cb5e5b469c10d79a5546cf37b7ecc11c162139
@@ -425,6 +435,16 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-canary.1/erigon-0.6.1-canary.1.tgz
       version: 0.6.1-canary.1
+    - apiVersion: v2
+      appVersion: v2.34.0
+      created: "2023-06-26T00:57:34Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 3b178b52d940e609cf085bdca337abf65010f2d7d56f164040c033fdc077ef19
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.4/erigon-0.5.2-canary.4.tgz
+      version: 0.5.2-canary.4
     - apiVersion: v2
       appVersion: v2.34.0
       created: "2023-06-26T00:50:00Z"
@@ -680,6 +700,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
       version: 1.1.2
   lighthouse:
+    - apiVersion: v2
+      appVersion: v3.4.0
+      created: "2023-06-26T00:57:42Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 02cbb624b34f304bdbe78810e0339e7ce90846e2e351ba0287e250292584eba3
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.10/lighthouse-0.2.1-canary.10.tgz
+      version: 0.2.1-canary.10
     - apiVersion: v2
       appVersion: v3.4.0
       created: "2023-06-26T00:50:06Z"
@@ -946,6 +976,16 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
+      created: "2023-06-26T00:57:35Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: 02ff372c24972d066141fdc561867f8f766a161e68969f2fd16cb91b0ada4811
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.10/proxyd-0.1.9-canary.10.tgz
+      version: 0.1.9-canary.10
+    - apiVersion: v2
+      appVersion: 3.11.0
       created: "2023-06-26T00:50:04Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: 421322a6c9e10d4930a64e627f7204ace8c65b041839d5887849ae69c37b4837
@@ -1014,4 +1054,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:59:00.382598504Z"
+generated: "2023-06-26T00:59:06.071786503Z"
