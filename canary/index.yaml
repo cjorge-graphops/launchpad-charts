@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-06-26T00:49:51Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: ad97c855c651bbae2d41de6abaa6662709e722876e522f38318e1d30d434b6ca
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.9/arbitrum-classic-0.1.24-canary.9.tgz
+      version: 0.1.24-canary.9
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-06-26T00:19:27Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: 2fcc5373321de9d775b5b833b3f24b8cda132cf7d331987a8028bc4a5f11cc38
@@ -276,6 +286,16 @@ entries:
   celo:
     - apiVersion: v2
       appVersion: 1.7.2
+      created: "2023-06-26T00:49:57Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 6c3c1e8a5b639ed6e16a021eb4cb5e5b469c10d79a5546cf37b7ecc11c162139
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.9/celo-0.1.10-canary.9.tgz
+      version: 0.1.10-canary.9
+    - apiVersion: v2
+      appVersion: 1.7.2
       created: "2023-06-26T00:19:35Z"
       description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
       digest: 526c961a951b18aa25212d565be092f8aafa13721c04b366f4f688e6377939d2
@@ -377,6 +397,16 @@ entries:
       version: 0.6.1-canary.1
     - apiVersion: v2
       appVersion: v2.34.0
+      created: "2023-06-26T00:50:00Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 55e7ae5f5c2a396693f6e3ee6508961f2793e155bcb11223aabf9c9f44e39467
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.3/erigon-0.5.2-canary.3.tgz
+      version: 0.5.2-canary.3
+    - apiVersion: v2
+      appVersion: v2.34.0
       created: "2023-06-26T00:19:36Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: 44f7d3a1709357c44da62df00f418ef3735be793d0c8ea42f91094e70e196316
@@ -396,6 +426,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.1/erigon-0.5.2-canary.1.tgz
       version: 0.5.2-canary.1
   graph-network-indexer:
+    - apiVersion: v2
+      appVersion: v0.20.5-alpha.1
+      created: "2023-06-26T00:49:50Z"
+      description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
+      digest: 3699b1682772ec876ff349b7390b8c2a18e7d393b8757a245f3cb2ec36987b31
+      name: graph-network-indexer
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.9/graph-network-indexer-0.1.3-canary.9.tgz
+      version: 0.1.3-canary.9
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
       created: "2023-06-26T00:19:26Z"
@@ -447,6 +487,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
       version: 0.1.2
   graph-node:
+    - apiVersion: v2
+      appVersion: v0.28.2
+      created: "2023-06-26T00:49:50Z"
+      description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node) inside Kubernetes with ease
+      digest: 46629316f2d15192367e1edb7ab04011fdb1a4c8f0d3f02ff8f3881bf6bfa906
+      name: graph-node
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.9/graph-node-0.1.6-canary.9.tgz
+      version: 0.1.6-canary.9
     - apiVersion: v2
       appVersion: v0.28.2
       created: "2023-06-26T00:19:26Z"
@@ -509,6 +559,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-toolbox-0.1.0/graph-toolbox-0.1.0.tgz
       version: 0.1.0
   heimdall:
+    - apiVersion: v2
+      appVersion: v0.3.0
+      created: "2023-06-26T00:49:42Z"
+      description: Deploy and scale [Heimdall](https://github.com/maticnetwork/heimdall) inside Kubernetes with ease
+      digest: 3b5160824f296f348f3e292848fbc9d64981ab2ec2bd3a2ce7f07169292a5e97
+      name: heimdall
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.9/heimdall-1.1.3-canary.9.tgz
+      version: 1.1.3-canary.9
     - apiVersion: v2
       appVersion: v0.3.0
       created: "2023-06-26T00:19:23Z"
@@ -664,6 +724,16 @@ entries:
   nimbus:
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
+      created: "2023-06-26T00:49:55Z"
+      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
+      digest: 19771f84043c4afadce510facb3c51f00e63577851551118df932024319a9776
+      name: nimbus
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.9/nimbus-0.3.1-canary.9.tgz
+      version: 0.3.1-canary.9
+    - apiVersion: v2
+      appVersion: multiarch-v22.12.0
       created: "2023-06-26T00:19:28Z"
       description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
       digest: 46e4579b418d3f671c40207ced369ac68e9044a8baeba63625c349f1ec1dc4fd
@@ -715,6 +785,16 @@ entries:
   openebs-rawfile-localpv:
     - apiVersion: v2
       appVersion: 0.7.0
+      created: "2023-06-26T00:49:44Z"
+      description: RawFile Driver Container Storage Interface
+      digest: 005d9d3bf47cce481f93fa97a550e44e4e5b0c1e3b7e45de59483b0afd03d8da
+      name: openebs-rawfile-localpv
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.9/openebs-rawfile-localpv-0.8.1-canary.9.tgz
+      version: 0.8.1-canary.9
+    - apiVersion: v2
+      appVersion: 0.7.0
       created: "2023-06-26T00:19:19Z"
       description: RawFile Driver Container Storage Interface
       digest: 791bbd9ffcde533d90c3d317821e3850d6be67803fe36c3d4a3345e822e8d62c
@@ -764,6 +844,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.0/openebs-rawfile-localpv-0.8.0.tgz
       version: 0.8.0
   proxyd:
+    - apiVersion: v2
+      appVersion: 3.11.0
+      created: "2023-06-26T00:50:04Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: 421322a6c9e10d4930a64e627f7204ace8c65b041839d5887849ae69c37b4837
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.9/proxyd-0.1.9-canary.9.tgz
+      version: 0.1.9-canary.9
     - apiVersion: v2
       appVersion: 3.11.0
       created: "2023-06-26T00:19:36Z"
@@ -824,4 +914,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:21:28.559790801Z"
+generated: "2023-06-26T00:51:05.943658322Z"
