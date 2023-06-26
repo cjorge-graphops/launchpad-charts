@@ -225,6 +225,16 @@ entries:
   arbitrum-nitro:
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
+      created: "2023-06-26T01:08:50Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: b91d81339a337b2df5af7080a93978a72fbdbfeab441c561556f38dccbbefaba
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.11/arbitrum-nitro-0.1.12-canary.11.tgz
+      version: 0.1.12-canary.11
+    - apiVersion: v2
+      appVersion: v2.0.10-73224e3
       created: "2023-06-26T00:57:23Z"
       description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
       digest: 50d1646fd289495c5140ee741e17d08dff4cb0be956e87d08c4c231ebd52ac69
@@ -324,6 +334,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.1/arbitrum-nitro-0.1.1.tgz
       version: 0.1.1
   celo:
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2023-06-26T01:09:03Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: 98454150511ab93a08256d0094f6ec85dd2879e21980a99a6c1cc71634e98e39
+      name: celo
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.11/celo-0.1.10-canary.11.tgz
+      version: 0.1.10-canary.11
     - apiVersion: v2
       appVersion: 1.7.2
       created: "2023-06-26T00:57:30Z"
@@ -752,6 +772,16 @@ entries:
   lighthouse:
     - apiVersion: v2
       appVersion: v3.4.0
+      created: "2023-06-26T01:09:16Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 5bcd9f84d49d4a590e0cd236cf4ffdbebd4353fe1e5a1df9214070e09c1445da
+      name: lighthouse
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.11/lighthouse-0.2.1-canary.11.tgz
+      version: 0.2.1-canary.11
+    - apiVersion: v2
+      appVersion: v3.4.0
       created: "2023-06-26T00:57:42Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: 02cbb624b34f304bdbe78810e0339e7ce90846e2e351ba0287e250292584eba3
@@ -821,6 +851,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
+      created: "2023-06-26T01:09:15Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 0558bd0d42263999016135436f153721ff8f8f717b94698066b4cbcb81e7ac9c
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.11/nethermind-0.3.1-canary.11.tgz
+      version: 0.3.1-canary.11
     - apiVersion: v2
       appVersion: 1.16.0-unstable
       created: "2023-06-26T00:57:41Z"
@@ -1056,6 +1096,16 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
+      created: "2023-06-26T01:09:09Z"
+      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
+      digest: 4a1c01a235851586faf7b3605264388edf3106d904029eeea71b995f04ee2d2a
+      name: proxyd
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.11/proxyd-0.1.9-canary.11.tgz
+      version: 0.1.9-canary.11
+    - apiVersion: v2
+      appVersion: 3.11.0
       created: "2023-06-26T00:57:35Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: 02ff372c24972d066141fdc561867f8f766a161e68969f2fd16cb91b0ada4811
@@ -1134,4 +1184,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T01:10:42.892351891Z"
+generated: "2023-06-26T01:11:00.28335733Z"
