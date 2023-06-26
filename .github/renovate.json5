@@ -43,7 +43,7 @@
         "matchPaths": ["charts/arbitrum*/**"],
         "groupName": "Arbitrum dependencies",
         "groupSlug": "arbitrum",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -51,7 +51,7 @@
         "matchPaths": ["charts/avalanche/**"],
         "groupName": "Avalanche dependencies",
         "groupSlug": "avalanche",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -59,7 +59,7 @@
         "matchPaths": ["charts/celo/**"],
         "groupName": "Celo dependencies",
         "groupSlug": "celo",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -67,7 +67,7 @@
         "matchPaths": ["charts/erigon/**"],
         "groupName": "Erigon dependencies",
         "groupSlug": "erigon",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -75,7 +75,7 @@
         "matchPaths": ["charts/graph-*/**"],
         "groupName": "Graph dependencies",
         "groupSlug": "graph",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -83,7 +83,7 @@
         "matchPaths": ["charts/heimdall/**"],
         "groupName": "Heimdall dependencies",
         "groupSlug": "heimdall",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -91,7 +91,7 @@
         "matchPaths": ["charts/lighthouse/**"],
         "groupName": "Lighthouse dependencies",
         "groupSlug": "lighthouse",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -99,7 +99,7 @@
         "matchPaths": ["charts/nethermind/**"],
         "groupName": "Nethermind dependencies",
         "groupSlug": "nethermind",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -107,7 +107,7 @@
         "matchPaths": ["charts/nimbus/**"],
         "groupName": "Nimbus dependencies",
         "groupSlug": "nimbus",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -115,7 +115,7 @@
         "matchPaths": ["charts/openebs-*/**"],
         "groupName": "OpenEBS dependencies",
         "groupSlug": "openebs",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
@@ -123,7 +123,7 @@
         "matchPaths": ["charts/proxyd/**"],
         "groupName": "Proxyd dependencies",
         "groupSlug": "proxyd",
-        "commitMessageTopic": "{{groupName}}",
+        "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
       {
