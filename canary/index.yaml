@@ -724,16 +724,6 @@ entries:
   nimbus:
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
-      created: "2023-06-26T00:49:55Z"
-      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
-      digest: 19771f84043c4afadce510facb3c51f00e63577851551118df932024319a9776
-      name: nimbus
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.9/nimbus-0.3.1-canary.9.tgz
-      version: 0.3.1-canary.9
-    - apiVersion: v2
-      appVersion: multiarch-v22.12.0
       created: "2023-06-26T00:19:28Z"
       description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
       digest: 46e4579b418d3f671c40207ced369ac68e9044a8baeba63625c349f1ec1dc4fd
@@ -846,16 +836,6 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
-      created: "2023-06-26T00:50:04Z"
-      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
-      digest: 421322a6c9e10d4930a64e627f7204ace8c65b041839d5887849ae69c37b4837
-      name: proxyd
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.9/proxyd-0.1.9-canary.9.tgz
-      version: 0.1.9-canary.9
-    - apiVersion: v2
-      appVersion: 3.11.0
       created: "2023-06-26T00:19:36Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: c5871bed17230718e1c83a8869e1106ee6c50920fbfe3dfbf91d9bf90ce01c8e
@@ -914,4 +894,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:51:05.943658322Z"
+generated: "2023-06-26T00:51:07.316611099Z"
