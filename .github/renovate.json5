@@ -31,6 +31,13 @@
     ],
 
     "packageRules": [
+      // thorax/erigon released a few versions following YYYY.MM.DD versioning pattern
+      // we want to exclude those
+      {
+        "matchPackageNames": ["thorax/erigon"],
+        "allowedVersions": "<2000"
+      },
+      // Group our dependencies
       {
         "description": "Group dependencies",
         "matchPaths": ["charts/arbitrum*/**"],
