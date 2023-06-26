@@ -44,11 +44,12 @@ split_commits = true
 # regex for preprocessing the commit messages
 commit_preprocessors = [
   # { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](https://github.com/orhun/git-cliff/issues/${2}))"}, # replace issue numbers
-  { pattern = '[\|]\s*docker\s*[\|]\s*(\S*)\s*[\|]\s*(\S*)\s*[\|]\s*(\S*)\s*[\|]', replace = "chore(deps): Bump ${1} from ${2} to ${3}" },
+  { pattern = '[\|]\s*docker\s*[\|]\s*(\S*)\s*[\|]\s*(\S*)\s*[\|]\s*(\S*)\s*[\|]', replace = "chore(deps): * Bump ${1} from ${2} to ${3}" },
 ]
 # regex for parsing and grouping commits
 commit_parsers = [
   { message = "^feat", group = "<!-- 0 -->✨ Features" },
+  { message = "^chore\\(deps\\)", group = "<!-- 0 -->✨ Features" },
   { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
   { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
   { message = "^perf", group = "<!-- 4 -->⚡️ Performance" },
@@ -66,12 +67,11 @@ protect_breaking_commits = false
 # filter out the commits that are not matched by commit parsers
 filter_commits = true
 # glob pattern for matching git tags
-#tag_pattern = "^celo-[\\d]+.[\\d]+.[\\d]+.*"
-#tag_pattern = 'celo-*'
+tag_pattern = "v[0-9]*"
 # regex for skipping tags
 #skip_tags = "v0.1.0-beta.1"
 # regex for ignoring tags
-#ignore_tags = "celo-v?[0-9]+.[0-9]+.[0-9]+-.*"
+ignore_tags = ""
 # sort the tags topologically
 topo_order = false
 # sort the commits inside sections by oldest/newest order
