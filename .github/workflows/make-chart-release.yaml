@@ -55,23 +55,23 @@ jobs:
       - name: Get chart name
         id: chart_name
         run: |
-          name="$(echo ${{ inputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+/\1/g')"
+          name="$(echo ${{ inputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+.*/\1/g')"
           echo "name=$name" >> $GITHUB_OUTPUT
 
       - name: Generate release notes
         id: release_notes
         env:
-          CHART: ${{ steps.chart_name.name }}
+          CHART: ${{ steps.chart_name.outputs.name }}
         run: |
           set -x -e
 
-          tag_pattern="$CHART-*"
-          ignore_tags="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
+          export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
+          GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
 
           if [[ -n "${{ needs.init.outputs.prerelease }}" ]]; then
-            GIT_CLIFF__GIT__TAG_PATTERN="$tag_pattern" GIT_CLIFF__GIT__IGNORE_TAGS="$ignore_tags" yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -u -t "${{ needs.init.outputs.tag }}" -o "RELEASE-NOTES.md"
+            yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -u -t "${{ needs.init.outputs.tag }}" -o "RELEASE-NOTES.md"
           else
-            GIT_CLIFF__GIT__TAG_PATTERN="$tag_pattern" GIT_CLIFF__GIT__IGNORE_TAGS="$ignore_tags" yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -l -o "RELEASE-NOTES.md"
+            yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" --strip all -l -o "RELEASE-NOTES.md"
           fi
 
       - uses: actions/upload-artifact@v3
