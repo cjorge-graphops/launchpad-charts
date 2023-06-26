@@ -8,6 +8,8 @@
 
     "commitBodyTable": true,
 
+    "semanticCommitType": "feat",
+
     "ignorePaths": [
     ],
 
