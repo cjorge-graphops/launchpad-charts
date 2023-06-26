@@ -205,16 +205,6 @@ entries:
   arbitrum-nitro:
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
-      created: "2023-06-26T00:49:51Z"
-      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
-      digest: 55d51325b151dec33980e81c20e23e2ed1a24344b5a9e2a8df58ad5598bdb1bf
-      name: arbitrum-nitro
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.9/arbitrum-nitro-0.1.12-canary.9.tgz
-      version: 0.1.12-canary.9
-    - apiVersion: v2
-      appVersion: v2.0.10-73224e3
       created: "2023-06-26T00:19:27Z"
       description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
       digest: aa89246431a1792e8c71214ef8d2591b1fb57e560046b6daff6731732a7f684e
@@ -944,4 +934,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-06-26T00:51:21.868753726Z"
+generated: "2023-06-26T00:51:41.188298365Z"
