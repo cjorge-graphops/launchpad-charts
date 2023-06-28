@@ -101,7 +101,7 @@ jobs:
             release_stream="main"
           fi
 
-          echo "repo=${release_stream}" >> $GITHUB_OUTPUTS
+          echo "repo=${release_stream}" >> $GITHUB_OUTPUT
 
   call-update-helm-repo:
     needs:
