@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - init
-    if: ${{ needs.init.outputs.prerelease != '' }}
+    if: ${{ needs.init.outputs.prerelease == '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -93,8 +93,9 @@ jobs:
       repo: ${{ steps.check-release-stream.outputs.repo }}
     steps:
       - name: check-release-stream
+        id: check-release-stream
         run: |
-          version=$(echo "${{ github.ref_name }}" | sed -r 's/.*-([0-9]+\.[0-9]+\.[0-9]+.*)/\1/g')
+          version=$(echo "${{ inputs.tag }}" | sed -r 's/.*-([0-9]+\.[0-9]+\.[0-9]+.*)/\1/g')
           if [[ "$version" == *"-canary"* ]]; then
             release_stream="canary"
           else
