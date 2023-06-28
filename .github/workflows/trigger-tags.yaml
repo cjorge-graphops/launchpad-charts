@@ -30,7 +30,7 @@ jobs:
       - name: Parse tag
         id: parse_tag
         run: |
-          if [ -n "${{ inputs.tag }}" ]; then
+          if [[ "${{ inputs.tag }}" != "" ]]; then
             tag="${{ inputs.tag }}"
           else
             tag="${{ github.ref_name }}"
