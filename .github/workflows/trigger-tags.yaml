@@ -29,15 +29,13 @@ jobs:
     steps:
       - name: Parse tag
         id: parse_tag
-        env:
-          TAG: ${{ inputs.tag }}
         run: |
-          if [ -n "$TAG" ]; then
-            tag="$TAG"
+          if [ -n "${{ inputs.tag }}" ]; then
+            tag="${{ inputs.tag }}"
           else
             tag="${{ github.ref_name }}"
           fi
-          echo "tag=${{ inputs.tag }}" >> $GITHUB_OUTPUT
+          echo "tag=$tag" >> $GITHUB_OUTPUT
           name=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\1/g')
           echo "name=$name" >> $GITHUB_OUTPUT
           version=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\2/g')
