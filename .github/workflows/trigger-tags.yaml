@@ -69,12 +69,12 @@ jobs:
 
       - name: Generate changelog and commit
         env:
-          CHART: ${{ steps.chart_name.name }}
+          CHART: ${{ steps.chart_name.outputs.name }}
         run: |
           export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
           export GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
 
-          yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" > "$charts/$CHART/CHANGELOG.md"
+          yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" > "charts/$CHART/CHANGELOG.md"
 
           git add "charts/$CHART/CHANGELOG.md"
           git commit -m "chore(changelog): Update CHANGELOG for $CHART"
