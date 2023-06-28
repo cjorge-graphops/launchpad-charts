@@ -30,12 +30,17 @@ jobs:
       - name: Parse tag
         id: parse_tag
         run: |
+          if [ -n "${{ inputs.tag }}" ]; then
+            tag="${{ inputs.tag }}"
+          else
+            tag="${{ context.github.ref_name }}
+          fi
           echo "tag=${{ inputs.tag }}" >> $GITHUB_OUTPUT
-          name=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\1/g')
+          name=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\1/g')
           echo "name=$name" >> $GITHUB_OUTPUT
-          version=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\2/g')
+          version=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\2/g')
           echo "version=$version" >> $GITHUB_OUTPUT
-          prerelease=$(echo "${{ inputs.tag }}" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\4/g')
+          prerelease=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\4/g')
           echo "prerelease=$prerelease" >> $GITHUB_OUTPUT
 
   update-changelog:
@@ -67,7 +72,7 @@ jobs:
       - name: Get chart name
         id: chart_name
         run: |
-          name="$(echo ${{ inputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+/\1/g')"
+          name="$(echo ${{ needs.init.outputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+/\1/g')"
           echo "name=$name" >> $GITHUB_OUTPUT
 
       - name: Generate changelog and commit
@@ -77,7 +82,7 @@ jobs:
           export GIT_CLIFF__GIT__TAG_PATTERN="$CHART-*"
           export GIT_CLIFF__GIT__IGNORE_TAGS="$CHART-v?[0-9]+.[0-9]+.[0-9]+-.*"
 
-          yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" > "charts/$CHART/CHANGELOG.md"
+          yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" -o "charts/$CHART/CHANGELOG.md"
 
           git add "charts/$CHART/CHANGELOG.md"
           git commit -m "ci(changelog): Update CHANGELOG for $CHART" --no-verify
@@ -98,7 +103,7 @@ jobs:
       - name: check-release-stream
         id: check-release-stream
         run: |
-          version=$(echo "${{ inputs.tag }}" | sed -r 's/.*-([0-9]+\.[0-9]+\.[0-9]+.*)/\1/g')
+          version=$(echo "${{ needs.init.outputs.tag }}" | sed -r 's/.*-([0-9]+\.[0-9]+\.[0-9]+.*)/\1/g')
           if [[ "$version" == *"-canary"* ]]; then
             release_stream="canary"
           else
