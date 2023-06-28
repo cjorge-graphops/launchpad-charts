@@ -33,7 +33,7 @@ jobs:
           if [ -n "${{ inputs.tag }}" ]; then
             tag="${{ inputs.tag }}"
           else
-            tag="${{ context.github.ref_name }}
+            tag="${{ github.ref_name }}
           fi
           echo "tag=${{ inputs.tag }}" >> $GITHUB_OUTPUT
           name=$(echo "$tag" | sed -r 's/^(.*)-([v]?[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+)(-canary.)?([[:digit:]]+)?$/\1/g')
