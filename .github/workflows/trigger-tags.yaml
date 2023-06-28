@@ -64,7 +64,7 @@ jobs:
       - name: Get chart name
         id: chart_name
         run: |
-          name="$(echo {{ inputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+/\1/g')"
+          name="$(echo ${{ inputs.tag }} | sed -E 's/(.*)-[[:digit:]]+.[[:digit:]]+.[[:digit:]]+/\1/g')"
           echo "name=$name" >> $GITHUB_OUTPUT
 
       - name: Generate changelog and commit
