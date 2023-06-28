@@ -40,6 +40,8 @@ jobs:
 
   update-changelog:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # for updating changelog
     needs:
       - init
     if: ${{ needs.init.outputs.prerelease == '' }}
