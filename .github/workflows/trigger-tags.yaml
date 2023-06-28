@@ -77,7 +77,7 @@ jobs:
           yarn git-cliff -c ".cliff.toml" --include-path "charts/$CHART/**" > "charts/$CHART/CHANGELOG.md"
 
           git add "charts/$CHART/CHANGELOG.md"
-          git commit -m "chore(changelog): Update CHANGELOG for $CHART"
+          git commit -m "chore(changelog): Update CHANGELOG for $CHART" --no-verify
           git push
 
   call-release:
