@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### <!-- 0 -->✨ Features
 
+- Release test 0.2.2 ([c8668d](https://github.com/graphops/launchpad-charts/commit/c8668d96b108f74815bf05b2d3b823ee711c68ec))
 - More permissive defaults, upgrade to appVersion 3.11.0 ([fd3098](https://github.com/graphops/launchpad-charts/commit/fd3098e75ea7310ea599f4a896bdd86ab9b0cd3f))
 - Release (#14) ([e57b8c](https://github.com/graphops/launchpad-charts/commit/e57b8cefacee381173332eacb52c4ce496eb886a))
 
