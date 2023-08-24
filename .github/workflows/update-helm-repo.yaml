@@ -1,6 +1,9 @@
 name: Update Helm Repository
 
 on:
+  release:
+    types: [published]
+
   workflow_dispatch:
     inputs:
       repo:
