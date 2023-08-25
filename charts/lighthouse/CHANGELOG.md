@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [lighthouse-0.2.3](https://github.com/graphops/launchpad-charts/compare/lighthouse-0.2.2...lighthouse-0.2.3) - 2023-08-24
+
+### <!-- 0 -->✨ Features
+
+- Release lighthouse ([7169b5](https://github.com/graphops/launchpad-charts/commit/7169b518d3ee8507120b1e6a510bbe6af500449c))
+
 ## [lighthouse-0.2.2](https://github.com/graphops/launchpad-charts/compare/lighthouse-0.2.1...lighthouse-0.2.2) - 2023-08-24
 
 ### <!-- 0 -->✨ Features
