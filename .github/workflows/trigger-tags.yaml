@@ -49,7 +49,7 @@ jobs:
       contents: write # for updating changelog
     needs:
       - init
-    if: ${{ needs.init.outputs.prerelease == '' }}
+    if: ${{ (needs.init.outputs.prerelease == '') && (false) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
