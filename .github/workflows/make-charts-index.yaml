@@ -53,7 +53,7 @@ jobs:
             filter=(jq '.[] | select(.isDraft == false)')
           fi
 
-          for chart_url in $(cat releases.json| "${filter[@]}" | jq -c '.[].releaseAssets.nodes[].downloadUrl'); do
+          for chart_url in $(cat releases.json| "${filter[@]}" | jq -c '.releaseAssets.nodes[].downloadUrl'); do
             wget -P .releases/ "$chart_url";
           done
 
