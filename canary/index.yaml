@@ -1123,16 +1123,6 @@ entries:
   nethermind:
     - apiVersion: v2
       appVersion: 1.16.0-unstable
-      created: "2023-09-26T18:31:39Z"
-      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
-      digest: b7ab10fb71f6121a172c42700c008a9a295eef5e3cde0a2acabaaa639b6d341d
-      name: nethermind
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.16/nethermind-0.3.1-canary.16.tgz
-      version: 0.3.1-canary.16
-    - apiVersion: v2
-      appVersion: 1.16.0-unstable
       created: "2023-07-18T11:31:21Z"
       description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
       digest: fa8a228e9a6e3716e180181f85eb6f615fb3e45c0394f76770788c80d093f1dd
@@ -1252,16 +1242,6 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.0/nethermind-0.3.0.tgz
       version: 0.3.0
   nimbus:
-    - apiVersion: v2
-      appVersion: multiarch-v23.9.1
-      created: "2023-09-26T18:31:40Z"
-      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
-      digest: a0ca0d7c082f6a89c5345001ba6d64d6127960bc488cac6cb6eac0172a85c4fd
-      name: nimbus
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.16/nimbus-0.3.1-canary.16.tgz
-      version: 0.3.1-canary.16
     - apiVersion: v2
       appVersion: multiarch-v23.7.0
       created: "2023-08-09T19:58:19Z"
@@ -1614,4 +1594,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-09-26T18:33:11.055205028Z"
+generated: "2023-09-26T18:33:28.23300638Z"
