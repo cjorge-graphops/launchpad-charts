@@ -1303,6 +1303,16 @@ entries:
       version: 0.3.0
   nimbus:
     - apiVersion: v2
+      appVersion: multiarch-v23.10.0
+      created: "2023-10-24T11:13:30Z"
+      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
+      digest: 6fec9f9bef52bb33575e5278b79c62dfc396bd70fbc448a879b605c9a6dde651
+      name: nimbus
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.17/nimbus-0.3.1-canary.17.tgz
+      version: 0.3.1-canary.17
+    - apiVersion: v2
       appVersion: multiarch-v23.9.1
       created: "2023-09-26T18:31:40Z"
       description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
@@ -1664,4 +1674,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-10-15T04:49:58.423705046Z"
+generated: "2023-10-24T11:15:10.585095311Z"
