@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2023-10-31T17:48:47Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 3e87f11e5f7bd84b7a656a639eec1882c9a634ef0e125bc5c7cd335b66696c40
+      name: arbitrum-classic
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.16/arbitrum-classic-0.1.24-canary.16.tgz
+      version: 0.1.24-canary.16
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-10-31T16:14:11Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: ba26ef14ca65733b1fe3c324789df531232ccc93f4f5f08ebeb87c4cdce53285
@@ -263,6 +273,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
       version: 0.1.1
   arbitrum-nitro:
+    - apiVersion: v2
+      appVersion: v2.1.2-4c55843-slim-arm64v8
+      created: "2023-10-31T17:48:47Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: a8d7ddc66a55ff58cd3a9d481dd2f631e970b0e6ef760d1d268797306ebe325e
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.16/arbitrum-nitro-0.1.12-canary.16.tgz
+      version: 0.1.12-canary.16
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
       created: "2023-10-31T16:14:11Z"
@@ -1924,4 +1944,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-10-31T16:51:30.594292713Z"
+generated: "2023-10-31T17:51:32.50341392Z"
