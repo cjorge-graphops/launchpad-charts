@@ -135,16 +135,6 @@
         "commitMessageExtra": ""
       },
 
-    "hostRules": [
-      {
-        "hostType": "docker",
-        "matchHost": "docker.io",
-        "username": "graphops",
-        "password": "${RENOVATE_TEST}"
-      }
-    ],
-
-
       {
         "matchManagers": ["helm-requirements", "helm-values", "regex"],
         "postUpgradeTasks": {
@@ -160,6 +150,15 @@
         "fileFilters": ["charts/**/Chart.yaml"],
         "executionMode": "branch"
         },
+      }
+    ],
+
+    "hostRules": [
+      {
+        "hostType": "docker",
+        "matchHost": "docker.io",
+        "username": "graphops",
+        "password": "${RENOVATE_TEST}"
       }
     ]
 }
