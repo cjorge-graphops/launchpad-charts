@@ -537,6 +537,16 @@ entries:
       version: 0.6.1-canary.1
     - apiVersion: v2
       appVersion: v2.34.0
+      created: "2023-10-31T12:20:38Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 447feef9a7592a4754fbc4656af8bab9de780ab05ad05a8adb413a7905c71df3
+      name: erigon
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.12/erigon-0.5.2-canary.12.tgz
+      version: 0.5.2-canary.12
+    - apiVersion: v2
+      appVersion: v2.34.0
       created: "2023-10-15T04:47:59Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: e3447186b4ec8d4afa1dbc29a059c03a945cf729b12d82c01acc16ca209ec267
@@ -646,6 +656,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.1/erigon-0.5.2-canary.1.tgz
       version: 0.5.2-canary.1
   graph-network-indexer:
+    - apiVersion: v2
+      appVersion: v0.20.23
+      created: "2023-10-31T12:20:27Z"
+      description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
+      digest: 5612d6e162dcdc1ca2f81ebc90452bf9a9ff5b4868fa804a1cfe9c47bee7211f
+      name: graph-network-indexer
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.16/graph-network-indexer-0.1.3-canary.16.tgz
+      version: 0.1.3-canary.16
     - apiVersion: v2
       appVersion: v0.20.23
       created: "2023-10-15T04:47:50Z"
@@ -767,6 +787,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
       version: 0.1.2
   graph-node:
+    - apiVersion: v2
+      appVersion: v0.28.2
+      created: "2023-10-31T12:20:27Z"
+      description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node) inside Kubernetes with ease
+      digest: b6b82544b3684e250a7bebb3f600590a4573d7e22f19be0adc9777f5cbc30ef5
+      name: graph-node
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.16/graph-node-0.1.6-canary.16.tgz
+      version: 0.1.6-canary.16
     - apiVersion: v2
       appVersion: v0.28.2
       created: "2023-10-15T04:47:50Z"
@@ -1161,6 +1191,16 @@ entries:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
+      created: "2023-10-31T12:20:39Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 3a0f53008f24e1a8b18fd18ad10d4928b00697d5c173cec1f16fe4fcabe92c8c
+      name: nethermind
+      type: application
+      urls:
+        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.18/nethermind-0.3.1-canary.18.tgz
+      version: 0.3.1-canary.18
     - apiVersion: v2
       appVersion: 1.16.0-unstable
       created: "2023-10-15T04:48:10Z"
@@ -1674,4 +1714,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-10-24T11:15:10.585095311Z"
+generated: "2023-10-31T12:22:17.150313433Z"
