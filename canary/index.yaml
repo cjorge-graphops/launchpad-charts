@@ -1756,16 +1756,6 @@ entries:
   proxyd:
     - apiVersion: v2
       appVersion: 3.11.0
-      created: "2023-10-31T16:15:02Z"
-      description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
-      digest: 2452c8f7f3a04a6a7481f5dd6f844c8acfcbe6f2744492c5039133e882c92e68
-      name: proxyd
-      type: application
-      urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.3-canary.3/proxyd-0.2.3-canary.3.tgz
-      version: 0.2.3-canary.3
-    - apiVersion: v2
-      appVersion: 3.11.0
       created: "2023-10-31T15:34:37Z"
       description: Deploy and scale [proxyd](https://github.com/ethereum-optimism/optimism/tree/develop/proxyd) inside Kubernetes with ease
       digest: 3655897b3573fa612bb85b67f59303102e801a58488f2bcc77da34ffb22d112c
@@ -1904,4 +1894,4 @@ entries:
       urls:
         - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-10-31T16:16:25.343031444Z"
+generated: "2023-10-31T16:16:24.351184429Z"
