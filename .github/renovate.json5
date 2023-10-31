@@ -134,6 +134,17 @@
         "commitMessageTopic": "{{groupSlug}} dependencies",
         "commitMessageExtra": ""
       },
+
+    "hostRules": [
+      {
+        "hostType": "docker",
+        "matchHost": "docker.io",
+        "username": "graphops",
+        "password": "${RENOVATE_TEST}"
+      }
+    ],
+
+
       {
         "matchManagers": ["helm-requirements", "helm-values", "regex"],
         "postUpgradeTasks": {
