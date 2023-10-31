@@ -151,13 +151,5 @@
         "executionMode": "branch"
         },
       }
-    ],
-
-    "hostRules": [
-      {
-        "hostType": "docker",
-        "username": "calina",
-        "password": "{{ secrets.DOCKERHUB_TOKEN }}"
-      }
     ]
 }
