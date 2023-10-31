@@ -16,7 +16,7 @@
     "ignoreDeps": [
     ],
 
-    "pinDigests": true,
+    "pinDigests": false
 
     "enabledManagers": ["helm-values", "helmv3", "regex"],
 
