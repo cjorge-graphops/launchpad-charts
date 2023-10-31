@@ -48,7 +48,7 @@
       },
       {
         "matchPackageNames": ["offchainlabs/nitro-node"],
-        "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<prerelease>[a-zA-Z0-9]+))?$"
+        "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<build>[a-zA-Z0-9]+))?$"
       },
       // Group our dependencies
       {
