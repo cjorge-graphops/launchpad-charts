@@ -25,7 +25,7 @@
         "datasourceTemplate": "docker",
         "fileMatch": ["^charts/.*/Chart\\.yaml$"],
         "matchStrings": [
-          "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
+          "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\"?(?<currentValue>[\\w+\\.\\-]*)\""
         ]
       }
     ],
@@ -45,14 +45,6 @@
         "matchPackageNames": ["ghcr.io/graphprotocol/indexer-service"],
         "allowedVersions": "!/\\-alpha.*$/",
         "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-alpha\\.(?<prerelease>\\d+))?$"
-      },
-      {
-        "matchPackageNames": ["offchainlabs/nitro-node"],
-        "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<prerelease>\\w+))?$"
-      },
-      {
-        "matchPackageNames": ["offchainlabs/arb-node"],
-        "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<prerelease>\\w+))?$"
       },
       // Group our dependencies
       {
