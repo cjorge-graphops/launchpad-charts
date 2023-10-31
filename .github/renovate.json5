@@ -156,7 +156,6 @@
     "hostRules": [
       {
         "hostType": "docker",
-        "matchHost": "docker.io",
         "username": "graphops",
         "password": "${RENOVATE_TEST}"
       }
