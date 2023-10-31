@@ -156,8 +156,8 @@
     "hostRules": [
       {
 	"matchHost": "docker.io",
-        "username": "graphops",
-        "password": "${RENOVATE_TEST}"
+        "username": "calina",
+        "password": "dckr_pat_V7BCK5_pUpK8zcwtHb26_CfZov8"
       }
     ]
 }
