@@ -1202,6 +1202,16 @@ entries:
   lighthouse:
     - apiVersion: v2
       appVersion: v3.4.0
+      created: "2023-12-08T13:57:02Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 8a3247bc1d61f9b9470a5ce574aac7efbdc7581e217f48a8184d9a1c0febab08
+      name: lighthouse
+      type: application
+      urls:
+        - lighthouse-0.4.1-canary.2.tgz
+      version: 0.4.1-canary.2
+    - apiVersion: v2
+      appVersion: v3.4.0
       created: "2023-12-08T13:51:30Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: 5e62cbca93846773e42b7f051a75ac99aac0e88bb0b10b0fb082fb311ce8f1d3
@@ -1974,4 +1984,4 @@ entries:
       urls:
         - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-12-08T13:54:44.897506907Z"
+generated: "2023-12-08T13:58:50.80388669Z"
