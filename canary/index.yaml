@@ -9,7 +9,7 @@ entries:
       name: Avalanche
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/Avalanche-0.1.0/Avalanche-0.1.0.tgz
+        - Avalanche-0.1.0.tgz
       version: 0.1.0
   arbitrum-classic:
     - apiVersion: v2
@@ -20,7 +20,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.17/arbitrum-classic-0.1.24-canary.17.tgz
+        - arbitrum-classic-0.1.24-canary.17.tgz
       version: 0.1.24-canary.17
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -30,7 +30,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.16/arbitrum-classic-0.1.24-canary.16.tgz
+        - arbitrum-classic-0.1.24-canary.16.tgz
       version: 0.1.24-canary.16
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -40,7 +40,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.15/arbitrum-classic-0.1.24-canary.15.tgz
+        - arbitrum-classic-0.1.24-canary.15.tgz
       version: 0.1.24-canary.15
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -50,7 +50,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.14/arbitrum-classic-0.1.24-canary.14.tgz
+        - arbitrum-classic-0.1.24-canary.14.tgz
       version: 0.1.24-canary.14
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -60,7 +60,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.13/arbitrum-classic-0.1.24-canary.13.tgz
+        - arbitrum-classic-0.1.24-canary.13.tgz
       version: 0.1.24-canary.13
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -70,7 +70,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.12/arbitrum-classic-0.1.24-canary.12.tgz
+        - arbitrum-classic-0.1.24-canary.12.tgz
       version: 0.1.24-canary.12
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -80,7 +80,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.11/arbitrum-classic-0.1.24-canary.11.tgz
+        - arbitrum-classic-0.1.24-canary.11.tgz
       version: 0.1.24-canary.11
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -90,7 +90,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.10/arbitrum-classic-0.1.24-canary.10.tgz
+        - arbitrum-classic-0.1.24-canary.10.tgz
       version: 0.1.24-canary.10
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -100,7 +100,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.9/arbitrum-classic-0.1.24-canary.9.tgz
+        - arbitrum-classic-0.1.24-canary.9.tgz
       version: 0.1.24-canary.9
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -110,7 +110,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.8/arbitrum-classic-0.1.24-canary.8.tgz
+        - arbitrum-classic-0.1.24-canary.8.tgz
       version: 0.1.24-canary.8
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -120,7 +120,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.7/arbitrum-classic-0.1.24-canary.7.tgz
+        - arbitrum-classic-0.1.24-canary.7.tgz
       version: 0.1.24-canary.7
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -130,7 +130,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.6/arbitrum-classic-0.1.24-canary.6.tgz
+        - arbitrum-classic-0.1.24-canary.6.tgz
       version: 0.1.24-canary.6
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -140,7 +140,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.24-canary.5/arbitrum-classic-0.1.24-canary.5.tgz
+        - arbitrum-classic-0.1.24-canary.5.tgz
       version: 0.1.24-canary.5
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -150,7 +150,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.23/arbitrum-classic-0.1.23.tgz
+        - arbitrum-classic-0.1.23.tgz
       version: 0.1.23
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -160,7 +160,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.22/arbitrum-classic-0.1.22.tgz
+        - arbitrum-classic-0.1.22.tgz
       version: 0.1.22
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -170,7 +170,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.21/arbitrum-classic-0.1.21.tgz
+        - arbitrum-classic-0.1.21.tgz
       version: 0.1.21
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -180,7 +180,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.20/arbitrum-classic-0.1.20.tgz
+        - arbitrum-classic-0.1.20.tgz
       version: 0.1.20
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -190,7 +190,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.19/arbitrum-classic-0.1.19.tgz
+        - arbitrum-classic-0.1.19.tgz
       version: 0.1.19
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -200,7 +200,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.17/arbitrum-classic-0.1.17.tgz
+        - arbitrum-classic-0.1.17.tgz
       version: 0.1.17
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -210,7 +210,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.16/arbitrum-classic-0.1.16.tgz
+        - arbitrum-classic-0.1.16.tgz
       version: 0.1.16
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -220,7 +220,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.15/arbitrum-classic-0.1.15.tgz
+        - arbitrum-classic-0.1.15.tgz
       version: 0.1.15
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -230,7 +230,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.14/arbitrum-classic-0.1.14.tgz
+        - arbitrum-classic-0.1.14.tgz
       version: 0.1.14
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -240,7 +240,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.13/arbitrum-classic-0.1.13.tgz
+        - arbitrum-classic-0.1.13.tgz
       version: 0.1.13
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -250,7 +250,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.12/arbitrum-classic-0.1.12.tgz
+        - arbitrum-classic-0.1.12.tgz
       version: 0.1.12
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -260,7 +260,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.11/arbitrum-classic-0.1.11.tgz
+        - arbitrum-classic-0.1.11.tgz
       version: 0.1.11
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -270,7 +270,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.10/arbitrum-classic-0.1.10.tgz
+        - arbitrum-classic-0.1.10.tgz
       version: 0.1.10
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
@@ -280,7 +280,7 @@ entries:
       name: arbitrum-classic
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-classic-0.1.1/arbitrum-classic-0.1.1.tgz
+        - arbitrum-classic-0.1.1.tgz
       version: 0.1.1
   arbitrum-nitro:
     - apiVersion: v2
@@ -291,7 +291,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.17/arbitrum-nitro-0.1.12-canary.17.tgz
+        - arbitrum-nitro-0.1.12-canary.17.tgz
       version: 0.1.12-canary.17
     - apiVersion: v2
       appVersion: v2.1.2-4c55843-slim-arm64v8
@@ -301,7 +301,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.16/arbitrum-nitro-0.1.12-canary.16.tgz
+        - arbitrum-nitro-0.1.12-canary.16.tgz
       version: 0.1.12-canary.16
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -311,7 +311,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.15/arbitrum-nitro-0.1.12-canary.15.tgz
+        - arbitrum-nitro-0.1.12-canary.15.tgz
       version: 0.1.12-canary.15
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -321,7 +321,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.14/arbitrum-nitro-0.1.12-canary.14.tgz
+        - arbitrum-nitro-0.1.12-canary.14.tgz
       version: 0.1.12-canary.14
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -331,7 +331,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.13/arbitrum-nitro-0.1.12-canary.13.tgz
+        - arbitrum-nitro-0.1.12-canary.13.tgz
       version: 0.1.12-canary.13
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -341,7 +341,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.12/arbitrum-nitro-0.1.12-canary.12.tgz
+        - arbitrum-nitro-0.1.12-canary.12.tgz
       version: 0.1.12-canary.12
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -351,7 +351,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.11/arbitrum-nitro-0.1.12-canary.11.tgz
+        - arbitrum-nitro-0.1.12-canary.11.tgz
       version: 0.1.12-canary.11
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -361,7 +361,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.10/arbitrum-nitro-0.1.12-canary.10.tgz
+        - arbitrum-nitro-0.1.12-canary.10.tgz
       version: 0.1.12-canary.10
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -371,7 +371,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.9/arbitrum-nitro-0.1.12-canary.9.tgz
+        - arbitrum-nitro-0.1.12-canary.9.tgz
       version: 0.1.12-canary.9
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -381,7 +381,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.8/arbitrum-nitro-0.1.12-canary.8.tgz
+        - arbitrum-nitro-0.1.12-canary.8.tgz
       version: 0.1.12-canary.8
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -391,7 +391,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.7/arbitrum-nitro-0.1.12-canary.7.tgz
+        - arbitrum-nitro-0.1.12-canary.7.tgz
       version: 0.1.12-canary.7
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -401,7 +401,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.6/arbitrum-nitro-0.1.12-canary.6.tgz
+        - arbitrum-nitro-0.1.12-canary.6.tgz
       version: 0.1.12-canary.6
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -411,7 +411,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.12-canary.5/arbitrum-nitro-0.1.12-canary.5.tgz
+        - arbitrum-nitro-0.1.12-canary.5.tgz
       version: 0.1.12-canary.5
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -421,7 +421,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.10/arbitrum-nitro-0.1.10.tgz
+        - arbitrum-nitro-0.1.10.tgz
       version: 0.1.10
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -431,7 +431,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.8/arbitrum-nitro-0.1.8.tgz
+        - arbitrum-nitro-0.1.8.tgz
       version: 0.1.8
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -441,7 +441,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.7/arbitrum-nitro-0.1.7.tgz
+        - arbitrum-nitro-0.1.7.tgz
       version: 0.1.7
     - apiVersion: v2
       appVersion: v2.0.10-73224e3
@@ -451,7 +451,7 @@ entries:
       name: arbitrum-nitro
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/arbitrum-nitro-0.1.1/arbitrum-nitro-0.1.1.tgz
+        - arbitrum-nitro-0.1.1.tgz
       version: 0.1.1
   celo:
     - apiVersion: v2
@@ -462,7 +462,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.14/celo-0.1.10-canary.14.tgz
+        - celo-0.1.10-canary.14.tgz
       version: 0.1.10-canary.14
     - apiVersion: v2
       appVersion: 1.7.2
@@ -472,7 +472,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.13/celo-0.1.10-canary.13.tgz
+        - celo-0.1.10-canary.13.tgz
       version: 0.1.10-canary.13
     - apiVersion: v2
       appVersion: 1.7.2
@@ -482,7 +482,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.12/celo-0.1.10-canary.12.tgz
+        - celo-0.1.10-canary.12.tgz
       version: 0.1.10-canary.12
     - apiVersion: v2
       appVersion: 1.7.2
@@ -492,7 +492,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.11/celo-0.1.10-canary.11.tgz
+        - celo-0.1.10-canary.11.tgz
       version: 0.1.10-canary.11
     - apiVersion: v2
       appVersion: 1.7.2
@@ -502,7 +502,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.10/celo-0.1.10-canary.10.tgz
+        - celo-0.1.10-canary.10.tgz
       version: 0.1.10-canary.10
     - apiVersion: v2
       appVersion: 1.7.2
@@ -512,7 +512,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.9/celo-0.1.10-canary.9.tgz
+        - celo-0.1.10-canary.9.tgz
       version: 0.1.10-canary.9
     - apiVersion: v2
       appVersion: 1.7.2
@@ -522,7 +522,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.8/celo-0.1.10-canary.8.tgz
+        - celo-0.1.10-canary.8.tgz
       version: 0.1.10-canary.8
     - apiVersion: v2
       appVersion: 1.7.2
@@ -532,7 +532,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.7/celo-0.1.10-canary.7.tgz
+        - celo-0.1.10-canary.7.tgz
       version: 0.1.10-canary.7
     - apiVersion: v2
       appVersion: 1.7.2
@@ -542,7 +542,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.6/celo-0.1.10-canary.6.tgz
+        - celo-0.1.10-canary.6.tgz
       version: 0.1.10-canary.6
     - apiVersion: v2
       appVersion: 1.7.2
@@ -552,7 +552,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.10-canary.5/celo-0.1.10-canary.5.tgz
+        - celo-0.1.10-canary.5.tgz
       version: 0.1.10-canary.5
     - apiVersion: v2
       appVersion: 1.7.2
@@ -562,7 +562,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.9/celo-0.1.9.tgz
+        - celo-0.1.9.tgz
       version: 0.1.9
     - apiVersion: v2
       appVersion: 1.7.2
@@ -572,7 +572,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.5/celo-0.1.5.tgz
+        - celo-0.1.5.tgz
       version: 0.1.5
     - apiVersion: v2
       appVersion: 1.7.2
@@ -582,7 +582,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.2/celo-0.1.2.tgz
+        - celo-0.1.2.tgz
       version: 0.1.2
     - apiVersion: v2
       appVersion: 1.7.2
@@ -592,7 +592,7 @@ entries:
       name: celo
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/celo-0.1.0/celo-0.1.0.tgz
+        - celo-0.1.0.tgz
       version: 0.1.0
   erigon:
     - apiVersion: v2
@@ -603,7 +603,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-canary.2/erigon-0.6.1-canary.2.tgz
+        - erigon-0.6.1-canary.2.tgz
       version: 0.6.1-canary.2
     - apiVersion: v2
       appVersion: v2.34.0
@@ -613,7 +613,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.6.1-canary.1/erigon-0.6.1-canary.1.tgz
+        - erigon-0.6.1-canary.1.tgz
       version: 0.6.1-canary.1
     - apiVersion: v2
       appVersion: v2.34.0
@@ -623,7 +623,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.14/erigon-0.5.2-canary.14.tgz
+        - erigon-0.5.2-canary.14.tgz
       version: 0.5.2-canary.14
     - apiVersion: v2
       appVersion: v2.34.0
@@ -633,7 +633,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.13/erigon-0.5.2-canary.13.tgz
+        - erigon-0.5.2-canary.13.tgz
       version: 0.5.2-canary.13
     - apiVersion: v2
       appVersion: v2.34.0
@@ -643,7 +643,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.12/erigon-0.5.2-canary.12.tgz
+        - erigon-0.5.2-canary.12.tgz
       version: 0.5.2-canary.12
     - apiVersion: v2
       appVersion: v2.34.0
@@ -653,7 +653,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.11/erigon-0.5.2-canary.11.tgz
+        - erigon-0.5.2-canary.11.tgz
       version: 0.5.2-canary.11
     - apiVersion: v2
       appVersion: v2.34.0
@@ -663,7 +663,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.10/erigon-0.5.2-canary.10.tgz
+        - erigon-0.5.2-canary.10.tgz
       version: 0.5.2-canary.10
     - apiVersion: v2
       appVersion: v2.34.0
@@ -673,7 +673,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.9/erigon-0.5.2-canary.9.tgz
+        - erigon-0.5.2-canary.9.tgz
       version: 0.5.2-canary.9
     - apiVersion: v2
       appVersion: v2.34.0
@@ -683,7 +683,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.8/erigon-0.5.2-canary.8.tgz
+        - erigon-0.5.2-canary.8.tgz
       version: 0.5.2-canary.8
     - apiVersion: v2
       appVersion: v2.34.0
@@ -693,7 +693,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.7/erigon-0.5.2-canary.7.tgz
+        - erigon-0.5.2-canary.7.tgz
       version: 0.5.2-canary.7
     - apiVersion: v2
       appVersion: v2.34.0
@@ -703,7 +703,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.6/erigon-0.5.2-canary.6.tgz
+        - erigon-0.5.2-canary.6.tgz
       version: 0.5.2-canary.6
     - apiVersion: v2
       appVersion: v2.34.0
@@ -713,7 +713,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.5/erigon-0.5.2-canary.5.tgz
+        - erigon-0.5.2-canary.5.tgz
       version: 0.5.2-canary.5
     - apiVersion: v2
       appVersion: v2.34.0
@@ -723,7 +723,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.4/erigon-0.5.2-canary.4.tgz
+        - erigon-0.5.2-canary.4.tgz
       version: 0.5.2-canary.4
     - apiVersion: v2
       appVersion: v2.34.0
@@ -733,7 +733,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.3/erigon-0.5.2-canary.3.tgz
+        - erigon-0.5.2-canary.3.tgz
       version: 0.5.2-canary.3
     - apiVersion: v2
       appVersion: v2.34.0
@@ -743,7 +743,7 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.2/erigon-0.5.2-canary.2.tgz
+        - erigon-0.5.2-canary.2.tgz
       version: 0.5.2-canary.2
     - apiVersion: v2
       appVersion: v2.34.0
@@ -753,9 +753,19 @@ entries:
       name: erigon
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/erigon-0.5.2-canary.1/erigon-0.5.2-canary.1.tgz
+        - erigon-0.5.2-canary.1.tgz
       version: 0.5.2-canary.1
   graph-network-indexer:
+    - apiVersion: v2
+      appVersion: v0.21.4
+      created: "2024-08-01T15:44:07Z"
+      description: Deploy and scale the [Graph Network Indexer](https://github.com/graphprotocol/indexer) components inside Kubernetes with ease
+      digest: f60e88cf8904be9b3fe032b1c433dbc25f1ef5f4831f669aa6580fdebf10b9e4
+      name: graph-network-indexer
+      type: application
+      urls:
+        - graph-network-indexer-0.1.3-canary.18.tgz
+      version: 0.1.3-canary.18
     - apiVersion: v2
       appVersion: v0.20.23
       created: "2023-10-31T16:49:40Z"
@@ -764,7 +774,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.17/graph-network-indexer-0.1.3-canary.17.tgz
+        - graph-network-indexer-0.1.3-canary.17.tgz
       version: 0.1.3-canary.17
     - apiVersion: v2
       appVersion: v0.20.23
@@ -774,7 +784,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.16/graph-network-indexer-0.1.3-canary.16.tgz
+        - graph-network-indexer-0.1.3-canary.16.tgz
       version: 0.1.3-canary.16
     - apiVersion: v2
       appVersion: v0.20.23
@@ -784,7 +794,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.15/graph-network-indexer-0.1.3-canary.15.tgz
+        - graph-network-indexer-0.1.3-canary.15.tgz
       version: 0.1.3-canary.15
     - apiVersion: v2
       appVersion: v0.20.22
@@ -794,7 +804,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.14/graph-network-indexer-0.1.3-canary.14.tgz
+        - graph-network-indexer-0.1.3-canary.14.tgz
       version: 0.1.3-canary.14
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -804,7 +814,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.13/graph-network-indexer-0.1.3-canary.13.tgz
+        - graph-network-indexer-0.1.3-canary.13.tgz
       version: 0.1.3-canary.13
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -814,7 +824,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.12/graph-network-indexer-0.1.3-canary.12.tgz
+        - graph-network-indexer-0.1.3-canary.12.tgz
       version: 0.1.3-canary.12
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -824,7 +834,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.11/graph-network-indexer-0.1.3-canary.11.tgz
+        - graph-network-indexer-0.1.3-canary.11.tgz
       version: 0.1.3-canary.11
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -834,7 +844,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.10/graph-network-indexer-0.1.3-canary.10.tgz
+        - graph-network-indexer-0.1.3-canary.10.tgz
       version: 0.1.3-canary.10
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -844,7 +854,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.9/graph-network-indexer-0.1.3-canary.9.tgz
+        - graph-network-indexer-0.1.3-canary.9.tgz
       version: 0.1.3-canary.9
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -854,7 +864,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.8/graph-network-indexer-0.1.3-canary.8.tgz
+        - graph-network-indexer-0.1.3-canary.8.tgz
       version: 0.1.3-canary.8
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -864,7 +874,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.7/graph-network-indexer-0.1.3-canary.7.tgz
+        - graph-network-indexer-0.1.3-canary.7.tgz
       version: 0.1.3-canary.7
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -874,7 +884,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.6/graph-network-indexer-0.1.3-canary.6.tgz
+        - graph-network-indexer-0.1.3-canary.6.tgz
       version: 0.1.3-canary.6
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -884,7 +894,7 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.3-canary.5/graph-network-indexer-0.1.3-canary.5.tgz
+        - graph-network-indexer-0.1.3-canary.5.tgz
       version: 0.1.3-canary.5
     - apiVersion: v2
       appVersion: v0.20.5-alpha.1
@@ -894,9 +904,19 @@ entries:
       name: graph-network-indexer
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-network-indexer-0.1.2/graph-network-indexer-0.1.2.tgz
+        - graph-network-indexer-0.1.2.tgz
       version: 0.1.2
   graph-node:
+    - apiVersion: v2
+      appVersion: v0.28.2
+      created: "2024-08-01T15:44:07Z"
+      description: Deploy and scale [Graph Node](https://github.com/graphprotocol/graph-node) inside Kubernetes with ease
+      digest: 49abe92e20349570df6f1bc2e7aa5cafc0dec67d53bda38d9a0bcb01fa45fd46
+      name: graph-node
+      type: application
+      urls:
+        - graph-node-0.1.6-canary.19.tgz
+      version: 0.1.6-canary.19
     - apiVersion: v2
       appVersion: v0.28.2
       created: "2023-10-31T16:49:40Z"
@@ -905,7 +925,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.18/graph-node-0.1.6-canary.18.tgz
+        - graph-node-0.1.6-canary.18.tgz
       version: 0.1.6-canary.18
     - apiVersion: v2
       appVersion: v0.28.2
@@ -915,7 +935,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.17/graph-node-0.1.6-canary.17.tgz
+        - graph-node-0.1.6-canary.17.tgz
       version: 0.1.6-canary.17
     - apiVersion: v2
       appVersion: v0.28.2
@@ -925,7 +945,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.16/graph-node-0.1.6-canary.16.tgz
+        - graph-node-0.1.6-canary.16.tgz
       version: 0.1.6-canary.16
     - apiVersion: v2
       appVersion: v0.28.2
@@ -935,7 +955,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.15/graph-node-0.1.6-canary.15.tgz
+        - graph-node-0.1.6-canary.15.tgz
       version: 0.1.6-canary.15
     - apiVersion: v2
       appVersion: v0.28.2
@@ -945,7 +965,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.14/graph-node-0.1.6-canary.14.tgz
+        - graph-node-0.1.6-canary.14.tgz
       version: 0.1.6-canary.14
     - apiVersion: v2
       appVersion: v0.28.2
@@ -955,7 +975,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.13/graph-node-0.1.6-canary.13.tgz
+        - graph-node-0.1.6-canary.13.tgz
       version: 0.1.6-canary.13
     - apiVersion: v2
       appVersion: v0.28.2
@@ -965,7 +985,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.12/graph-node-0.1.6-canary.12.tgz
+        - graph-node-0.1.6-canary.12.tgz
       version: 0.1.6-canary.12
     - apiVersion: v2
       appVersion: v0.28.2
@@ -975,7 +995,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.11/graph-node-0.1.6-canary.11.tgz
+        - graph-node-0.1.6-canary.11.tgz
       version: 0.1.6-canary.11
     - apiVersion: v2
       appVersion: v0.28.2
@@ -985,7 +1005,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.10/graph-node-0.1.6-canary.10.tgz
+        - graph-node-0.1.6-canary.10.tgz
       version: 0.1.6-canary.10
     - apiVersion: v2
       appVersion: v0.28.2
@@ -995,7 +1015,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.9/graph-node-0.1.6-canary.9.tgz
+        - graph-node-0.1.6-canary.9.tgz
       version: 0.1.6-canary.9
     - apiVersion: v2
       appVersion: v0.28.2
@@ -1005,7 +1025,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.8/graph-node-0.1.6-canary.8.tgz
+        - graph-node-0.1.6-canary.8.tgz
       version: 0.1.6-canary.8
     - apiVersion: v2
       appVersion: v0.28.2
@@ -1015,7 +1035,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.7/graph-node-0.1.6-canary.7.tgz
+        - graph-node-0.1.6-canary.7.tgz
       version: 0.1.6-canary.7
     - apiVersion: v2
       appVersion: v0.28.2
@@ -1025,7 +1045,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.6/graph-node-0.1.6-canary.6.tgz
+        - graph-node-0.1.6-canary.6.tgz
       version: 0.1.6-canary.6
     - apiVersion: v2
       appVersion: v0.28.2
@@ -1035,7 +1055,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.6-canary.5/graph-node-0.1.6-canary.5.tgz
+        - graph-node-0.1.6-canary.5.tgz
       version: 0.1.6-canary.5
     - apiVersion: v2
       appVersion: v0.28.2
@@ -1045,7 +1065,7 @@ entries:
       name: graph-node
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-node-0.1.5/graph-node-0.1.5.tgz
+        - graph-node-0.1.5.tgz
       version: 0.1.5
   graph-toolbox:
     - apiVersion: v2
@@ -1056,7 +1076,7 @@ entries:
       name: graph-toolbox
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/graph-toolbox-0.1.0/graph-toolbox-0.1.0.tgz
+        - graph-toolbox-0.1.0.tgz
       version: 0.1.0
   heimdall:
     - apiVersion: v2
@@ -1067,7 +1087,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.17/heimdall-1.1.3-canary.17.tgz
+        - heimdall-1.1.3-canary.17.tgz
       version: 1.1.3-canary.17
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1077,7 +1097,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.16/heimdall-1.1.3-canary.16.tgz
+        - heimdall-1.1.3-canary.16.tgz
       version: 1.1.3-canary.16
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1087,7 +1107,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.15/heimdall-1.1.3-canary.15.tgz
+        - heimdall-1.1.3-canary.15.tgz
       version: 1.1.3-canary.15
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1097,7 +1117,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.14/heimdall-1.1.3-canary.14.tgz
+        - heimdall-1.1.3-canary.14.tgz
       version: 1.1.3-canary.14
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1107,7 +1127,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.13/heimdall-1.1.3-canary.13.tgz
+        - heimdall-1.1.3-canary.13.tgz
       version: 1.1.3-canary.13
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1117,7 +1137,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.12/heimdall-1.1.3-canary.12.tgz
+        - heimdall-1.1.3-canary.12.tgz
       version: 1.1.3-canary.12
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1127,7 +1147,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.11/heimdall-1.1.3-canary.11.tgz
+        - heimdall-1.1.3-canary.11.tgz
       version: 1.1.3-canary.11
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1137,7 +1157,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.10/heimdall-1.1.3-canary.10.tgz
+        - heimdall-1.1.3-canary.10.tgz
       version: 1.1.3-canary.10
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1147,7 +1167,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.9/heimdall-1.1.3-canary.9.tgz
+        - heimdall-1.1.3-canary.9.tgz
       version: 1.1.3-canary.9
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1157,7 +1177,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.8/heimdall-1.1.3-canary.8.tgz
+        - heimdall-1.1.3-canary.8.tgz
       version: 1.1.3-canary.8
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1167,7 +1187,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.7/heimdall-1.1.3-canary.7.tgz
+        - heimdall-1.1.3-canary.7.tgz
       version: 1.1.3-canary.7
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1177,7 +1197,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.6/heimdall-1.1.3-canary.6.tgz
+        - heimdall-1.1.3-canary.6.tgz
       version: 1.1.3-canary.6
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1187,7 +1207,7 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.3-canary.5/heimdall-1.1.3-canary.5.tgz
+        - heimdall-1.1.3-canary.5.tgz
       version: 1.1.3-canary.5
     - apiVersion: v2
       appVersion: v0.3.0
@@ -1197,9 +1217,29 @@ entries:
       name: heimdall
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/heimdall-1.1.2/heimdall-1.1.2.tgz
+        - heimdall-1.1.2.tgz
       version: 1.1.2
   lighthouse:
+    - apiVersion: v2
+      appVersion: v3.4.0
+      created: "2023-12-08T13:57:02Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 8a3247bc1d61f9b9470a5ce574aac7efbdc7581e217f48a8184d9a1c0febab08
+      name: lighthouse
+      type: application
+      urls:
+        - lighthouse-0.4.1-canary.2.tgz
+      version: 0.4.1-canary.2
+    - apiVersion: v2
+      appVersion: v3.4.0
+      created: "2023-12-08T13:51:30Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: 5e62cbca93846773e42b7f051a75ac99aac0e88bb0b10b0fb082fb311ce8f1d3
+      name: lighthouse
+      type: application
+      urls:
+        - lighthouse-0.4.1-canary.1.tgz
+      version: 0.4.1-canary.1
     - apiVersion: v2
       appVersion: v3.4.0
       created: "2023-10-31T16:14:38Z"
@@ -1208,7 +1248,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.5-canary.3/lighthouse-0.2.5-canary.3.tgz
+        - lighthouse-0.2.5-canary.3.tgz
       version: 0.2.5-canary.3
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1218,7 +1258,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.5-canary.2/lighthouse-0.2.5-canary.2.tgz
+        - lighthouse-0.2.5-canary.2.tgz
       version: 0.2.5-canary.2
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1228,7 +1268,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.5-canary.1/lighthouse-0.2.5-canary.1.tgz
+        - lighthouse-0.2.5-canary.1.tgz
       version: 0.2.5-canary.1
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1238,7 +1278,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.4/lighthouse-0.2.4.tgz
+        - lighthouse-0.2.4.tgz
       version: 0.2.4
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1248,7 +1288,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.3/lighthouse-0.2.3.tgz
+        - lighthouse-0.2.3.tgz
       version: 0.2.3
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1258,7 +1298,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.2/lighthouse-0.2.2.tgz
+        - lighthouse-0.2.2.tgz
       version: 0.2.2
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1268,7 +1308,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.13/lighthouse-0.2.1-canary.13.tgz
+        - lighthouse-0.2.1-canary.13.tgz
       version: 0.2.1-canary.13
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1278,7 +1318,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.12/lighthouse-0.2.1-canary.12.tgz
+        - lighthouse-0.2.1-canary.12.tgz
       version: 0.2.1-canary.12
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1288,7 +1328,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.11/lighthouse-0.2.1-canary.11.tgz
+        - lighthouse-0.2.1-canary.11.tgz
       version: 0.2.1-canary.11
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1298,7 +1338,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.10/lighthouse-0.2.1-canary.10.tgz
+        - lighthouse-0.2.1-canary.10.tgz
       version: 0.2.1-canary.10
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1308,7 +1348,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.9/lighthouse-0.2.1-canary.9.tgz
+        - lighthouse-0.2.1-canary.9.tgz
       version: 0.2.1-canary.9
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1318,7 +1358,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.8/lighthouse-0.2.1-canary.8.tgz
+        - lighthouse-0.2.1-canary.8.tgz
       version: 0.2.1-canary.8
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1328,7 +1368,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.7/lighthouse-0.2.1-canary.7.tgz
+        - lighthouse-0.2.1-canary.7.tgz
       version: 0.2.1-canary.7
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1338,7 +1378,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.6/lighthouse-0.2.1-canary.6.tgz
+        - lighthouse-0.2.1-canary.6.tgz
       version: 0.2.1-canary.6
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1348,7 +1388,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.1-canary.5/lighthouse-0.2.1-canary.5.tgz
+        - lighthouse-0.2.1-canary.5.tgz
       version: 0.2.1-canary.5
     - apiVersion: v2
       appVersion: v3.4.0
@@ -1358,7 +1398,7 @@ entries:
       name: lighthouse
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/lighthouse-0.2.0/lighthouse-0.2.0.tgz
+        - lighthouse-0.2.0.tgz
       version: 0.2.0
   nethermind:
     - apiVersion: v2
@@ -1369,7 +1409,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.20/nethermind-0.3.1-canary.20.tgz
+        - nethermind-0.3.1-canary.20.tgz
       version: 0.3.1-canary.20
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1379,7 +1419,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.19/nethermind-0.3.1-canary.19.tgz
+        - nethermind-0.3.1-canary.19.tgz
       version: 0.3.1-canary.19
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1389,7 +1429,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.18/nethermind-0.3.1-canary.18.tgz
+        - nethermind-0.3.1-canary.18.tgz
       version: 0.3.1-canary.18
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1399,7 +1439,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.17/nethermind-0.3.1-canary.17.tgz
+        - nethermind-0.3.1-canary.17.tgz
       version: 0.3.1-canary.17
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1409,7 +1449,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.16/nethermind-0.3.1-canary.16.tgz
+        - nethermind-0.3.1-canary.16.tgz
       version: 0.3.1-canary.16
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1419,7 +1459,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.15/nethermind-0.3.1-canary.15.tgz
+        - nethermind-0.3.1-canary.15.tgz
       version: 0.3.1-canary.15
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1429,7 +1469,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.14/nethermind-0.3.1-canary.14.tgz
+        - nethermind-0.3.1-canary.14.tgz
       version: 0.3.1-canary.14
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1439,7 +1479,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.13/nethermind-0.3.1-canary.13.tgz
+        - nethermind-0.3.1-canary.13.tgz
       version: 0.3.1-canary.13
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1449,7 +1489,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.12/nethermind-0.3.1-canary.12.tgz
+        - nethermind-0.3.1-canary.12.tgz
       version: 0.3.1-canary.12
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1459,7 +1499,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.11/nethermind-0.3.1-canary.11.tgz
+        - nethermind-0.3.1-canary.11.tgz
       version: 0.3.1-canary.11
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1469,7 +1509,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.10/nethermind-0.3.1-canary.10.tgz
+        - nethermind-0.3.1-canary.10.tgz
       version: 0.3.1-canary.10
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1479,7 +1519,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.9/nethermind-0.3.1-canary.9.tgz
+        - nethermind-0.3.1-canary.9.tgz
       version: 0.3.1-canary.9
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1489,7 +1529,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.8/nethermind-0.3.1-canary.8.tgz
+        - nethermind-0.3.1-canary.8.tgz
       version: 0.3.1-canary.8
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1499,7 +1539,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.7/nethermind-0.3.1-canary.7.tgz
+        - nethermind-0.3.1-canary.7.tgz
       version: 0.3.1-canary.7
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1509,7 +1549,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.6/nethermind-0.3.1-canary.6.tgz
+        - nethermind-0.3.1-canary.6.tgz
       version: 0.3.1-canary.6
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1519,7 +1559,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.1-canary.5/nethermind-0.3.1-canary.5.tgz
+        - nethermind-0.3.1-canary.5.tgz
       version: 0.3.1-canary.5
     - apiVersion: v2
       appVersion: 1.16.0-unstable
@@ -1529,7 +1569,7 @@ entries:
       name: nethermind
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nethermind-0.3.0/nethermind-0.3.0.tgz
+        - nethermind-0.3.0.tgz
       version: 0.3.0
   nimbus:
     - apiVersion: v2
@@ -1540,7 +1580,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.19/nimbus-0.3.1-canary.19.tgz
+        - nimbus-0.3.1-canary.19.tgz
       version: 0.3.1-canary.19
     - apiVersion: v2
       appVersion: multiarch-v23.10.0
@@ -1550,7 +1590,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.18/nimbus-0.3.1-canary.18.tgz
+        - nimbus-0.3.1-canary.18.tgz
       version: 0.3.1-canary.18
     - apiVersion: v2
       appVersion: multiarch-v23.10.0
@@ -1560,7 +1600,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.17/nimbus-0.3.1-canary.17.tgz
+        - nimbus-0.3.1-canary.17.tgz
       version: 0.3.1-canary.17
     - apiVersion: v2
       appVersion: multiarch-v23.9.1
@@ -1570,7 +1610,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.16/nimbus-0.3.1-canary.16.tgz
+        - nimbus-0.3.1-canary.16.tgz
       version: 0.3.1-canary.16
     - apiVersion: v2
       appVersion: multiarch-v23.7.0
@@ -1580,7 +1620,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.15/nimbus-0.3.1-canary.15.tgz
+        - nimbus-0.3.1-canary.15.tgz
       version: 0.3.1-canary.15
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1590,7 +1630,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.14/nimbus-0.3.1-canary.14.tgz
+        - nimbus-0.3.1-canary.14.tgz
       version: 0.3.1-canary.14
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1600,7 +1640,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.13/nimbus-0.3.1-canary.13.tgz
+        - nimbus-0.3.1-canary.13.tgz
       version: 0.3.1-canary.13
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1610,7 +1650,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.12/nimbus-0.3.1-canary.12.tgz
+        - nimbus-0.3.1-canary.12.tgz
       version: 0.3.1-canary.12
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1620,7 +1660,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.11/nimbus-0.3.1-canary.11.tgz
+        - nimbus-0.3.1-canary.11.tgz
       version: 0.3.1-canary.11
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1630,7 +1670,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.10/nimbus-0.3.1-canary.10.tgz
+        - nimbus-0.3.1-canary.10.tgz
       version: 0.3.1-canary.10
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1640,7 +1680,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.9/nimbus-0.3.1-canary.9.tgz
+        - nimbus-0.3.1-canary.9.tgz
       version: 0.3.1-canary.9
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1650,7 +1690,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.8/nimbus-0.3.1-canary.8.tgz
+        - nimbus-0.3.1-canary.8.tgz
       version: 0.3.1-canary.8
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1660,7 +1700,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.7/nimbus-0.3.1-canary.7.tgz
+        - nimbus-0.3.1-canary.7.tgz
       version: 0.3.1-canary.7
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1670,7 +1710,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.6/nimbus-0.3.1-canary.6.tgz
+        - nimbus-0.3.1-canary.6.tgz
       version: 0.3.1-canary.6
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1680,7 +1720,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.1-canary.5/nimbus-0.3.1-canary.5.tgz
+        - nimbus-0.3.1-canary.5.tgz
       version: 0.3.1-canary.5
     - apiVersion: v2
       appVersion: multiarch-v22.12.0
@@ -1690,7 +1730,7 @@ entries:
       name: nimbus
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/nimbus-0.3.0/nimbus-0.3.0.tgz
+        - nimbus-0.3.0.tgz
       version: 0.3.0
   openebs-rawfile-localpv:
     - apiVersion: v2
@@ -1701,7 +1741,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.15/openebs-rawfile-localpv-0.8.1-canary.15.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.15.tgz
       version: 0.8.1-canary.15
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1711,7 +1751,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.14/openebs-rawfile-localpv-0.8.1-canary.14.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.14.tgz
       version: 0.8.1-canary.14
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1721,7 +1761,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.13/openebs-rawfile-localpv-0.8.1-canary.13.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.13.tgz
       version: 0.8.1-canary.13
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1731,7 +1771,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.12/openebs-rawfile-localpv-0.8.1-canary.12.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.12.tgz
       version: 0.8.1-canary.12
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1741,7 +1781,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.11/openebs-rawfile-localpv-0.8.1-canary.11.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.11.tgz
       version: 0.8.1-canary.11
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1751,7 +1791,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.10/openebs-rawfile-localpv-0.8.1-canary.10.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.10.tgz
       version: 0.8.1-canary.10
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1761,7 +1801,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.9/openebs-rawfile-localpv-0.8.1-canary.9.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.9.tgz
       version: 0.8.1-canary.9
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1771,7 +1811,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.8/openebs-rawfile-localpv-0.8.1-canary.8.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.8.tgz
       version: 0.8.1-canary.8
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1781,7 +1821,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.7/openebs-rawfile-localpv-0.8.1-canary.7.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.7.tgz
       version: 0.8.1-canary.7
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1791,7 +1831,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.6/openebs-rawfile-localpv-0.8.1-canary.6.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.6.tgz
       version: 0.8.1-canary.6
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1801,7 +1841,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.1-canary.5/openebs-rawfile-localpv-0.8.1-canary.5.tgz
+        - openebs-rawfile-localpv-0.8.1-canary.5.tgz
       version: 0.8.1-canary.5
     - apiVersion: v2
       appVersion: 0.7.0
@@ -1811,7 +1851,7 @@ entries:
       name: openebs-rawfile-localpv
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/openebs-rawfile-localpv-0.8.0/openebs-rawfile-localpv-0.8.0.tgz
+        - openebs-rawfile-localpv-0.8.0.tgz
       version: 0.8.0
   proxyd:
     - apiVersion: v2
@@ -1822,7 +1862,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.3-canary.3/proxyd-0.2.3-canary.3.tgz
+        - proxyd-0.2.3-canary.3.tgz
       version: 0.2.3-canary.3
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1832,7 +1872,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.3-canary.2/proxyd-0.2.3-canary.2.tgz
+        - proxyd-0.2.3-canary.2.tgz
       version: 0.2.3-canary.2
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1842,7 +1882,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.3-canary.1/proxyd-0.2.3-canary.1.tgz
+        - proxyd-0.2.3-canary.1.tgz
       version: 0.2.3-canary.1
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1852,7 +1892,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.2/proxyd-0.2.2.tgz
+        - proxyd-0.2.2.tgz
       version: 0.2.2
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1862,7 +1902,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.2.1/proxyd-0.2.1.tgz
+        - proxyd-0.2.1.tgz
       version: 0.2.1
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1872,7 +1912,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.12/proxyd-0.1.9-canary.12.tgz
+        - proxyd-0.1.9-canary.12.tgz
       version: 0.1.9-canary.12
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1882,7 +1922,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.11/proxyd-0.1.9-canary.11.tgz
+        - proxyd-0.1.9-canary.11.tgz
       version: 0.1.9-canary.11
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1892,7 +1932,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.10/proxyd-0.1.9-canary.10.tgz
+        - proxyd-0.1.9-canary.10.tgz
       version: 0.1.9-canary.10
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1902,7 +1942,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.9/proxyd-0.1.9-canary.9.tgz
+        - proxyd-0.1.9-canary.9.tgz
       version: 0.1.9-canary.9
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1912,7 +1952,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.8/proxyd-0.1.9-canary.8.tgz
+        - proxyd-0.1.9-canary.8.tgz
       version: 0.1.9-canary.8
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1922,7 +1962,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.7/proxyd-0.1.9-canary.7.tgz
+        - proxyd-0.1.9-canary.7.tgz
       version: 0.1.9-canary.7
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1932,7 +1972,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.6/proxyd-0.1.9-canary.6.tgz
+        - proxyd-0.1.9-canary.6.tgz
       version: 0.1.9-canary.6
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1942,7 +1982,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.9-canary.5/proxyd-0.1.9-canary.5.tgz
+        - proxyd-0.1.9-canary.5.tgz
       version: 0.1.9-canary.5
     - apiVersion: v2
       appVersion: 3.11.0
@@ -1952,7 +1992,7 @@ entries:
       name: proxyd
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/proxyd-0.1.8/proxyd-0.1.8.tgz
+        - proxyd-0.1.8.tgz
       version: 0.1.8
   resource-injector:
     - apiVersion: v2
@@ -1962,6 +2002,6 @@ entries:
       name: resource-injector
       type: application
       urls:
-        - https://github.com/cjorge-graphops/launchpad-charts/releases/download/resource-injector-0.2.0/resource-injector-0.2.0.tgz
+        - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2023-10-31T18:47:18.687307659Z"
+generated: "2024-08-01T15:47:18.863120853Z"
