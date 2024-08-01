@@ -1463,6 +1463,16 @@ entries:
   nethermind:
     - apiVersion: v2
       appVersion: 1.16.0-unstable
+      created: "2024-08-01T16:19:57Z"
+      description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
+      digest: 800b954fe6d08203588183c20fdb23c32b80c25eb7dcc2e619a95075efc8b9c2
+      name: nethermind
+      type: application
+      urls:
+        - nethermind-0.3.1-canary.21.tgz
+      version: 0.3.1-canary.21
+    - apiVersion: v2
+      appVersion: 1.16.0-unstable
       created: "2023-10-31T16:14:39Z"
       description: Deploy and scale [Nethermind](https://github.com/NethermindEth/nethermind) inside Kubernetes with ease
       digest: cbad41c96981bc8cdeb183e0fc2c810e593974da40edea1c0b9969da5bf7a13e
@@ -2064,4 +2074,4 @@ entries:
       urls:
         - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2024-08-01T16:21:07.667872366Z"
+generated: "2024-08-01T16:21:12.903132364Z"
