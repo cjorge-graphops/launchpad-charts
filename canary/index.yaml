@@ -14,6 +14,16 @@ entries:
   arbitrum-classic:
     - apiVersion: v2
       appVersion: v1.4.5-e97c1a4
+      created: "2024-08-01T16:19:40Z"
+      description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
+      digest: 9e75a9115b356f61da1ca5650479f1e92ca52d4f34b39d8f26ce98e8743f8093
+      name: arbitrum-classic
+      type: application
+      urls:
+        - arbitrum-classic-0.1.24-canary.18.tgz
+      version: 0.1.24-canary.18
+    - apiVersion: v2
+      appVersion: v1.4.5-e97c1a4
       created: "2023-10-31T18:44:53Z"
       description: Deploy and scale [Arbitrum-Classic](https://github.com/OffchainLabs/arbitrum) inside Kubernetes with ease
       digest: c91fc523327e8599564b50a53e0628b6b3fb89144b2803569ae63d9f8988bdae
@@ -284,6 +294,16 @@ entries:
       version: 0.1.1
   arbitrum-nitro:
     - apiVersion: v2
+      appVersion: v3.1.0-7d1d84c
+      created: "2024-08-01T16:19:40Z"
+      description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
+      digest: b7f9a176019f3a076a0b50278827fd9c8c78b7b271817865944f91d70d39f41c
+      name: arbitrum-nitro
+      type: application
+      urls:
+        - arbitrum-nitro-0.1.12-canary.18.tgz
+      version: 0.1.12-canary.18
+    - apiVersion: v2
       appVersion: v2.1.2-4c55843
       created: "2023-10-31T18:44:53Z"
       description: Deploy and scale [Arbitrum-Nitro](https://github.com/OffchainLabs/nitro/) inside Kubernetes with ease
@@ -454,6 +474,16 @@ entries:
         - arbitrum-nitro-0.1.1.tgz
       version: 0.1.1
   celo:
+    - apiVersion: v2
+      appVersion: 1.7.2
+      created: "2024-08-01T16:19:46Z"
+      description: Deploy and scale [Celo](https://github.com/celo-org/celo-blockchain) Nodes inside Kubernetes with ease
+      digest: d37bc472fc0953c0c98ad24381dc4a985b00f286cfd6d2e87a9bfb3cfdff60d1
+      name: celo
+      type: application
+      urls:
+        - celo-0.1.10-canary.15.tgz
+      version: 0.1.10-canary.15
     - apiVersion: v2
       appVersion: 1.7.2
       created: "2023-09-26T18:31:23Z"
@@ -1262,6 +1292,16 @@ entries:
       version: 0.4.1-canary.1
     - apiVersion: v2
       appVersion: v3.4.0
+      created: "2024-08-01T16:19:55Z"
+      description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
+      digest: a80b1be0a1ed3a110fad81ef544ff575dea34b62d84c9b496b52090e2ef1a733
+      name: lighthouse
+      type: application
+      urls:
+        - lighthouse-0.2.5-canary.4.tgz
+      version: 0.2.5-canary.4
+    - apiVersion: v2
+      appVersion: v3.4.0
       created: "2023-10-31T16:14:38Z"
       description: Deploy and scale [Lighthouse](https://github.com/sigp/lighthouse) inside Kubernetes with ease
       digest: a9398221fca027a78194ce04448812d1759e5372686195e80ce6bc162b76643f
@@ -2024,4 +2064,4 @@ entries:
       urls:
         - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2024-08-01T15:48:55.194695893Z"
+generated: "2024-08-01T16:21:07.667872366Z"
