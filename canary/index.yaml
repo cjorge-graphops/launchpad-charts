@@ -1643,6 +1643,16 @@ entries:
       version: 0.3.0
   nimbus:
     - apiVersion: v2
+      appVersion: multiarch-v24.7.0
+      created: "2024-08-01T16:20:11Z"
+      description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
+      digest: 5b87b52346ceffd774091a34feec4bce2b4067f16417da9a0dd72d88518cd403
+      name: nimbus
+      type: application
+      urls:
+        - nimbus-0.3.1-canary.20.tgz
+      version: 0.3.1-canary.20
+    - apiVersion: v2
       appVersion: multiarch-v23.10.0
       created: "2023-10-31T16:14:53Z"
       description: Deploy and scale [Nimbus](https://github.com/status-im/nimbus-eth2) inside Kubernetes with ease
@@ -2074,4 +2084,4 @@ entries:
       urls:
         - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2024-08-01T16:21:12.903132364Z"
+generated: "2024-08-01T16:21:30.358570721Z"
