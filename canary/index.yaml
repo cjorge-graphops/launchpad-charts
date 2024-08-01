@@ -617,6 +617,16 @@ entries:
       version: 0.6.1-canary.1
     - apiVersion: v2
       appVersion: v2.34.0
+      created: "2024-08-01T15:45:50Z"
+      description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
+      digest: 0dad31f46f60ad19f39cfa4f0f006bb9d5ca533bca93655fe7be33bf091cc25a
+      name: erigon
+      type: application
+      urls:
+        - erigon-0.5.2-canary.15.tgz
+      version: 0.5.2-canary.15
+    - apiVersion: v2
+      appVersion: v2.34.0
       created: "2023-10-31T16:14:30Z"
       description: Deploy and scale [Erigon](https://github.com/ledgerwatch/erigon) inside Kubernetes with ease
       digest: c6a4acf05bc3c7b835840eb505ca8ec4cf94dc011222b9c1d6068ebb8764249a
@@ -2004,4 +2014,4 @@ entries:
       urls:
         - resource-injector-0.2.0.tgz
       version: 0.2.0
-generated: "2024-08-01T15:47:18.863120853Z"
+generated: "2024-08-01T15:48:43.273771891Z"
